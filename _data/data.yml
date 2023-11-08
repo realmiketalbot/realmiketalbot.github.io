@@ -1,0 +1,229 @@
+#
+# Be aware that even a small syntax error here can lead to failures in output.
+#
+
+sidebar:
+    position: right # position of the sidebar : left or right
+    about: True # set to False or comment line if you want to remove the "how to use?" in the sidebar
+    education: True # set to False if you want education in main section instead of in sidebar
+
+    # Profile information
+    name: Mike Talbot
+    tagline: PhD Candidate
+    avatar: mike-talbot-bw.jpg  #place a 100x100 picture inside /assets/images/ folder and provide the name of the file below
+
+    # Sidebar links
+    email: 
+    phone: 
+    timezone: America/Denver Timezone
+    citizenship:
+    website: realmiketalbot.github.io #do not add http://
+    linkedin: realmiketalbot
+    xing: 
+    github: realmiketalbot
+    telegram: # add your nickname without '@' sign
+    gitlab:
+    bitbucket:
+    twitter: 
+    stack-overflow: 11536645/mike-talbot # Number/Username, e.g. 123456/alandoe
+    codewars:
+    goodreads: 7953785-mike
+    pdf: assets/images/talbot-cv-2023-02-01.pdf
+
+career-profile:
+    title: Career Profile
+    summary: |
+      I worked for 10 years as a consulting engineer, primarily on projects dealing with watershed planning, flood mitigation, hydrologic and hydraulic modeling, spatial data processing and management, and full-stack web development.
+
+      In 2023, I was admitted to the Department of Civil & Environmental Engineering at Colorado State University where I'm currently pursuing a PhD in the Hydrologic Sciences & Engineering program. My research interests span the intersections between climate change, flood mitigation, data science, and machine learning.
+education:
+    title: Education
+    info:
+      - degree: PhD in Civil & Environmental Engineering
+        university: Colorado State University
+        time: 2024 -
+        details: |
+          The details of my research are still being worked out.
+      - degree: MS in Bioproducts & Biosystems Science, Engineering, and Management
+        university: University of Minnesota
+        time: 2010 - 2019
+        details: |
+          My thesis involved evaluating the impact of evapotranspiration (ET) parameterization on spatial and temporal variations in the performance of a subsurface drainage model across the midwestern US.
+      - degree: BBAE in Biosystems & Agricultural Engineering
+        university: University of Minnesota
+        time: 2005 - 2009
+        details: |
+          
+
+experiences:
+    title: Experience
+    info:
+      - role: Water Resources Engineer
+        time: 2013 - 2023
+        company: Emmons & Olivier Resources, Inc.
+        location: St. Paul, MN
+      - role: Graduate Research Assistant
+        time: 2010 - 2013
+        company: Department of Bioproducts & Biosystems Engineering
+        location: University of Minnesota
+      - role: Graduate Research Contractor
+        time: 2010
+        company: United States Geological Survey
+        location: Minneapolis, MN
+      - role: Undergraduate Research Assistant
+        time: 2005 - 2009
+        company: Department of Biosystems & Agricultural Engineering
+        location: University of Minnesota
+      - role: Visiting Research Assistant
+        time: 2009
+        company: Department of Civil Engineering
+        location: Czech Technical University (ČVUT), Prague, Czech Republic
+
+publications:
+    title: Publications
+    types:
+      - name: Peer-reviewed
+        papers:
+          - title: Parameterization and Application of Agricultural Best Management Practices in a Rural Ontario Watershed Using PCSWMM
+            link: "doi:10.14796/JWMM.C400"
+            authors: <b>Talbot MT</b>, McGuire O, Olivier C, Fleming R
+            year: 2016
+            publication: Journal of Water Management Modeling
+          - title: Developing optimum subsurface drainage design procedures
+            link: "doi:10.1080/09064710.2014.997788"
+            authors: Sands GR, Canelon D, <b>Talbot M</b>
+            year: 2015
+            publication: Acta Agriculturae Scandinavica, Section B — Soil & Plant Science. 65(sup1):121–127
+      - name: In preparation
+        papers:
+          - title: "Evapotranspiration Estimation in the Midwestern United States: Part I. Comparing Commonly Used Reference ET Methods"
+            link: 
+            authors: <b>Talbot MT</b>, Sands GR, Coulter JA, Peterson JR
+            year: 
+            publication: 
+          - title: "Evapotranspiration Estimation in the Midwestern United States: Part II. Assessing Impacts on DRAINMOD Model Predictions"
+            link: 
+            authors: <b>Talbot MT</b>, Sands GR, Coulter JA, Peterson JR
+            year: 
+            publication: 
+          - title: Evaluation of a GIS-Based Flood Hazard Assessment in Rochester, Minnesota
+            link: 
+            authors: <b>Talbot MT</b>, Correll C, Voje S, Nation P
+            year: 
+            publication: Journal of Water Management Modeling
+      - name: Contributions and Acknowledgements
+        papers:
+          - title: Agriculture — A river runs through it — The connections between agriculture and water quality.
+            link: "http://pubs.er.usgs.gov/publication/cir1433"
+            authors: Capel PD, McCarthy KA, Coupe RH, Grey KM, Amenumey SE, Baker NT, Johnson RL
+            year: 2018
+            publication: Geological Survey Circular Report No. 1433
+          - title: Thunder Bay Stormwater Management Plan for Sustainable Surface Water Management
+            link: "https://www.thunderbay.ca/en/city-services/resources/Documents/Stormwater-Management-Plan-for-web---Vol1.pdf"
+            authors: Emmons & Olivier Resources, Inc
+            year: 2016
+            publication: 
+          - title: The Role of Hydrologic Alteration and Riparian Vegetation Dynamics in Channel Evolution along the Lower Minnesota River
+            link: "https://elibrary.asabe.org/abstract.asp?aid=42686"
+            authors: Lenhart CF, Titov ML, Ulrich JS, Nieber JL, Suppes BJ
+            year: 2013
+            publication: Transactions of the ASABE. 56(2):549
+      - name: Other (not peer-reviewed)
+        papers:
+          - title: "Evaluating and Estimating DRAINMOD’s Effective Rooting Depth for Corn"
+            link: 
+            authors: <b>Talbot MT</b>, Sands G, Coulter J
+            year: 2014
+            publication: ASABE Meeting Presentations
+      
+presentations:
+    title: Selected Presentations
+    info:
+      - presentors: <b>Talbot MT</b>, Isensee M, Pynn B
+        title: "Improving Remote Collaboration while Lowering Costs: A Case Study in Prioritization and Targeting using Open Source Software"
+        conference: Minnesota Association of Watershed Districts Annual Conference
+        location: Virtual Meeting
+        date: Dec 1-4, 2020
+        link: 
+      - presentors: <b>Talbot MT</b>
+        title: Investigating the impact of ET model choice for DRAINMOD in the upper Midwest
+        conference: Midwest Drainage Research Forum
+        location: Virtual Meeting
+        date: Dec 1, 2020
+        link: 
+      - presentors: <b>Talbot MT</b>
+        title: Locating and Evaluating the Costs and Benefits of Urban LID Retrofits
+        conference: Environmental & Water Resources Institute World Environmental & Water Resources Congress
+        location: Minneapolis, MN
+        date: June 3-7, 2018
+        link: 
+      - presentors: <b>Talbot MT</b>
+        title: "What to do when your lidar is out of date: a modeling perspective"
+        conference: 51st Annual International Conference on Water Management Modeling
+        location: Brampton, ON
+        date: Feb 28, 2018
+        link: 
+      - presentors: <b>Talbot MT</b>, Perera N
+        title: Locating and Evaluating the Costs and Benefits of Urban LID Retrofits
+        conference: 51st Annual International Conference on Water Management Modeling
+        location: Brampton, ON
+        date: Feb 28, 2018 
+        link: 
+      - presentors: Naber JN, Ulrich JS, <b>Talbot MT</b>
+        title: Modeling the Influences of Riverine Hydrology on Near-Channel Nesting Habitat for State-Listed Turtle Species
+        conference: Minnesota Water Resources Conference
+        location: St. Paul, MN
+        date: Oct 18-19, 2016
+        link: 
+      - presentors: Emmons BH, Correll C, <b>Talbot MT</b>, Davenport T, Vincent P
+        title: Searching for the Goldilocks Water Quality Model
+        conference: 89th Central States Water Environmental Association Annual Meeting
+        location: Madison, WI
+        date: May 17-20, 2016
+        link: 
+      - presentors: Olivier C, <b>Talbot MT</b>
+        title: Rural Stormwater Management Model (RSWMM)
+        conference: 48th Annual International Conference on Water Management Modeling
+        location: Brampton, ON
+        date: Feb 25-26, 2015
+        link: 
+      - presentors: <b>Talbot MT</b>
+        title: Assessment of Bioretention Device Performance by Use of Water Level Recordings
+        conference: Minnesota Water Resources Conference
+        location: St. Paul, MN
+        date: Oct 14, 2014
+        link: 
+
+skills:
+    title: Programming &amp; Scripting Proficiency
+
+    toolset:
+      - name: R
+        level: 98%
+
+      - name: PHP
+        level: 95%
+
+      - name: HTML5 & CSS
+        level: 90%
+
+      - name: Javascript & jQuery
+        level: 85%
+
+      - name: PostgresSQL & PostGIS
+        level: 80%
+
+      - name: VBA
+        level: 70%
+
+      - name: Leaflet
+        level: 35%
+
+      - name: Python
+        level: 25%
+
+      - name: Julia
+        level: 10%
+
+footer: >
+    Designed with <i class="fas fa-heart"></i> by <a href="http://themes.3rdwavemedia.com" target="_blank" rel="nofollow">Xiaoying Riley</a>
