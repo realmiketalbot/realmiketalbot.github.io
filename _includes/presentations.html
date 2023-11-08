@@ -1,0 +1,24 @@
+{% assign presentations = site.data.data.presentations %} 
+{% if presentations %}
+<section class="section publications-section">
+  <h2 class="section-title">
+    <span class="fa-stack fa-xs">
+      <i class="fas fa-circle fa-stack-2x"></i>
+      <i class="fas fa-person-chalkboard fa-stack-1x fa-inverse"></i>
+    </span>
+    {{ presentations.title }}
+  </h2>
+
+  <ol>
+    {% for presentation in presentations.info %}
+      <li>
+        {% if presentation.presentors %} {{ presentation.presentors }}. {% endif %}
+        {% if presentation.link %} <a href="{{ presentation.link }}"> {{ presentation.title }}. </a> {% else %} {{ presentation.title }}. {% endif %} 
+        {% if presentation.conference %} {{ presentation.conference }}. {% endif %}
+        {% if presentation.location %} {{ presentation.location }}. {% endif %}
+        {% if presentation.date %} {{ presentation.date }}. {% endif %}
+      </li>
+    {% endfor %}
+  </ol>
+</section>
+{% endif %}
