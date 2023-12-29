@@ -1,0 +1,20 @@
+{% assign travel = site.data.data.travel %} {% if travel %}
+<section class="section summary-section">
+  <h2 class="section-title">
+    <span class="fa-stack fa-xs">
+      <i class="fas fa-circle fa-stack-2x"></i>
+      <i class="fas fa-plane fa-stack-1x fa-inverse"></i>
+    </span>
+    {{ travel.title }}
+  </h2>
+
+  <div class="summary">
+    <a href="https://openflights.org/user/Mike Talbot" target="_blank">
+      <img src="https://openflights.org/banner/Mike Talbot.png" width="400" height="70"/>
+    </a>
+  </div>
+  <!--//summary-->
+</section>
+<!--//section-->
+<!--//skills-section-->
+{% endif %}
