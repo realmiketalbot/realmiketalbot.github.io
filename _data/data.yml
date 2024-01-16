@@ -33,16 +33,16 @@ sidebar:
 career-profile:
     title: Career Profile
     summary: |
-      I worked for 10 years as a consulting engineer, primarily on projects dealing with watershed planning, flood mitigation, hydrologic and hydraulic modeling, spatial data processing and management, and full-stack web development.
+      I worked for 10 years as a consulting engineer, primarily on projects dealing with watershed planning, flood mitigation, stormwater modeling and management, spatial data processing and database design, and full-stack web development.
 
-      In 2023, I was admitted to the Department of Civil & Environmental Engineering at Colorado State University where I'm currently pursuing a PhD in the Hydrologic Sciences & Engineering program. My research interests span the intersections between climate change, flood mitigation, data science, and machine learning.
+      In 2023, I was admitted to the Department of Civil & Environmental Engineering at Colorado State University where I'm currently pursuing a PhD in the Hydrologic Sciences & Engineering program. My research interests span the intersections between climate change, hydrology, flood mitigation, and data science.
 
 education:
     title: Education
     info:
       - degree: PhD in Civil & Environmental Engineering
         university: Colorado State University
-        time: 2024 -
+        time: 2024 - Present
         details: |
           The details of my research are still being worked out.
       - degree: MS in Bioproducts & Biosystems Science, Engineering, and Management
@@ -59,6 +59,10 @@ education:
 experiences:
     title: Experience
     info:
+      - role: Graduate Research Assistant
+        time: 2024 - Present
+        company: Colorado State University
+        location: Fort Collins, CO
       - role: Water Resources Engineer
         time: 2013 - 2023
         company: Emmons & Olivier Resources, Inc.
