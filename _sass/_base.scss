@@ -178,7 +178,8 @@ p {
   }
 
   .experiences-section,
-  .educations-section {
+  .educations-section,
+  .awards-honors-section {
     .item {
       margin-bottom: 30px;
     }
@@ -191,6 +192,7 @@ p {
     display: flex;
   }
   .job-title,
+  .award-title,
   .degree,
   .cert-title,
   .pub-section {

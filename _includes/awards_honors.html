@@ -1,0 +1,29 @@
+{% assign awards_honors = site.data.data.awards_honors %}
+{% if awards_honors %}
+<section class="section awards-honors-section">
+  <h2 class="section-title">
+    <span class="fa-stack fa-xs">
+      <i class="fas fa-circle fa-stack-2x"></i>
+      <i class="fas fa-trophy fa-stack-1x fa-inverse"></i>
+    </span>
+    {{ awards_honors.title }}
+  </h2>
+
+  {% for award_honor in awards_honors.info %}
+  <div class="item">
+
+    <div class="meta">
+
+      <div class="upper-row">
+        <h3 class="award-title">{{ award_honor.title }}</h3>
+        <div class="time">{{ award_honor.time }}</div>
+      </div><!--//upper-row-->
+
+    </div><!--//meta-->
+
+  </div><!--//item-->
+  {% endfor %}
+
+</section><!--//section-->
+{% endif %}
+

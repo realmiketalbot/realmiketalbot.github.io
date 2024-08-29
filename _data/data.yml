@@ -55,6 +55,13 @@ education:
         time: 2005 - 2009
         details: |
           
+awards_honors:
+    title: Awards and Honors
+    info:
+      - title: Walter Scott Jr. Graduate Research Assistantship
+        time: 2024
+      - title: Whitney Borland New Graduate Student Scholarship
+        time: 2024
 
 experiences:
     title: Experience
