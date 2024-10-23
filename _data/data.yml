@@ -58,10 +58,16 @@ education:
 awards_honors:
     title: Awards and Honors
     info:
+      - title: Whitney Borlund New Graduate Student Scholarship
+        title: October 2024
+      - title: Jorge Ramirez Graduate Scholarship in Hydrology and Water Resources
+        time: October 2024
       - title: Walter Scott Jr. Graduate Research Assistantship
-        time: 2024
+        time: January 2024
       - title: Whitney Borland New Graduate Student Scholarship
-        time: 2024
+        time: January 2024
+      - title: EOR Forward! Award
+        time: January 2023
 
 experiences:
     title: Experience
@@ -151,6 +157,11 @@ publications:
 presentations:
     title: Selected Presentations
     info:
+      - presentors: <b>Talbot MT</b>
+        title: "Watershed Alchemy: Transforming Data into Hydrologic Understanding"
+        conference: AGU24 Annual Meeting
+        location: Washington, D.C.
+        date: Dec 13th, 2024
       - presentors: <b>Talbot MT</b>, Isensee M, Pynn B
         title: "Improving Remote Collaboration while Lowering Costs: A Case Study in Prioritization and Targeting using Open Source Software"
         conference: Minnesota Association of Watershed Districts Annual Conference
