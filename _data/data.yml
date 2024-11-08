@@ -82,22 +82,26 @@ experiences:
         time: 2013 - 2023
         company: Emmons & Olivier Resources, Inc.
         location: St. Paul, MN
+      - role: Quality Control Engineer
+        time: 2012 - 2013
+        company: Dectra, Inc.
+        location: St. Paul, MN
       - role: Graduate Research Assistant
-        time: 2010 - 2013
-        company: Department of Bioproducts & Biosystems Engineering
-        location: University of Minnesota
+        time: 2010 - 2012
+        company: Department of Bioproducts & Biosystems Engineering, University of Minnesota
+        location: St. Paul, MN
       - role: Graduate Research Contractor
         time: 2010
         company: United States Geological Survey
         location: Minneapolis, MN
       - role: Undergraduate Research Assistant
         time: 2005 - 2009
-        company: Department of Biosystems & Agricultural Engineering
-        location: University of Minnesota
+        company: Department of Biosystems & Agricultural Engineering, University of Minnesota
+        location: St. Paul, MN
       - role: Visiting Research Assistant
         time: 2009
-        company: Department of Civil Engineering
-        location: Czech Technical University (ČVUT), Prague, Czech Republic
+        company: Department of Civil Engineering, Czech Technical University (ČVUT)
+        location: Prague, Czech Republic
 
 publications:
     title: Publications
