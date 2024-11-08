@@ -229,13 +229,7 @@ skills:
       - name: PHP
         level: 95%
 
-      - name: HTML5 & CSS
-        level: 90%
-
-      - name: Javascript & jQuery
-        level: 85%
-
-      - name: PostgresSQL & PostGIS
+      - name: SQL
         level: 80%
 
       - name: Python
@@ -243,6 +237,9 @@ skills:
 
       - name: VBA
         level: 70%
+
+      - name: Javascript
+        level: 60%
 
       - name: Julia
         level: 20%
