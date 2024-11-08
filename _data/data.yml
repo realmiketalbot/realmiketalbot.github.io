@@ -238,17 +238,14 @@ skills:
       - name: PostgresSQL & PostGIS
         level: 80%
 
+      - name: Python
+        level: 75%
+
       - name: VBA
         level: 70%
 
-      - name: Leaflet
-        level: 35%
-
-      - name: Python
-        level: 25%
-
       - name: Julia
-        level: 10%
+        level: 20%
 
 travel:
     title: Travel
