@@ -18,6 +18,7 @@ sidebar:
     timezone: America/Denver Timezone
     citizenship:
     website: miketalbot.io #do not add http://
+    bluesky: bsky.miketalbot.io
     linkedin: realmiketalbot
     xing: 
     github: realmiketalbot
@@ -58,6 +59,8 @@ education:
 awards_honors:
     title: Awards and Honors
     info:
+      - title: Walter Scott, Jr. College of Engineering Excellence in Research Award
+        time: Nov 2024
       - title: Graduate Student Council Conference Travel Grant
         time: Nov 2024
       - title: Whitney Borlund New Graduate Student Scholarship
