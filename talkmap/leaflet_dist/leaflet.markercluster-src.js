@@ -2455,7 +2455,7 @@
 		},
 
 		//On zoom start we add a zoomanim handler so that we are guaranteed to be last (after markers are animated)
-		//This means we can define the animation they do rather than Markers doing an animation to their actual location
+		//This means we can define the animation they do rather than Markers paperdoing an animation to their actual location
 		_unspiderfyZoomStart: function () {
 			if (!this._map) { //May have been removed from the map by a zoomEnd handler
 				return;

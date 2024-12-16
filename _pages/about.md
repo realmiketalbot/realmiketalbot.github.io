@@ -7,6 +7,8 @@ redirect_from:
   - /about.html
 ---
 
+{% include base_path %}
+
 Hello! I'm Mike, a PhD student at Colorado State University working with [Dr. Frances Davenport](https://fdavenport.github.io) in the [Hydrologic Science & Engineering](https://www.engr.colostate.edu/ce/graduate/hydrologic-science-and-engineering/) program in the [Department of Civil & Environmental Engineering](https://www.engr.colostate.edu/ce/). I worked as a Water Resources Engineer with [Emmons & Olivier Resources](https://www.eorinc.com/) (EOR) for 10 years and continue to provide guidance and technical feedback on some hydrologic modeling, watershed planning, and web development projects. 
 
 My research interests stem from my extensive experience building and using hydrologic and hydraulic models for a variety of purposes across a wide range of scales, and the myriad challenges I encountered along the way. My early PhD research uses of deep learning and advanced statistical techniques to uncover regionalizable principles in hydrologic modeling, and to improve the ability of deep learning models such as LSTMs to predict hydrologic extremes. Basically, I'm interested in the intersection between deep learning and flood prediction, but unlike much of the research being done on flood forecasting in this area, my particular interests are in using explainable AI to see what we can learn from these complex data-driven models.

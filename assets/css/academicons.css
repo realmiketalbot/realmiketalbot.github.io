@@ -152,10 +152,10 @@
 .ai-depsy-square:before {
   content: "\e94b";
 }
-.ai-doi:before {
+.ai-paperdoi:before {
   content: "\e97e";
 }
-.ai-doi-square:before {
+.ai-paperdoi-square:before {
   content: "\e98f";
 }
 .ai-dryad:before {

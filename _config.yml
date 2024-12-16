@@ -28,7 +28,7 @@ author:
   location         : "Fort Collins, CO"
   employer         : "Colorado State University"
   research-uri     : https://fdavenport.github.io
-  email            : "mtalbot@colostate.edu" 
+  email            :
 
   # Academic websites
   arxiv            : # URL - Update with the correct link to your profile
@@ -76,12 +76,16 @@ author:
 
 # Publication Category - The following the list of publication categories and their headings
 publication_category:
+  manuscripts:
+    title: 'Peer-Reviewed'
+  preparation:
+    title: 'In Preparation'   
+  contributes:
+    title: 'Contributions and Acknowledgements'   
+  conferences:
+    title: 'Conference Proceedings'
   books:
     title: 'Books'
-  manuscripts:
-    title: 'Journal Articles'    
-  conferences:
-    title: 'Conference Papers'
 
 # Site Settings
 teaser                   :  # filename of teaser fallback teaser image placed in /images/, .e.g. "500x300.png"
