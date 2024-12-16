@@ -243,3 +243,22 @@
     }
   }
 }
+
+.list__item-custom {
+  padding: 1em 1em 0em 1em; /* Add padding for all archive items */
+  margin-bottom: 1em; /* Maintain spacing between items */
+  border-radius: 8px; /* Rounded corners */
+  outline: 1px solid rgba(211, 211, 211, 0.5); /* Subtle light-gray outline */
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.05); /* Soft shadow for depth */
+}
+
+.archive__item-custom {
+  padding: 0.1em; /* Add padding for all archive items */
+  padding-bottom: 1px;
+  margin: 0;
+}
+
+.archive__item-title-custom {
+  margin-top: 0;
+  margin-bottom: 0;
+}

@@ -1,0 +1,12 @@
+name: geocoding-env
+channels:
+  - conda-forge
+dependencies:
+  - python=3.10
+  - geopy
+  - ipywidgets
+  - ipyleaflet
+  - jupyterlab
+  - pip
+  - pip:
+      - getorg
