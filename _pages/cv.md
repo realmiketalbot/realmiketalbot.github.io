@@ -10,7 +10,7 @@ redirect_from:
 {% include base_path %}
 
 <h2>Education</h2><hr />
-* Ph.D in Civil & Environmental Engineering, _Colorado State University, 2027 (expected)_
+* Ph.D. in Civil & Environmental Engineering, _Colorado State University, 2027 (expected)_
 * M.S. in Bioproducts & Biosystems Science, Engineering, and Management, _University of Minnesota, 2019_
 * B.B.A.E. in Biosystems & Agricultural Engineering, _University of Minnesota, 2009_
 
