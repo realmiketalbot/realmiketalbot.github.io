@@ -78,31 +78,31 @@ redirect_from:
 -->
 
 <h2>Awards and honors</h2><hr />
-* CASFM Ben Urbonas Scholarship
+* <a href='https://www.casfm.org/about/committees/scholarship-committee/ben-urbonas-scholarship/' target='_blank'>CASFM Ben Urbonas Scholarship</a>
   * December 2024
 
-* Walter Scott, Jr. College of Engineering Excellence in Research Award
+* <a href='https://source.colostate.edu/graduate-students-awarded-24k-in-awards-for-research-and-creativity-at-gradshow/' target='_blank'>Walter Scott, Jr. College of Engineering Excellence in Research Award</a>
   * November 2024
 
-* Graduate Student Council Conference Travel Grant
+* <a href='https://gsc.colostate.edu/budget/' target='_blank'>Graduate Student Council Conference Travel Grant</a>
   * November 2024
   * Awarded for travel to the AGU24 Annual Meeting in Washington, D.C.
 
-* Whitney Borlund New Graduate Student Scholarship
+* <a href='https://colostate.academicworks.com/opportunities/58504' target='_blank'>Whitney Borland New Graduate Student Scholarship</a>
   * October 2024
 
-* Jorge Ramirez Graduate Scholarship in Hydrology and Water Resources
+* <a href='https://colostate.academicworks.com/opportunities/55567' target='_blank'>Jorge Ramirez Graduate Scholarship in Hydrology and Water Resources</a>
   * October 2024
 
-* Walter Scott Jr. Graduate Research Assistantship
+* <a href='https://colostate.academicworks.com/opportunities/57231' target='_blank'>Walter Scott Jr. Graduate Fellowship</a>
   * January 2024
 
-* Whitney Borland New Graduate Student Scholarship
+* <a href='https://colostate.academicworks.com/opportunities/58504' target='_blank'>Whitney Borland New Graduate Student Scholarship</a>
   * January 2024
 
-* EOR Forward! Award
+* <a href='https://www.eorinc.com/index.html' target='_blank'>EOR</a> Forward! Award
   * January 2023
   * Awarded for quality and innovative work
 
 <h2>Service and leadership</h2><hr />
-* Water Engineering and Science (WES) Seminar Co-Chair, _Fall 2024_
+* <a href='https://www.engr.colostate.edu/ce/events/water-seminar/' target='_blank'>Water Engineering and Science (WES) Seminar</a> Co-Chair, _Fall 2024_
