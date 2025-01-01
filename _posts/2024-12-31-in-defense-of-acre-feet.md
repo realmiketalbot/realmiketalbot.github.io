@@ -9,7 +9,7 @@ tags:
 
 Let me start by asking a simple question: is it easier for you to visualize, in your mind's eye, a million gallons of water or an Olympic swimming pool? Or for you cynics out there: is it easier to visualize a million milliliters of water or one cubic meter? 
 
-For most of us, there’s an obvious answer. Numbers alone are rarely intuitive, but a well-chosen analogy can transform the abstract into the tangible. This is the challenge we face in science communication every day: how do we make complex ideas resonate with different audiences?
+For most of us, there’s an obvious answer. Numbers alone are rarely intuitive, but a well-chosen analogy can transform the abstract into the tangible. This is at the heart of one of the challenges we face in science communication: how do we make complex ideas resonate with different audiences?
 
 In this post, I’ll use the acre-foot -- a peculiar and often-criticized unit of measurement -- as a case study to explore (a) why the choice of units matter, (b) why it's so hard to make numbers make sense, and (c) what we can learn from the acre-foot to improve how we share science.
 
