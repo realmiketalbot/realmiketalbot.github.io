@@ -7,7 +7,7 @@ tags:
   - science-communication
 ---
 
-Let me start by asking a simple question: is it easier for you to visualize, in your mind's eye, a million gallons of water or an Olympic swimming pool? Or for you cynics out there: is it easier to visualize a million milliliters of water or one cubic meter? 
+Let me start by asking a simple question: is it easier for you to visualize, in your mind's eye, a million gallons of water or an Olympic swimming pool? Or for you cynics out there: is it easier to visualize a million milliliters of water or a refrigerator? 
 
 For most of us, there’s an obvious answer. Numbers alone are rarely intuitive, but a well-chosen analogy can transform the abstract into the tangible. This is at the heart of one of the challenges we face in science communication: how do we make complex ideas resonate with different audiences?
 
