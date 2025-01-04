@@ -7,7 +7,7 @@ tags:
   - science-communication
 ---
 
-Let me start by asking a simple question: is it easier for you to visualize, in your mind's eye, a million gallons of water or an Olympic swimming pool? Or for you cynics out there: is it easier to visualize a million milliliters of water or one cubic meter? 
+Let me start by asking a simple question: is it easier for you to visualize, in your mind's eye, a million gallons of water or an Olympic swimming pool? Or for you cynics out there: is it easier to visualize a million milliliters of water or a refrigerator? 
 
 For most of us, there’s an obvious answer. Numbers alone are rarely intuitive, but a well-chosen analogy can transform the abstract into the tangible. This is at the heart of one of the challenges we face in science communication: how do we make complex ideas resonate with different audiences?
 
@@ -84,7 +84,7 @@ Consider the American farmer as an audience, for example, simply because it's on
 
 I certainly learned a lot the hard way by making mistakes of my own and, at times, alienating entire segments of my audience, but I learned the most by observing how more experienced communicators dealt with these crowds. I'm thinking of those working in extension or outreach, or those who have simply had years of experience running public meetings. I can only describe what they do as a form of adept <a href='https://www.unitedlanguagegroup.com/learn/linguistic-code-switching' target='_blank'>code-switching</a>, and I think it's something more scientists and engineers really need to work on. While code-switching can be a double-edged sword and is <a href='https://lsa.umich.edu/lsa/news-events/lsa-magazine/Summer-2022/the-burden-of-code--switching.html' target='_blank'>tantamount to pandering</a> if done poorly, doing it well is truly an invaluable skill. Just remember: it's not about "dumbing down" your message, but rather meeting your audience where they are. And doing the opposite -- for example, <a href='https://www.plainlanguage.gov/guidelines/words/avoid-jargon/' target='_blank'>using jargon</a> because you think it makes you sound smart or authoritative -- <a href='https://www.nature.com/articles/d41586-020-00580-w' target='_blank'>can be equally alienating</a>. 
 
-I may be a little off track here, but I think these are incredibly important things to think about. To summarize, here are what I think are the five most important things you can do as a scientist to improve the communication of your message:
+I may be a little off track here, but I think these are incredibly important things to think about. To summarize, here are what I think are the five most important things you can do as a scientist to help your audience digest quantitative results:
 
 1. **Consider your audience** and tailor your units and analogies to the intellectual and cultural context
 2. **Use visual aids and contextualize abstract quantities** -- for example, putting the size of an acre in context
