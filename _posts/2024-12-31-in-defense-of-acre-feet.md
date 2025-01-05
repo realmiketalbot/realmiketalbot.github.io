@@ -31,7 +31,7 @@ Allow me to briefly remind you that an acre is defined as 43,560 square feet (wh
 
 ![Acre Comparison](../../images/acre-size-comparison.png)
 
-<small>A visual comparison of an acre to an American football field and a standard soccer pitch (to scale). Original content © Michael T. Talbot, 2024. Licensed under CC BY 4.0 (reuse permitted with attribution).</small>
+<small>A visual comparison of an acre to an American football field and a standard soccer pitch (to scale). [original content]</small>
 
 Admittedly, the acre-foot is a unique unit. I've been racking my brain and perusing the <a href="https://en.wikipedia.org/wiki/List_of_unusual_units_of_measurement">list of unusual units of measurement</a> to think of another unit that combines two different units of measure for the same dimension[^1] -- length in this case -- and I've only come up with two: the <a href="https://en.wikipedia.org/wiki/Board_foot">board foot</a> and the hectare-meter -- the latter of which I have seen in the scientific literature as, I believe, merely an SI version of the acre-foot. So, carpentry aside, it appears that this may be unique to the field of hydrology where, perhaps, we simply have a need for such a unit -- e.g., to convey how much water there is when it floods in a way that humans understand. This is really the fundamental utility of such a unit: someone without scientific training can visualize what you mean (with a modicum of explanation, if necessary) when you talk about an acre-foot of water.
 
