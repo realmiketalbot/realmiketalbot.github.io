@@ -22,9 +22,9 @@ repository               : "realmiketalbot/realmiketalbot.github.io"
 author:
   # Biographic information
   avatar           : "mike-talbot-bw.png"
-  name             : "PhD Student"
+  name             : "Mike Talbot"
   pronouns         : # example: "she/her"  
-  bio              : "Engineer, Hydrologist, Data Scientist"
+  bio              : "Phd Student, Engineer, Hydrologist, Data Scientist"
   location         : "Fort Collins, CO"
   employer         : "Colorado State University"
   research-uri     : https://fdavenport.github.io
