@@ -108,6 +108,6 @@ redirect_from:
   * Awarded for quality and innovative work
 
 <h2>Service and leadership</h2><hr />
-* <a href='https://www.engr.colostate.edu/ce/events/water-seminar/' target='_blank'>Water Engineering and Science (WES) Seminar</a> Co-Chair, _Fall 2024_
-
 * <a href='https://www.engr.colostate.edu/organizations/ewri/' target='_blank'>EWRI-CSU Graduate Student Group</a> Treasurer, _2025_
+
+* <a href='https://www.engr.colostate.edu/ce/events/water-seminar/' target='_blank'>Water Engineering and Science (WES) Seminar</a> Co-Chair, _Fall 2024_
