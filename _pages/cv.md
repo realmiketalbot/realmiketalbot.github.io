@@ -78,6 +78,9 @@ redirect_from:
 -->
 
 <h2>Awards and honors</h2><hr />
+* <a href='https://awracolorado.org/past-recipients' target='_blank'>AWRA Colorado Rich Herbert Memorial Scholarship</a>
+  * February 2025
+
 * <a href='https://www.casfm.org/about/committees/scholarship-committee/ben-urbonas-scholarship/' target='_blank'>CASFM Ben Urbonas Scholarship</a>
   * December 2024
 
