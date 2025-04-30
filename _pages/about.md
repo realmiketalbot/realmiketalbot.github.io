@@ -19,7 +19,7 @@ While at EOR, I worked on a large number of projects ranging from engineering de
 - [Thunder Bay Stormwater Management Plan](https://www.thunderbay.ca/en/city-services/resources/Documents/Stormwater-Management-Plan-for-web---Vol1-Accessible.pdf) (2016)
 - [City of Grand Marais Stormwater Management Plan](https://www.ci.grand-marais.mn.us/vertical/sites/%7B33D7F42E-203A-42E0-8979-44AF7108C86C%7D/uploads/FINAL_Plan_Grand_Marais_SWP.pdf) (2018)
 - [Edmonton LID Study](https://www.eorinc.com/projects/edmonton-lid-study.html) (2019)
-- [Middle Cedar Watershed Management Plan](https://www.iowadnr.gov/Portals/idnr/uploads/water/watershed/files/WMA_Files/MiddleCedar_Watershed_Management_Plan%20OptforWeb.pdf) (2020)
+- [Middle Cedar Watershed Management Plan](https://web.archive.org/web/20240516190825/https://www.iowadnr.gov/Portals/idnr/uploads/water/watershed/files/WMA_Files/MiddleCedar_Watershed_Management_Plan%20OptforWeb.pdf) (2020)
 - [Rochester Comprehensive Surface Water Management Plan](https://cswmp-rpu.hub.arcgis.com/) (~2025)
 
 From 2020 onward, I was also brought into the IT department to help with improving the remote work experience, which resulted in my standing up a cloud-hosted PostGIS instance for increasing the efficiency of our remote GIS work. Stemming from this, I (somewhat accidentally) found myself acting as a full-stack web developer, and ultimately built some data management interfaces (both internal and client-facing) using PHP and PostgreSQL on the back end and Bootstrap on the front end. 
