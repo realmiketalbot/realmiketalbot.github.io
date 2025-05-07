@@ -67,3 +67,57 @@
     }
   }
   
+  .cv-entry {
+    margin-bottom: 1.25rem;
+  }
+  
+  .cv-row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: baseline;
+    gap: 0.25rem;
+  }
+  
+  @media (max-width: 600px) {
+    .cv-row {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  }
+  
+  .cv-dates {
+    font-size: 0.85rem;
+    font-style: italic;
+    color: #666;
+    white-space: nowrap;
+  }
+
+  @media print {
+    body {
+      font-size: 10.5pt;
+      color: #000;
+      background: #fff;
+    }
+  
+    a[href^="http"]::after {
+      content: " (" attr(href) ")";
+      font-size: 90%;
+      color: #666;
+    }
+  
+    header, footer, nav, .page__footer {
+      display: none !important;
+    }
+  
+    .cv-entry {
+      page-break-inside: avoid;
+    }
+  
+    .cv-dates {
+      float: none;
+      display: inline;
+      font-style: italic;
+      margin-left: 0.5rem;
+    }
+  }

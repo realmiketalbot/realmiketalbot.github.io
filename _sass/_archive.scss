@@ -58,12 +58,63 @@
 }
 
 .archive__item-excerpt {
-  margin-top: 0;
+  margin-top: 0.25rem; 
   font-size: $type-size-6;
+  font-style: italic;
+  color: #666; 
+  line-height: 1.4;
 
   & + p {
     text-indent: 0;
+    margin-top: 0.25rem;
   }
+}
+
+// Custom adjustments for "Talks" CV section to reduce spacing
+.talks-cv .archive__item {
+  margin-bottom: 0.75em;
+}
+
+.talks-cv .archive__item-title {
+  margin-bottom: 0.25em;
+}
+
+.talks-cv .page__meta {
+  margin: 0 0 0.15em 0;
+  font-size: $type-size-6;
+  color: #666;
+}
+
+.talks-cv .archive__item-excerpt {
+  margin: 0;
+  font-size: $type-size-6;
+  font-style: italic;
+  color: #666;
+}
+
+.talks-cv ul {
+  list-style: none;
+  padding-left: 0;
+  margin-left: 0;
+}
+
+.talks-cv li {
+  margin-bottom: 1.25em; // controls spacing between talks
+}
+
+.talks-cv .page__meta {
+  margin: 0;
+  font-size: $type-size-6;
+  font-weight: normal;
+  color: #666;
+}
+
+.talks-cv .archive__item-excerpt {
+  margin-top: 0.25rem;
+  font-size: $type-size-6;
+  font-style: italic;
+  color: #666;
+  line-height: 1.4;
 }
 
 .archive__item-teaser {
@@ -261,4 +312,33 @@
 .archive__item-title-custom {
   margin-top: 0;
   margin-bottom: 0;
+}
+
+.talks-cv .list__item {
+  margin-bottom: 0.75em;
+}
+
+.cv-link-icon {
+  font-size: 0.8em;
+  margin-left: 0.3em;
+  color: #aaa;
+  text-decoration: none;
+  opacity: 0;
+  transition: opacity 0.2s ease;
+}
+
+.cv-row:hover .cv-link-icon {
+  opacity: 1;
+}
+
+.cv-section-header {
+  font-size: 1.25rem;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  margin-top: 2.5rem;
+  margin-bottom: 1rem;
+  color: #333;
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 0.3rem;
 }

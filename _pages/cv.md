@@ -9,49 +9,208 @@ redirect_from:
 
 {% include base_path %}
 
-<h2>Education</h2><hr />
-* Ph.D. in Civil & Environmental Engineering, _Colorado State University, 2027 (expected)_
-* M.S. in Bioproducts & Biosystems Science, Engineering, and Management, _University of Minnesota, 2019_
-* B.B.A.E. in Biosystems & Agricultural Engineering, _University of Minnesota, 2009_
+<h2 class="cv-section-header">Education</h2>
 
-<h2>Work experience</h2><hr />
-* Graduate Research Assistant
-  * 2024 - Present
-  * Colorado State University
-  * Fort Collins, Colorado
+<div class="cv-entry">
+  <div class="cv-row">
+    <strong>Ph.D. in Civil & Environmental Engineering</strong>
+    <span class="cv-dates">Expected 2027</span>
+  </div>
+  <em>Colorado State University</em>
+</div>
 
-* Water Resources Engineer
-  * 2013 - 2023
-  * Emmons & Olivier Resources, Inc.
-  * St. Paul, Minnesota
+<div class="cv-entry">
+  <div class="cv-row">
+    <strong>M.S. in Bioproducts & Biosystems Science, Engineering, and Management</strong>
+    <span class="cv-dates">2019</span>
+  </div>
+  <em>University of Minnesota</em>
+</div>
 
-* Quality Control Engineer
-  * 2012 - 2013
-  * Dectra Corporation
-  * St. Paul, Minnesota
+<div class="cv-entry">
+  <div class="cv-row">
+    <strong>B.B.A.E. in Biosystems & Agricultural Engineering</strong>
+    <span class="cv-dates">2009</span>
+  </div>
+  <em>University of Minnesota</em>
+</div>
 
-* Graduate Research Assistant
-  * 2010 - 2012
-  * University of Minnesota
-  * St. Paul, Minnesota
+<h2 class="cv-section-header">Work Experience</h2>
 
-* Graduate Research Contractor
-  * 2010
-  * United States Geological Survey
-  * Minneapolis, Minnesota
+<div class="cv-entry">
+  <div class="cv-row">
+    <strong>Graduate Research Assistant</strong>
+    <span class="cv-dates">2024 – Present</span>
+  </div>
+  Colorado State University, Fort Collins, CO
+</div>
 
-* Undergraduate Research Assistant
-  * 2005 - 2009
-  * University of Minnesota
-  * St. Paul, Minnesota
+<div class="cv-entry">
+  <div class="cv-row">
+    <strong>Water Resources Engineer</strong>
+    <span class="cv-dates">2013 – 2023</span>
+  </div>
+  Emmons & Olivier Resources, Inc., St. Paul, MN
+</div>
 
-* Visiting Research Assistant
-  * 2009
-  * Czech Technical University (ČVUT)
-  * Prague, Czech Republic
+<div class="cv-entry">
+  <div class="cv-row">
+    <strong>Quality Control Engineer</strong>
+    <span class="cv-dates">2012 – 2013</span>
+  </div>
+  Dectra Corporation, St. Paul, MN
+</div>
+
+<div class="cv-entry">
+  <div class="cv-row">
+    <strong>Graduate Research Assistant</strong>
+    <span class="cv-dates">2010 – 2012</span>
+  </div>
+  University of Minnesota, St. Paul, MN
+</div>
+
+<div class="cv-entry">
+  <div class="cv-row">
+    <strong>Graduate Research Contractor</strong>
+    <span class="cv-dates">2010</span>
+  </div>
+  United States Geological Survey, Minneapolis, MN
+</div>
+
+<div class="cv-entry">
+  <div class="cv-row">
+    <strong>Undergraduate Research Assistant</strong>
+    <span class="cv-dates">2005 – 2009</span>
+  </div>
+  University of Minnesota, St. Paul, MN
+</div>
+
+<div class="cv-entry">
+  <div class="cv-row">
+    <strong>Visiting Research Assistant</strong>
+    <span class="cv-dates">2009</span>
+  </div>
+  Czech Technical University (ČVUT), Prague, Czech Republic
+</div>
+
+<h2 class="cv-section-header">Awards and Honors</h2>
+
+<div class="cv-entry">
+  <div class="cv-row">
+    <strong>
+      AWRA Colorado Rich Herbert Memorial Scholarship
+      <a href="https://awracolorado.org/past-recipients" target="_blank" class="cv-link-icon" aria-label="Link to award page"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+    </strong>
+    <span class="cv-dates">Feb 2025</span>
+  </div>
+</div>
+
+<div class="cv-entry">
+  <div class="cv-row">
+    <strong>
+      CASFM Ben Urbonas Scholarship
+      <a href="https://www.casfm.org/about/committees/scholarship-committee/ben-urbonas-scholarship/" target="_blank" class="cv-link-icon" aria-label="Link to award page"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+    </strong>
+    <span class="cv-dates">Dec 2024</span>
+  </div>
+</div>
+
+<div class="cv-entry">
+  <div class="cv-row">
+    <strong>
+      Walter Scott, Jr. College of Engineering Excellence in Research Award
+      <a href="https://source.colostate.edu/graduate-students-awarded-24k-in-awards-for-research-and-creativity-at-gradshow/" target="_blank" class="cv-link-icon"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+    </strong>
+    <span class="cv-dates">Nov 2024</span>
+  </div>
+</div>
+
+<div class="cv-entry">
+  <div class="cv-row">
+    <strong>
+      Graduate Student Council Conference Travel Grant
+      <a href="https://gsc.colostate.edu/budget/" target="_blank" class="cv-link-icon"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+    </strong>
+    <span class="cv-dates">Nov 2024</span>
+  </div>
+  Awarded for travel to the AGU24 Annual Meeting in Washington, D.C.
+</div>
+
+<div class="cv-entry">
+  <div class="cv-row">
+    <strong>
+      Whitney Borland New Graduate Student Scholarship
+      <a href="https://colostate.academicworks.com/opportunities/58504" target="_blank" class="cv-link-icon"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+    </strong>
+    <span class="cv-dates">Oct 2024</span>
+  </div>
+</div>
+
+<div class="cv-entry">
+  <div class="cv-row">
+    <strong>
+      Jorge Ramirez Graduate Scholarship in Hydrology and Water Resources
+      <a href="https://colostate.academicworks.com/opportunities/55567" target="_blank" class="cv-link-icon"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+    </strong>
+    <span class="cv-dates">Oct 2024</span>
+  </div>
+</div>
+
+<div class="cv-entry">
+  <div class="cv-row">
+    <strong>
+      Walter Scott Jr. Graduate Fellowship
+      <a href="https://colostate.academicworks.com/opportunities/57231" target="_blank" class="cv-link-icon"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+    </strong>
+    <span class="cv-dates">Jan 2024</span>
+  </div>
+</div>
+
+<div class="cv-entry">
+  <div class="cv-row">
+    <strong>
+      Whitney Borland New Graduate Student Scholarship
+      <a href="https://colostate.academicworks.com/opportunities/58504" target="_blank" class="cv-link-icon"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+    </strong>
+    <span class="cv-dates">Jan 2024</span>
+  </div>
+</div>
+
+<div class="cv-entry">
+  <div class="cv-row">
+    <strong>
+      EOR Forward! Award
+      <a href="https://www.eorinc.com/index.html" target="_blank" class="cv-link-icon"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+    </strong>
+    <span class="cv-dates">Jan 2023</span>
+  </div>
+  Awarded for quality and innovative work
+</div>
+
+<h2 class="cv-section-header">Service and Leadership</h2>
+
+<div class="cv-entry">
+  <div class="cv-row">
+    <strong>
+      EWRI-CSU Graduate Student Group — Treasurer
+      <a href="https://www.engr.colostate.edu/organizations/ewri/" target="_blank" class="cv-link-icon"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+    </strong>
+    <span class="cv-dates">2025</span>
+  </div>
+</div>
+
+<div class="cv-entry">
+  <div class="cv-row">
+    <strong>
+      Water Engineering and Science (WES) Seminar — Co-Chair
+      <a href="https://www.engr.colostate.edu/ce/events/water-seminar/" target="_blank" class="cv-link-icon"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+    </strong>
+    <span class="cv-dates">Fall 2024</span>
+  </div>
+</div>
 
 <!--
-<h2>Skills</h2><hr />
+<h2>Skills</h2>
 * Skill 1
 * Skill 2
   * Sub-skill 2.1
@@ -60,54 +219,27 @@ redirect_from:
 * Skill 3
 -->
 
-<h2>Publications</h2><hr />
-  <ul>{% for post in site.publications reversed %}
-    {% include archive-single-cv.html %}
-  {% endfor %}</ul>
+<h2 class="cv-section-header">Publications</h2>
+<div class="cv-list">
+  {% for post in site.publications reversed %}
+    <div class="cv-entry">
+      {% include archive-single-cv.html %}
+    </div>
+  {% endfor %}
+</div>
   
-<h2>Talks</h2><hr />
-  <ul>{% for post in site.talks reversed %}
-    {% include archive-single-talk-cv.html  %}
-  {% endfor %}</ul>
+<h2 class="cv-section-header">Talks</h2>
+<div class="talks-cv">
+  <ul>
+    {% for post in site.talks reversed %}
+      {% include archive-single-talk-cv.html %}
+    {% endfor %}
+  </ul>
+</div>
   
 <!--
-<h2>Teaching</h2><hr />
+<h2>Teaching</h2>
   <ul>{% for post in site.teaching reversed %}
     {% include archive-single-cv.html %}
   {% endfor %}</ul>
 -->
-
-<h2>Awards and honors</h2><hr />
-* <a href='https://awracolorado.org/past-recipients' target='_blank'>AWRA Colorado Rich Herbert Memorial Scholarship</a>
-  * February 2025
-
-* <a href='https://www.casfm.org/about/committees/scholarship-committee/ben-urbonas-scholarship/' target='_blank'>CASFM Ben Urbonas Scholarship</a>
-  * December 2024
-
-* <a href='https://source.colostate.edu/graduate-students-awarded-24k-in-awards-for-research-and-creativity-at-gradshow/' target='_blank'>Walter Scott, Jr. College of Engineering Excellence in Research Award</a>
-  * November 2024
-
-* <a href='https://gsc.colostate.edu/budget/' target='_blank'>Graduate Student Council Conference Travel Grant</a>
-  * November 2024
-  * Awarded for travel to the AGU24 Annual Meeting in Washington, D.C.
-
-* <a href='https://colostate.academicworks.com/opportunities/58504' target='_blank'>Whitney Borland New Graduate Student Scholarship</a>
-  * October 2024
-
-* <a href='https://colostate.academicworks.com/opportunities/55567' target='_blank'>Jorge Ramirez Graduate Scholarship in Hydrology and Water Resources</a>
-  * October 2024
-
-* <a href='https://colostate.academicworks.com/opportunities/57231' target='_blank'>Walter Scott Jr. Graduate Fellowship</a>
-  * January 2024
-
-* <a href='https://colostate.academicworks.com/opportunities/58504' target='_blank'>Whitney Borland New Graduate Student Scholarship</a>
-  * January 2024
-
-* <a href='https://www.eorinc.com/index.html' target='_blank'>EOR</a> Forward! Award
-  * January 2023
-  * Awarded for quality and innovative work
-
-<h2>Service and leadership</h2><hr />
-* <a href='https://www.engr.colostate.edu/organizations/ewri/' target='_blank'>EWRI-CSU Graduate Student Group</a> Treasurer, _2025_
-
-* <a href='https://www.engr.colostate.edu/ce/events/water-seminar/' target='_blank'>Water Engineering and Science (WES) Seminar</a> Co-Chair, _Fall 2024_
