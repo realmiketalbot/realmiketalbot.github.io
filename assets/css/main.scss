@@ -39,3 +39,31 @@
 @import "vendor/font-awesome/brands";
 @import "vendor/magnific-popup/magnific-popup";
 @import "print";
+
+.console-style {
+    font-family: Consolas, 'Fira Code', 'Courier New', monospace;
+    font-size: 0.85rem;
+    color: #000;
+    background-color: #fff;
+    padding: 0.5rem 0.75rem;
+    border-radius: 4px;
+    white-space: pre-line;
+    line-height: 1.4;
+    margin-bottom: 1.5rem;
+  }
+  
+  .blinking-cursor {
+    display: inline-block;
+    width: 0.6ch;
+    height: 1em;
+    background-color: #000;
+    animation: blink 1s steps(1, start) infinite;
+    vertical-align: bottom;
+  }
+  
+  @keyframes blink {
+    50% {
+      opacity: 0;
+    }
+  }
+  
