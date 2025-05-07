@@ -3,7 +3,7 @@ title: "Evaluation of a GIS-Based Flood Hazard Assessment in Rochester, Minnesot
 collection: talks
 type: "Poster"
 permalink: /talks/2023-icwmm-presentation
-venue: "56th International Conference on Water Management Modeling"
+venue: "56th Annual ICWMM"
 date: 2023-03-02
 location: "Virtual Meeting"
 ---

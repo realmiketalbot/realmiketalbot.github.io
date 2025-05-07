@@ -3,7 +3,7 @@ title: "Investigating the impact of ET model choice for DRAINMOD in the upper Mi
 collection: talks
 type: "Talk"
 permalink: /talks/2020-mdrf-presentation
-venue: "Midwest Drainage Research Forum"
+venue: "2020 Midwest Drainage Research Forum"
 date: 2020-12-01
 location: "Virtual Meeting"
 ---

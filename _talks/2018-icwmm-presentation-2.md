@@ -3,7 +3,7 @@ title: "Locating and Evaluating the Costs and Benefits of Urban LID Retrofits"
 collection: talks
 type: "Talk"
 permalink: /talks/2018-icwmm-presentation-2
-venue: "51st Annual International Conference on Water Management Modeling"
+venue: "51st Annual ICWMM"
 date: 2018-02-28
 location: "Brampton, Ontario"
 ---

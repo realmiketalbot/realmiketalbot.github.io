@@ -3,7 +3,7 @@ title: "Modeling the Influences of Riverine Hydrology on Near-Channel Nesting Ha
 collection: talks
 type: "Talk"
 permalink: /talks/2016-mwrc-presentation
-venue: "Minnesota Water Resources Conference"
+venue: "2016 Minnesota Water Resources Conference"
 date: 2016-10-18
 location: "St. Paul, Minnesota"
 ---

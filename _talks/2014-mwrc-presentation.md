@@ -3,7 +3,7 @@ title: "Assessment of Bioretention Device Performance by Use of Water Level Reco
 collection: talks
 type: "Talk"
 permalink: /talks/2014-mwrc-presentation
-venue: "Minnesota Water Resources Conference"
+venue: "2014 Minnesota Water Resources Conference"
 date: 2014-10-14
 location: "St. Paul, Minnesota"
 ---

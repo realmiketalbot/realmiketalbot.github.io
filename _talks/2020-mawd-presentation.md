@@ -3,7 +3,7 @@ title: "Improving Remote Collaboration while Lowering Costs: A Case Study in Pri
 collection: talks
 type: "Talk"
 permalink: /talks/2020-mawd-presentation
-venue: "Minnesota Association of Watershed Districts Annual Conference"
+venue: "2020 MAWD Annual Conference"
 date: 2020-12-04
 location: "Virtual Meeting"
 ---

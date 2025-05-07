@@ -3,7 +3,7 @@ title: "Searching for the Goldilocks Water Quality Model"
 collection: talks
 type: "Talk"
 permalink: /talks/2016-cswea-presentation
-venue: "89th Central States Water Environmental Association Annual Meeting"
+venue: "89th CSWEA Annual Meeting"
 date: 2016-05-17
 location: "Madison, Wisconsin"
 ---

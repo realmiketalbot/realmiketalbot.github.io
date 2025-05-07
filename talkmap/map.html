@@ -1,45 +1,272 @@
-
-    <!DOCTYPE html>
-    <html>
-    <head>
-    	<title>Leaflet debug page</title>
-
-    	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.0.0-beta.2/leaflet.css" />
-    	<script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.0.0-beta.2/leaflet.js"></script>
-    	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-    	<link rel="stylesheet" href="leaflet_dist/screen.css" />
-
-    	<link rel="stylesheet" href="leaflet_dist/MarkerCluster.css" />
-    	<link rel="stylesheet" href="leaflet_dist/MarkerCluster.Default.css" />
-    	<script src="leaflet_dist/leaflet.markercluster-src.js"></script>
-    	<script src="org-locations.js"></script>
-
-    </head>
-    <body>
-
-    	<div id="map"></div>
-    	<span>Mouse over a cluster to see the bounds of its children and click a cluster to zoom to those bounds</span>
-    	<script type="text/javascript">
-    		var tiles = L.tileLayer('http://server.arcgisonline.com/ArcGIS/rest/services/World_Street_Map/MapServer/tile/{z}/{y}/{x}', {
-              maxZoom: 18,
-              attribution: 'Tiles &copy; Esri &mdash; Source: Esri, DeLorme, NAVTEQ, USGS, Intermap, iPC, NRCAN, Esri Japan, METI, Esri China (Hong Kong), Esri (Thailand), TomTom, 2012'
-                    }),
-    			latlng = L.latLng(30, 10);
-    		var map = L.map('map', {center: latlng, zoom: 0.7, layers: [tiles]});
-    		var markers = L.markerClusterGroup({
-    			showCoverageOnHover: false,
-    			maxClusterRadius: 80
-    			});
-    		for (var i = 0; i < addressPoints.length; i++) {
-    			var a = addressPoints[i];
-    			var title = a[0];
-    			var marker = L.marker(new L.LatLng(a[1], a[2]), { title: title });
-    			marker.bindPopup(title);
-    			markers.addLayer(marker);
-    		}
-    		map.addLayer(markers);
-    		map.zoomIn();
-    	</script>
-    </body>
-    </html>
+<!DOCTYPE html>
+<html>
+<head>
     
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_ab73bb8d1033709354055f42d726323e {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/leaflet.markercluster.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.Default.css"/>
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_ab73bb8d1033709354055f42d726323e" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_ab73bb8d1033709354055f42d726323e = L.map(
+                "map_ab73bb8d1033709354055f42d726323e",
+                {
+                    center: [42.2749273, -91.8337719857143],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 2,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_5a9018ac205cfb1351314b82d99e6012 = L.tileLayer(
+                "https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 20,
+  "maxNativeZoom": 20,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors \u0026copy; \u003ca href=\"https://carto.com/attributions\"\u003eCARTO\u003c/a\u003e",
+  "subdomains": "abcd",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_5a9018ac205cfb1351314b82d99e6012.addTo(map_ab73bb8d1033709354055f42d726323e);
+        
+    
+            map_ab73bb8d1033709354055f42d726323e.fitBounds(
+                [[38.8950368, -105.22058], [44.9772995, -77.0365427]],
+                {}
+            );
+        
+    
+            var marker_cluster_366fdc6628d670c1c23ba129a52d2084 = L.markerClusterGroup(
+                {
+}
+            );
+        
+    
+            var marker_f4a5b0770e98bb92eea898bb0b1daa22 = L.marker(
+                [40.5871782, -105.0770113],
+                {
+}
+            ).addTo(marker_cluster_366fdc6628d670c1c23ba129a52d2084);
+        
+    
+        var popup_db90d9eab32d73dbb2aad0815682d606 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_0da6d4e88b09da8d905125ab7df1ac3b = $(`<div id="html_0da6d4e88b09da8d905125ab7df1ac3b" style="width: 100.0%; height: 100.0%;"><b>Fort Collins, CO</b><br>• 2025 Hydrology Days</div>`)[0];
+                popup_db90d9eab32d73dbb2aad0815682d606.setContent(html_0da6d4e88b09da8d905125ab7df1ac3b);
+            
+        
+
+        marker_f4a5b0770e98bb92eea898bb0b1daa22.bindPopup(popup_db90d9eab32d73dbb2aad0815682d606)
+        ;
+
+        
+    
+    
+            var marker_b5c65cc9189dc705334998bebfc121ba = L.marker(
+                [43.685832, -79.7599366],
+                {
+}
+            ).addTo(marker_cluster_366fdc6628d670c1c23ba129a52d2084);
+        
+    
+        var popup_a6fcdf026e1751e84d339bac499f1d23 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_51d09571ba17094cf9298fa267b49e1f = $(`<div id="html_51d09571ba17094cf9298fa267b49e1f" style="width: 100.0%; height: 100.0%;"><b>Brampton, Ontario</b><br>• 48th Annual ICWMM<br>• 51st Annual ICWMM</div>`)[0];
+                popup_a6fcdf026e1751e84d339bac499f1d23.setContent(html_51d09571ba17094cf9298fa267b49e1f);
+            
+        
+
+        marker_b5c65cc9189dc705334998bebfc121ba.bindPopup(popup_a6fcdf026e1751e84d339bac499f1d23)
+        ;
+
+        
+    
+    
+            var marker_84aceaf1892a865d13bd068f946b0d6e = L.marker(
+                [38.8950368, -77.0365427],
+                {
+}
+            ).addTo(marker_cluster_366fdc6628d670c1c23ba129a52d2084);
+        
+    
+        var popup_67e8a29aaa889556e21cfc7c8e3bbc51 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_314d48730f37c854b02de47f4dfc2cd3 = $(`<div id="html_314d48730f37c854b02de47f4dfc2cd3" style="width: 100.0%; height: 100.0%;"><b>Washington, D.C.</b><br>• AGU24 Annual Meeting</div>`)[0];
+                popup_67e8a29aaa889556e21cfc7c8e3bbc51.setContent(html_314d48730f37c854b02de47f4dfc2cd3);
+            
+        
+
+        marker_84aceaf1892a865d13bd068f946b0d6e.bindPopup(popup_67e8a29aaa889556e21cfc7c8e3bbc51)
+        ;
+
+        
+    
+    
+            var marker_d030dd62cd4c67ebb57fe1e6a8781910 = L.marker(
+                [43.074761, -89.3837613],
+                {
+}
+            ).addTo(marker_cluster_366fdc6628d670c1c23ba129a52d2084);
+        
+    
+        var popup_724640455e8091a9c603e22c6034c9c5 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_c85613f461f1199d44011a6fe4603828 = $(`<div id="html_c85613f461f1199d44011a6fe4603828" style="width: 100.0%; height: 100.0%;"><b>Madison, Wisconsin</b><br>• 89th CSWEA Annual Meeting</div>`)[0];
+                popup_724640455e8091a9c603e22c6034c9c5.setContent(html_c85613f461f1199d44011a6fe4603828);
+            
+        
+
+        marker_d030dd62cd4c67ebb57fe1e6a8781910.bindPopup(popup_724640455e8091a9c603e22c6034c9c5)
+        ;
+
+        
+    
+    
+            var marker_90ab24e6b6e3d8418da6c0cc4dd9a577 = L.marker(
+                [39.7546349, -105.22058],
+                {
+}
+            ).addTo(marker_cluster_366fdc6628d670c1c23ba129a52d2084);
+        
+    
+        var popup_16a4441dfff1ee46114e06653ce08ec0 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_5548b6b3992bd6fd4a23356ebc95a1a9 = $(`<div id="html_5548b6b3992bd6fd4a23356ebc95a1a9" style="width: 100.0%; height: 100.0%;"><b>Golden, CO</b><br>• 2025 AWRA & CGWA Symposium</div>`)[0];
+                popup_16a4441dfff1ee46114e06653ce08ec0.setContent(html_5548b6b3992bd6fd4a23356ebc95a1a9);
+            
+        
+
+        marker_90ab24e6b6e3d8418da6c0cc4dd9a577.bindPopup(popup_16a4441dfff1ee46114e06653ce08ec0)
+        ;
+
+        
+    
+    
+            var marker_875657a6a7b5f758ece3ee1e012e46ea = L.marker(
+                [44.9497487, -93.0931028],
+                {
+}
+            ).addTo(marker_cluster_366fdc6628d670c1c23ba129a52d2084);
+        
+    
+        var popup_c31a293eff97133b34d26d15910de97c = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_810f219743566e48cf3e94870cf3b16d = $(`<div id="html_810f219743566e48cf3e94870cf3b16d" style="width: 100.0%; height: 100.0%;"><b>St. Paul, Minnesota</b><br>• 2014 Minnesota Water Resources Conference<br>• 2016 Minnesota Water Resources Conference</div>`)[0];
+                popup_c31a293eff97133b34d26d15910de97c.setContent(html_810f219743566e48cf3e94870cf3b16d);
+            
+        
+
+        marker_875657a6a7b5f758ece3ee1e012e46ea.bindPopup(popup_c31a293eff97133b34d26d15910de97c)
+        ;
+
+        
+    
+    
+            var marker_05f66d31cdeeed785b00859f77c9035f = L.marker(
+                [44.9772995, -93.2654692],
+                {
+}
+            ).addTo(marker_cluster_366fdc6628d670c1c23ba129a52d2084);
+        
+    
+        var popup_538567d00ec3a45b3f114444d3b3c0a7 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_dca0f68bdd783f9be37beea960ae5c7d = $(`<div id="html_dca0f68bdd783f9be37beea960ae5c7d" style="width: 100.0%; height: 100.0%;"><b>Minneapolis, Minnesota</b><br>• 2018 World Environmental & Water Resources Congress</div>`)[0];
+                popup_538567d00ec3a45b3f114444d3b3c0a7.setContent(html_dca0f68bdd783f9be37beea960ae5c7d);
+            
+        
+
+        marker_05f66d31cdeeed785b00859f77c9035f.bindPopup(popup_538567d00ec3a45b3f114444d3b3c0a7)
+        ;
+
+        
+    
+    
+            marker_cluster_366fdc6628d670c1c23ba129a52d2084.addTo(map_ab73bb8d1033709354055f42d726323e);
+        
+</script>
+</html>

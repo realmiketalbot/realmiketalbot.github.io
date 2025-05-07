@@ -3,7 +3,7 @@ title: "Rural Stormwater Management Model (RSWMM)"
 collection: talks
 type: "Talk"
 permalink: /talks/2015-icwmm-presentation
-venue: "48th Annual International Conference on Water Management Modeling"
+venue: "48th Annual ICWMM"
 date: 2015-02-25
 location: "Brampton, Ontario"
 ---
