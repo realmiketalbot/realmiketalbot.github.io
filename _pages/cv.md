@@ -218,16 +218,6 @@ redirect_from:
   </div>
 </div>
 
-<!--
-<h2>Skills</h2>
-* Skill 1
-* Skill 2
-  * Sub-skill 2.1
-  * Sub-skill 2.2
-  * Sub-skill 2.3
-* Skill 3
--->
-
 <h2 class="cv-section-header">Publications</h2>
 <div class="cv-list">
   {% for post in site.publications reversed %}
@@ -252,3 +242,60 @@ redirect_from:
     {% include archive-single-cv.html %}
   {% endfor %}</ul>
 -->
+
+<!--
+<h2>Skills</h2>
+* Skill 1
+* Skill 2
+  * Sub-skill 2.1
+  * Sub-skill 2.2
+  * Sub-skill 2.3
+* Skill 3
+-->
+
+<h2 class="cv-section-header">Professional Affiliations</h2>
+
+<div class="cv-entry">
+  <div class="cv-row">
+    <strong>
+    American Society of Agricultural and Biological Engineers (ASABE)
+    </strong>
+    <span class="cv-dates">Member, 2007 - Present</span>
+  </div>
+</div>
+
+<div class="cv-entry">
+  <div class="cv-row">
+    <strong>
+    Association of State Floodplain Managers (ASFPM)
+    </strong>
+    <span class="cv-dates">Certified Floodplain Manager (CFM), 2016 - Present</span>
+  </div>
+</div>
+
+<div class="cv-entry">
+  <div class="cv-row">
+    <strong>
+    American Geophysical Union (AGU)
+    </strong>
+    <span class="cv-dates">Member, 2024 - Present</span>
+  </div>
+</div>
+
+<div class="cv-entry">
+  <div class="cv-row">
+    <strong>
+    American Society of Civil Engineers (ASCE)
+    </strong>
+    <span class="cv-dates">Member, 2024 - Present</span>
+  </div>
+</div>
+
+<div class="cv-entry">
+  <div class="cv-row">
+    <strong>
+    American Water Resources Association (AWRA)
+    </strong>
+    <span class="cv-dates">Member, 2025 - Present</span>
+  </div>
+</div>
