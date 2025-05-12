@@ -320,15 +320,9 @@
 
 .cv-link-icon {
   font-size: 0.8em;
-  margin-left: 0.3em;
+  margin-left: 0.05em;
   color: #aaa;
   text-decoration: none;
-  opacity: 0;
-  transition: opacity 0.2s ease;
-}
-
-.cv-row:hover .cv-link-icon {
-  opacity: 1;
 }
 
 .cv-section-header {
@@ -341,4 +335,18 @@
   color: #333;
   border-bottom: 1px solid #ddd;
   padding-bottom: 0.3rem;
+}
+
+.cv-dates {
+  font-size: 0.85rem;
+  font-style: italic;
+  color: #666;
+  white-space: nowrap;
+}
+
+.cv-sub-detail {
+  font-size: 0.9rem;
+  color: #555;
+  display: block;
+  margin-top: 0.25em;
 }

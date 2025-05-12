@@ -16,7 +16,8 @@ redirect_from:
     <strong>Ph.D. in Civil & Environmental Engineering</strong>
     <span class="cv-dates">Expected 2027</span>
   </div>
-  <em>Colorado State University</em>
+  <em>Colorado State University</em><br>
+  <span class="cv-sub-detail"><strong>Advisor:</strong> Dr. Frances Davenport</span>
 </div>
 
 <div class="cv-entry">
@@ -24,7 +25,11 @@ redirect_from:
     <strong>M.S. in Bioproducts & Biosystems Science, Engineering, and Management</strong>
     <span class="cv-dates">2019</span>
   </div>
-  <em>University of Minnesota</em>
+  <em>University of Minnesota</em><br>
+  <span class="cv-sub-detail"><strong>Thesis:</strong> Comparison of Evapotranspiration Estimation Methods and Implications for Water Balance Model Parameterization in the Midwestern United States 
+  <a href="https://conservancy.umn.edu/items/48e62166-9c34-4898-9678-f3cfa3f8580a" target="_blank" class="cv-link-icon"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+  </span>
+  <span class="cv-sub-detail"><strong>Advisor:</strong> Dr. Gary Sands</span>
 </div>
 
 <div class="cv-entry">
@@ -32,7 +37,7 @@ redirect_from:
     <strong>B.B.A.E. in Biosystems & Agricultural Engineering</strong>
     <span class="cv-dates">2009</span>
   </div>
-  <em>University of Minnesota</em>
+  <em>University of Minnesota</em><br>
 </div>
 
 <h2 class="cv-section-header">Work Experience</h2>
