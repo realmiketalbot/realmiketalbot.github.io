@@ -17,7 +17,9 @@ redirect_from:
     <span class="cv-dates">Expected 2027</span>
   </div>
   <em>Colorado State University</em><br>
-  <span class="cv-sub-detail"><strong>Advisor:</strong> Dr. Frances Davenport</span>
+  <span class="cv-sub-detail"><strong>Advisor:</strong> Dr. Frances Davenport
+  <a href="https://www.engr.colostate.edu/ce/people/frances-davenport/" target="_blank" class="cv-link-icon"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+  </span>
 </div>
 
 <div class="cv-entry">
@@ -29,7 +31,9 @@ redirect_from:
   <span class="cv-sub-detail"><strong>Thesis:</strong> Comparison of Evapotranspiration Estimation Methods and Implications for Water Balance Model Parameterization in the Midwestern United States 
   <a href="https://conservancy.umn.edu/items/48e62166-9c34-4898-9678-f3cfa3f8580a" target="_blank" class="cv-link-icon"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
   </span>
-  <span class="cv-sub-detail"><strong>Advisor:</strong> Dr. Gary Sands</span>
+  <span class="cv-sub-detail"><strong>Advisor:</strong> Dr. Gary Sands
+  <a href="https://bbe.umn.edu/people/gary-r-sands" target="_blank" class="cv-link-icon"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+  </span>
 </div>
 
 <div class="cv-entry">
