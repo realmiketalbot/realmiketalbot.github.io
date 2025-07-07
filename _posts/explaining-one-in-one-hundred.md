@@ -1,0 +1,1 @@
+The idea here would be to explain how and why it's possible that we are constantly seeing "100-year floods". Public perception is that a 100-year flood (for example) should be more rare, and this type of language undermines trust in science.
