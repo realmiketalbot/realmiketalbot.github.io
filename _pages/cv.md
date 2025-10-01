@@ -168,7 +168,7 @@ redirect_from:
 <div class="cv-entry">
   <div class="cv-row">
     <strong>
-      Walter Scott Jr. Graduate Fellowship
+      Walter Scott, Jr. Graduate Fellowship
       <a href="https://colostate.academicworks.com/opportunities/57231" target="_blank" class="cv-link-icon"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
     </strong>
     <span class="cv-dates">Jan 2024</span>
