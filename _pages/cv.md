@@ -107,6 +107,16 @@ redirect_from:
 <div class="cv-entry">
   <div class="cv-row">
     <strong>
+      Dr. Yung Hai and Dr. Ada Chen Civil and Environmental Engineering Graduate Scholarship
+      <a href="https://colostate.academicworks.com/opportunities/56305" target="_blank" class="cv-link-icon" aria-label="Link to award page"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+    </strong>
+    <span class="cv-dates">Oct 2025</span>
+  </div>
+</div>
+
+<div class="cv-entry">
+  <div class="cv-row">
+    <strong>
       AWRA Colorado Rich Herbert Memorial Scholarship
       <a href="https://awracolorado.org/past-recipients" target="_blank" class="cv-link-icon" aria-label="Link to award page"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
     </strong>
