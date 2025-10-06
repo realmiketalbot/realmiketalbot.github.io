@@ -117,6 +117,16 @@ redirect_from:
 <div class="cv-entry">
   <div class="cv-row">
     <strong>
+      Whitney Borland Scholarship
+      <a href="https://colostate.academicworks.com/opportunities/58504" target="_blank" class="cv-link-icon"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+    </strong>
+    <span class="cv-dates">Jan 2024, Oct 2024, Oct 2025</span>
+  </div>
+</div>
+
+<div class="cv-entry">
+  <div class="cv-row">
+    <strong>
       AWRA Colorado Rich Herbert Memorial Scholarship
       <a href="https://awracolorado.org/past-recipients" target="_blank" class="cv-link-icon" aria-label="Link to award page"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
     </strong>
@@ -158,16 +168,6 @@ redirect_from:
 <div class="cv-entry">
   <div class="cv-row">
     <strong>
-      Whitney Borland New Graduate Student Scholarship
-      <a href="https://colostate.academicworks.com/opportunities/58504" target="_blank" class="cv-link-icon"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-    </strong>
-    <span class="cv-dates">Oct 2024</span>
-  </div>
-</div>
-
-<div class="cv-entry">
-  <div class="cv-row">
-    <strong>
       Jorge Ramirez Graduate Scholarship in Hydrology and Water Resources
       <a href="https://colostate.academicworks.com/opportunities/55567" target="_blank" class="cv-link-icon"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
     </strong>
@@ -180,16 +180,6 @@ redirect_from:
     <strong>
       Walter Scott, Jr. Graduate Fellowship
       <a href="https://colostate.academicworks.com/opportunities/57231" target="_blank" class="cv-link-icon"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-    </strong>
-    <span class="cv-dates">Jan 2024</span>
-  </div>
-</div>
-
-<div class="cv-entry">
-  <div class="cv-row">
-    <strong>
-      Whitney Borland New Graduate Student Scholarship
-      <a href="https://colostate.academicworks.com/opportunities/58504" target="_blank" class="cv-link-icon"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
     </strong>
     <span class="cv-dates">Jan 2024</span>
   </div>
