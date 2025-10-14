@@ -64,14 +64,6 @@ redirect_from:
 
 <div class="cv-entry">
   <div class="cv-row">
-    <strong>Quality Control Engineer</strong>
-    <span class="cv-dates">2012 – 2013</span>
-  </div>
-  Dectra Corporation, St. Paul, MN
-</div>
-
-<div class="cv-entry">
-  <div class="cv-row">
     <strong>Graduate Research Assistant</strong>
     <span class="cv-dates">2010 – 2012</span>
   </div>
@@ -220,7 +212,7 @@ redirect_from:
 <div class="cv-entry">
   <div class="cv-row">
     <strong>
-      Peer Reviewer, Frontiers of Earth Science
+      Peer Reviewer, <i>Frontiers of Earth Science</i>
       <a href="https://link.springer.com/journal/11707" target="_blank" class="cv-link-icon"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
     </strong>
     <span class="cv-dates">2025 – Present</span>
@@ -230,7 +222,17 @@ redirect_from:
 <div class="cv-entry">
   <div class="cv-row">
     <strong>
-      EWRI-CSU Graduate Student Group — Treasurer
+      Mentor, Scott Undergraduate Research Experience (SURE)
+      <a href="https://link.springer.com/journal/11707" target="_blank" class="cv-link-icon"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+    </strong>
+    <span class="cv-dates">2025 – Present</span>
+  </div>
+</div>
+
+<div class="cv-entry">
+  <div class="cv-row">
+    <strong>
+      Treasurer, Environmental & Water Resources Institute (EWRI) Graduate Student Group
       <a href="https://www.engr.colostate.edu/organizations/ewri/" target="_blank" class="cv-link-icon"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
     </strong>
     <span class="cv-dates">2025</span>
@@ -240,7 +242,7 @@ redirect_from:
 <div class="cv-entry">
   <div class="cv-row">
     <strong>
-      Water Engineering and Science (WES) Seminar — Co-Chair
+      Co-Chair, Water Engineering and Science (WES) Seminar
       <a href="https://www.engr.colostate.edu/ce/events/water-seminar/" target="_blank" class="cv-link-icon"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
     </strong>
     <span class="cv-dates">Fall 2024</span>
