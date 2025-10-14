@@ -102,6 +102,25 @@ redirect_from:
   Czech Technical University (ČVUT), Prague, Czech Republic
 </div>
 
+<h2 class="cv-section-header">Cerifications and Training</h2>
+
+<div class="cv-entry">
+  <div class="cv-row">
+    <strong>Certified Floodplain Manager (CFM)</strong>
+    <span class="cv-dates">Since 2016</span>
+  </div>
+  <i>Issued By:</i> Association of State Floodplain Managers (ASFPM)<br>
+  <i>Credential ID:</i> US-16-09490
+</div>
+
+<div class="cv-entry">
+  <div class="cv-row">
+    <strong>Graduate Student Teaching Certificate Course (GSTCC)</strong>
+    <span class="cv-dates">In Progress</span>
+  </div>
+  <i>Issued By:</i> Colorado State University
+</div>
+
 <h2 class="cv-section-header">Awards and Honors</h2>
 
 <div class="cv-entry">
