@@ -9,6 +9,8 @@ redirect_from:
 
 {% include base_path %}
 
+<a href="https://drive.google.com/file/d/1zKiy6mkbWYgz_zLfBggK0UXXNpeTKFx5/view?usp=sharing" target="_blank">PDF Version</a>
+
 <h2 class="cv-section-header">Education</h2>
 
 <div class="cv-entry">
