@@ -225,7 +225,7 @@ redirect_from:
   <div class="cv-row">
     <strong>
       Mentor, Scott Undergraduate Research Experience (SURE)
-      <a href="https://link.springer.com/journal/11707" target="_blank" class="cv-link-icon"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+      <a href="https://www.engr.colostate.edu/walter-scott-jr-gift/sure/" target="_blank" class="cv-link-icon"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
     </strong>
     <span class="cv-dates">2025 – Present</span>
   </div>
