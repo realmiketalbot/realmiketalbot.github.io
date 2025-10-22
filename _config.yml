@@ -78,12 +78,14 @@ author:
 publication_category:
   manuscripts:
     title: 'Peer-Reviewed'
+  submitted: 
+    title: 'Submitted for Publication' 
   preparation:
-    title: 'In Preparation'   
-  contributes:
-    title: 'Contributions and Acknowledgements'   
+    title: 'In Preparation'  
   conferences:
     title: 'Conference Proceedings'
+  contributes:
+    title: 'Contributions and Acknowledgements'   
   books:
     title: 'Books'
 
