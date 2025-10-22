@@ -1,12 +1,12 @@
 ---
-title: "Evapotranspiration Estimation in the Midwestern United States: Part I. Comparing Commonly Used Reference ET Methods"
+title: "Evapotranspiration Estimation in the Upper Midwestern United States: Part I. Comparing Commonly Used Reference ET Methods"
 collection: publications
-category: preparation
+category: submitted
 permalink: /publication/2025-et-estimation-1
 excerpt: ''
-date: 2025-01-01
+date: 2025-10-21
 venue: 'TBD'
 paperdoi: ''
 paperurl: ''
-citation: 'Talbot MT, Sands GR, Coulter JA, Peterson JR. Evapotranspiration Estimation in the Midwestern United States: Part I. Comparing Commonly Used Reference ET Methods.'
+citation: 'Talbot MT, Sands GR, Coulter JA, Peterson JR. (2025). Evapotranspiration Estimation in the Upper Midwestern United States: Part I. Comparing Commonly Used Reference ET Methods. Manuscript submitted for publication.'
 ---
