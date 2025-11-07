@@ -1,9 +1,13 @@
 ---
 layout: archive
-title: "My availability"
+title: "Meet with me"
 permalink: /calendar.html
 author_profile: false
 ---
+
+See more meeting options <a href="https://cal.com/mtalbot" target="_blank">here</a>.<br>
+
+<hr>
 
 <!-- Cal inline embed code begins -->
 <div style="width:100%;height:100%;overflow:scroll" id="my-cal-inline-online-quick"></div>
@@ -13,10 +17,10 @@ Cal("init", "online-quick", {origin:"https://app.cal.com"});
 
   Cal.ns["online-quick"]("inline", {
     elementOrSelector:"#my-cal-inline-online-quick",
-    config: {"layout":"month_view"},
+    config: {"layout":"month_view","theme":"light"},
     calLink: "mtalbot/online-quick",
   });
 
-  Cal.ns["online-quick"]("ui", {"hideEventTypeDetails":false,"layout":"month_view"});
+  Cal.ns["online-quick"]("ui", {"theme":"light","hideEventTypeDetails":false,"layout":"month_view"});
   </script>
   <!-- Cal inline embed code ends -->
