@@ -3,6 +3,7 @@ title: 'In Defense of the Acre-Foot'
 subtitle: 'A meditation on the proper use of units for communicating science'
 date: 2024-12-31
 permalink: /posts/2024-12-31-in-defense-of-acre-feet/
+author_profile: false
 tags:
   - science-communication
 ---
