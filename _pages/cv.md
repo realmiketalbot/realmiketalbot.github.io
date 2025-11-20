@@ -96,7 +96,7 @@ redirect_from:
   Czech Technical University (ČVUT), Prague, Czech Republic
 </div>
 
-<h2 class="cv-section-header">Cerifications and Training</h2>
+<h2 class="cv-section-header">Certifications and Training</h2>
 
 <div class="cv-entry">
   <div class="cv-row">
