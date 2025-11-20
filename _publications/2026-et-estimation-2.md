@@ -8,5 +8,5 @@ date: 2025-10-21
 venue: 'TBD'
 paperdoi: ''
 paperurl: ''
-citation: 'Talbot MT, Sands GR, Coulter JA, Peterson JR. (2025). Evapotranspiration Estimation in the Upper Midwestern United States: Part II. Assessing Impacts on DRAINMOD Model Predictions. Manuscript submitted for publication.'
+citation: 'Talbot MT, Sands GR, Coulter JA, Peterson JR. (2026). Evapotranspiration Estimation in the Upper Midwestern United States: Part II. Assessing Impacts on DRAINMOD Model Predictions. Manuscript submitted for publication.'
 ---
