@@ -337,6 +337,22 @@
   padding-bottom: 0.3rem;
 }
 
+.cv-subsection-header {
+  font-size: 0.95rem;      /* Smaller than your 1.25rem H2 */
+  font-weight: 600;        /* Matches your H2 weight */
+  text-transform: uppercase; /* Matches H2 style but hierarchy is handled by size/color */
+  letter-spacing: 0.05em;
+  color: #666;             /* Lighter than your #333 H2 to recede visually */
+  margin-top: 1.5rem;      /* Enough space to separate from previous item */
+  margin-bottom: 0.75rem;  /* Tight to the content below it */
+  border: none;            /* IMPORTANT: No border to avoid "line clutter" */
+}
+
+/* Optional: Make the very first subsection hug the main header a bit closer */
+.cv-section-header + .cv-subsection-header {
+  margin-top: 0.5rem;
+}
+
 .cv-dates {
   font-size: 0.85rem;
   font-style: italic;

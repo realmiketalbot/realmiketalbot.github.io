@@ -11,6 +11,7 @@ redirect_from:
 
 <a href="https://drive.google.com/file/d/1NGkGElHuTYoRrdU2A38gFzTUlikkZHeO/view?usp=sharing" target="_blank">PDF Version</a>
 
+<!-- SECTION HEADER -->
 <h2 class="cv-section-header">Education</h2>
 
 <div class="cv-entry">
@@ -96,7 +97,26 @@ redirect_from:
   Czech Technical University (ČVUT), Prague, Czech Republic
 </div>
 
+<!-- SECTION HEADER -->
 <h2 class="cv-section-header">Certifications and Training</h2>
+
+<!-- # uncomment after workshop completion
+<h3 class="cv-subsection-header">Specialized Training</h3>
+
+<div class="cv-entry">
+  <div class="cv-row">
+    <strong>HPC System Administrator Workshop | <i>University of Colorado Boulder / RMACC</i></strong>
+    <span class="cv-dates">January 2025</span>
+  </div>
+  <ul>
+    <li>Selected for an immersive 5-day NSF-funded training (Grant #2322260) on supercomputing infrastructure</li>
+    <li>Gained hands-on experience with the Alpine supercomputing cluster</li>
+    <li>Mastered hardware provisioning, image building, and scheduler setup within a Linux environment</li>
+  </ul>
+</div>
+
+<h3 class="cv-subsection-header">Certifications</h3>
+-->
 
 <div class="cv-entry">
   <div class="cv-row">
@@ -115,6 +135,7 @@ redirect_from:
   <i>Issued By:</i> Colorado State University
 </div>
 
+<!-- SECTION HEADER -->
 <h2 class="cv-section-header">Awards and Honors</h2>
 
 <div class="cv-entry">
@@ -209,6 +230,7 @@ redirect_from:
   Awarded for quality and innovative work
 </div>
 
+<!-- SECTION HEADER -->
 <h2 class="cv-section-header">Service and Leadership</h2>
 
 <div class="cv-entry">
@@ -251,6 +273,7 @@ redirect_from:
   </div>
 </div>
 
+<!-- SECTION HEADER -->
 <h2 class="cv-section-header">Publications</h2>
 <div class="cv-list">
   {% for post in site.publications reversed %}
@@ -260,6 +283,7 @@ redirect_from:
   {% endfor %}
 </div>
   
+<!-- SECTION HEADER -->
 <h2 class="cv-section-header">Talks</h2>
 <div class="talks-cv">
   <ul>
@@ -286,6 +310,7 @@ redirect_from:
 * Skill 3
 -->
 
+<!-- SECTION HEADER -->
 <h2 class="cv-section-header">Professional Affiliations</h2>
 
 <div class="cv-entry">
