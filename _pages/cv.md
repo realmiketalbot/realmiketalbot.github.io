@@ -238,7 +238,7 @@ redirect_from:
     </strong>
     <span class="cv-dates">Jan 2023</span>
   </div>
-  Awarded for quality and innovative work
+  Awarded for high-quality and innovative project work
 </div>
 
 <!-- SECTION HEADER -->
