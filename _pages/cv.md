@@ -106,7 +106,7 @@ redirect_from:
 <div class="cv-entry">
   <div class="cv-row">
     <strong>HPC System Administrator Workshop | <i>University of Colorado Boulder / RMACC</i></strong>
-    <span class="cv-dates">January 2025</span>
+    <span class="cv-dates">January 2026</span>
   </div>
   <ul>
     <li>Selected for an immersive 5-day NSF-funded training (Grant #2322260) on supercomputing infrastructure</li>
@@ -137,6 +137,17 @@ redirect_from:
 
 <!-- SECTION HEADER -->
 <h2 class="cv-section-header">Awards and Honors</h2>
+
+<div class="cv-entry">
+  <div class="cv-row">
+    <strong>
+      Graduate Student Council Conference Travel Grant
+      <a href="https://gsc.colostate.edu/budget/" target="_blank" class="cv-link-icon"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+    </strong>
+    <span class="cv-dates">Nov 2025</span>
+  </div>
+  Awarded for travel to the AGU25 Annual Meeting in New Orleans, Louisiana.
+</div>
 
 <div class="cv-entry">
   <div class="cv-row">
