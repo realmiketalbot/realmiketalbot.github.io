@@ -100,7 +100,6 @@ redirect_from:
 <!-- SECTION HEADER -->
 <h2 class="cv-section-header">Certifications and Training</h2>
 
-<!-- # uncomment after workshop completion
 <h3 class="cv-subsection-header">Specialized Training</h3>
 
 <div class="cv-entry">
@@ -109,14 +108,12 @@ redirect_from:
     <span class="cv-dates">January 2026</span>
   </div>
   <ul>
-    <li>Selected for an immersive 5-day NSF-funded training (Grant #2322260) on supercomputing infrastructure</li>
-    <li>Gained hands-on experience with the Alpine supercomputing cluster</li>
-    <li>Mastered hardware provisioning, image building, and scheduler setup within a Linux environment</li>
+    <li>Selected for a competitive, immersive 5-day NSF-funded training (Grant #2322260) on research computing infrastructure</li>
+    <li>Developed a deeper, hands-on understanding of HPC system architecture, image-based provisioning, and SLURM-based job scheduling in production research environments</li>
   </ul>
 </div>
 
 <h3 class="cv-subsection-header">Certifications</h3>
--->
 
 <div class="cv-entry">
   <div class="cv-row">
