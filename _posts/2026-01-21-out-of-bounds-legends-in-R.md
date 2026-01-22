@@ -16,7 +16,7 @@ Stay tuned for those, but in the meantime I've decided to start putting out some
 <h2>Visualizing out-of-bounds (OOB) data using R</h2>
 Let's say you want to plot some data, and let's say that data has a relatively "long-tailed" distribution. This need not even necessarily be non-normally distributed data, but often this is also the case. There are many ways to visualize this kind of data and, obviously, the best ways will often depend upon the context. But instead of talking circles around this, let me provide an example. 
 
-Let's look at some streamflow data. Without getting into details (because they are irrelevant to the substance of this post), I've extracted the largest observed streamflow values between 2011 and 2020 for 494 streams and rivers across the continuous US. Here's what the distribution of these values looks like:
+Let's look at some streamflow data. Without getting into details (because they are irrelevant to the substance of this post), I've extracted the largest observed streamflow values between 1981 and 2020 for 494 streams and rivers across the continuous US. Here's what the distribution of these values looks like:
 
 ![OOB Histogram](../../images/oob_histogram.png)
 
