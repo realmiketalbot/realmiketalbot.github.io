@@ -1,0 +1,102 @@
+---
+title: "Blog Post"
+author: "Mike Talbot"
+date: 2026-01-21
+output: html_document
+---
+
+```{r download-data}
+library(tidyverse)
+library(terra)
+library(tidyterra)
+library(colorspace)
+library(legendry)
+
+data <- readRDS("assets/scripts/USGS_Max_Observations.rds")
+
+p <- ggplot(data) +
+    geom_histogram(aes(x = largest_observation)) +
+    scale_x_continuous(name = "Binned peak streamflow (m^3/s)") +
+    scale_y_continuous(name = "Number of Stations") +
+    theme_bw()
+
+ggsave("images/oob_histogram.png", dpi = 300, width = 7, height = 4, units = "in")
+
+us_states <- vect(rnaturalearth::ne_states(country = "United States of America", returnclass = "sf")) %>%
+  project("EPSG:5070") %>%
+  dplyr::select(postal) %>%
+  dplyr::rename("state" = "postal")
+
+p <- ggplot() +
+    geom_spatvector(data = us_states %>% 
+        dplyr::filter(!(state %in% c("AK", "HI"))),
+        alpha = 1, linewidth = 0.5, fill = "white") +
+    geom_spatvector(data = data, 
+        aes(color = largest_observation),
+        linewidth = 0.01,
+        size = 1) +
+    scale_color_continuous_sequential(
+        name = "Peak Q (m^3/s)", 
+        palette = "Viridis", 
+        rev = T,
+        limits = c(0, NA)
+    ) +
+    theme_void() +
+    theme(
+        legend.key.height = unit(0.4, "in"),
+        legend.key.width  = unit(0.2,  "in")
+    )
+
+ggsave("images/oob_map_complete.png", dpi = 300, width = 7, height = 4, units = "in")
+
+p <- ggplot() +
+    geom_spatvector(data = us_states %>% 
+        dplyr::filter(!(state %in% c("AK", "HI"))),
+        alpha = 1, linewidth = 0.5, fill = "white") +
+    geom_spatvector(data = data, 
+        aes(color = largest_observation),
+        linewidth = 0.01,
+        size = 1) +
+    scale_color_continuous_sequential(
+        name = "Peak Q (m^3/s)", 
+        palette = "Viridis", 
+        rev = T,
+        limits = c(0, 1000),
+        oob = scales::squish
+    ) +
+    theme_void() +
+    theme(
+        legend.key.height = unit(0.4, "in"),
+        legend.key.width  = unit(0.2,  "in")
+    )
+
+ggsave("images/oob_map_clipped.png", dpi = 300, width = 7, height = 4, units = "in")
+
+p <- ggplot() +
+    geom_spatvector(data = us_states %>% 
+        dplyr::filter(!(state %in% c("AK", "HI"))),
+        alpha = 1, linewidth = 0.5, fill = "white") +
+    geom_spatvector(data = data, 
+        aes(color = largest_observation),
+        linewidth = 0.01,
+        size = 1) +
+    scale_color_continuous_sequential(
+        name = "Peak Q (m^3/s)", 
+        palette = "Viridis", 
+        rev = T,
+        limits = c(0, 1000),
+        oob = scales::squish,
+        guide  = legendry::guide_colbar(
+          shape = "triangle",
+          show  = NA,
+          oob   = "squish",
+          theme = theme(
+            legend.key.height = unit(2, "in"),
+            legend.key.width  = unit(0.2,  "in")
+            )
+          )
+    ) +
+    theme_void()
+
+ggsave("images/oob_map_clipped_with_arrow.png", dpi = 300, width = 7, height = 4, units = "in")
+```
