@@ -24,7 +24,7 @@ Let's look at some streamflow data. Without getting into details (because they a
 
 Quick aside: as I'm using this data illustrate a visualization method, I'm intentionally not normalizing streamflow by watershed area, which would of course reduce the skewness of the distribution considerably. Moving on...
 
-We can see that these data roughly resemble some kind of heavily right-skewed distribution. Now, let's say we're interested in mapping these data. We can do this quite easily in R:
+We can see that these data roughly resemble some kind of heavily right-skewed distribution. Now, let's say we're interested in mapping these data. We can do this quite easily using R:
 
 <pre style="font-size: 0.6em;">
 library(tidyverse)
