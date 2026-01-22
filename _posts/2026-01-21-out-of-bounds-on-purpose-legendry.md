@@ -96,9 +96,9 @@ But this creates a new problem: once you squish out-of-range values into the `li
 
 There’s a neat thing that Python’s `matplotlib` can do when you cap a color scale (i.e., you set limits but still want to signal out-of-range values). In `plt.colorbar`, you can use “extended” colorbars (triangular end caps) to indicate out-of-range values at one or both ends. That would solve our problem elegantly: we keep better contrast for the bulk of the data while still communicating that some stations exceed the plotted maximum. But, sadly, this is not a native feature of `ggplot2` :-(
 
-Yes, we could switch to Python. But here's the hard truth: I simply do not like `matplotlib`. I do not like it in the rain. I would not, could not, on a train. I will not use it here or there. I do not like it anywhere! 
+Yes, we could switch to Python.[^3] But here's the hard truth: I simply do not like `matplotlib`. I do not like it in the rain. I would not, could not, on a train. I will not use it here or there. I do not like it anywhere! 
 
-I know I could make equivalent plots using `matplotlib`, but I simply prefer the syntax of `ggplot2`, and it will likely continue to remain my default for visualizations. So, I wanted to find a way to do this using R. Luckily, it's quite easy. Enter the <a href="https://teunbrand.github.io/legendry/" target="_blank">`legendry`</a> package: `guide_colbar()`[^3] can add end caps automagically when (and only when) the data exceed your scale limits by specifying `show = NA`:
+I know I could make equivalent plots using `matplotlib`, but I strongly prefer the syntax of `ggplot2`, and as such R will likely continue to remain my default for visualizations. So, I wanted to find a way to do this using R. Luckily, it's quite easy. Enter the <a href="https://teunbrand.github.io/legendry/" target="_blank">`legendry`</a> package: `guide_colbar()`[^3] can add end caps automagically when (and only when) the data exceed your scale limits by specifying `show = NA`:
 
 <pre style="font-size: 0.6em;">
 # install.packages("legendry")
@@ -144,4 +144,5 @@ Big thanks to the developer of `legendry`. You made my day.
 
 [^1]: Here's a <a href="https://gist.github.com/realmiketalbot/0bd0af38c5b0f74c0d1fe16f895fe80d" target="_blank">reprex</a> you can play with since I haven't provided you with my data.
 [^2]: As I'm using this data to illustrate a visualization method, I'm intentionally not normalizing streamflow by watershed area, which would of course reduce the skewness of the distribution considerably.
-[^3]: Note that while `oob = scales::oob_squish` controls how out-of-range data are mapped to colors, `guide_colbar(oob = "squish", show = NA)` controls how the legend signals (and colors) the out-of-range end caps. You'll typically want to use both.
+[^3]: I use Python for the majority of my research (e.g., my machine learning model code), so this isn't about "R vs Python," which I believe to be an utterly pointless debate that nonetheless seems to persist on the internet. Part of why I often default to R is that I generally need to write significantly fewer lines of code in R than I would in Python to complete exactly the same task. But that's not the only reason. If you're interested in a deeper dive on why I believe R is _objectively_ better than Python **for data visualization**, check out <a href="https://edwinth.github.io/blog/nse/" target="_blank">Edwin Thoen's blog post</a> on one of the features of R that makes it so powerful: non-standard evaluation (NSE).
+[^4]: Note that while `oob = scales::oob_squish` controls how out-of-range data are mapped to colors, `guide_colbar(oob = "squish", show = NA)` controls how the legend signals (and colors) the out-of-range end caps. You'll typically want to use both.
