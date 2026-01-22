@@ -93,7 +93,7 @@ ggplot() +
 
 ![OOB Map Clipped](../../images/oob_map_clipped.png)
 
-But this creates a new problem: once you squish out-of-range values into the `limits`, the legend no longer communicates that those colors include values beyond the endpoints. Without an explicit indicator, a reader can reasonably interpret the darkest color as “≈ 1,000” rather than “≥ 1,000” (up to 4,842, our largest value) collapsing the extremes into an indistinguishable category. 
+This clearly increases interpretability by spreading out our common values across the color scale. However, it also creates a new problem: once you squish out-of-range values into the `limits`, the legend no longer communicates that those colors include values beyond the endpoints. Without an explicit indicator, a reader can reasonably interpret the darkest color as “≈ 1,000” rather than “≥ 1,000” (up to 4,842, our largest value) collapsing the extremes into an indistinguishable category. 
 
 There’s an admittedly neat thing that Python’s `matplotlib` can do when you cap a color scale (i.e., you set limits but still want to signal out-of-range values). In `plt.colorbar`, you can use “extended” colorbars (triangular end caps) to indicate out-of-range values at one or both ends (see <a href="https://content.cld.iop.org/journals/1748-9326/18/10/104047/revision2/erlacfdbcf4_hr.jpg" target="_blank">Figure 4</a> of <a href="https://iopscience.iop.org/article/10.1088/1748-9326/acfdbc" target="_blank">this article</a> for a real-world example). That would solve our problem elegantly: we keep better contrast for the bulk of the data while still communicating that some stations exceed the plotted maximum. But, sadly, this is not a native feature of `ggplot2` :-(
 
