@@ -139,6 +139,12 @@ Voila—out of bounds, on purpose. Now your map can focus on the bulk of the dat
 
 Big thanks to the developer of `legendry`. You made my day.
 
+<hr>
+
+<small>I do this for fun, but if you enjoyed reading this (and without ads!), consider <a href="https://buymeacoffee.com/talbotmichu">buying me a coffee</a> to help fuel my next post :coffee:</small>
+
+<hr>
+
 [^1]: Here's a <a href="https://gist.github.com/realmiketalbot/0bd0af38c5b0f74c0d1fe16f895fe80d" target="_blank">reprex</a> you can play with since I haven't provided you with my data.
 [^2]: As I'm using this data to illustrate a visualization method, I'm intentionally not normalizing streamflow by watershed area, which would of course reduce the skewness of the distribution considerably.
 [^3]: Note that while `oob = scales::oob_squish` controls how out-of-range data are mapped to colors, `guide_colbar(oob = "squish", show = NA)` controls how the legend signals (and colors) the out-of-range end caps. You'll typically want to use both.
