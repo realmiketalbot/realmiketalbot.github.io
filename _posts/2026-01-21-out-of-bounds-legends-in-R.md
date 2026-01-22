@@ -20,7 +20,7 @@ Let's look at some streamflow data. Without getting into details (because they a
 
 ![OOB Histogram](../../images/oob_histogram.png)
 
-<small>Histogram of largest streamflow values between 2011 and 2020 at 494 USGS gages [original content].</small>
+<small>Histogram of largest streamflow values between 1981 and 2020 at 494 USGS gages [original content].</small>
 
 Quick aside: as I'm using this data illustrate a visualization method, I'm intentionally not normalizing streamflow by watershed area, which would of course reduce the skewness of the distribution considerably. Moving on...
 
