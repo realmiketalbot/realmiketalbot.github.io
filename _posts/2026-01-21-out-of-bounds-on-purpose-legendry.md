@@ -98,7 +98,7 @@ There’s a neat thing that Python’s `matplotlib` can do when you cap a color 
 
 Yes, we could switch to Python.[^3] But here's the hard truth: I simply do not like `matplotlib`. I do not like it in the rain. I would not, could not, on a train. I will not use it here or there. I do not like it anywhere! 
 
-I know I could make equivalent plots using `matplotlib`, but I strongly prefer the syntax of `ggplot2`, and as such R will likely continue to remain my default for visualizations. So, I wanted to find a way to do this using R. Luckily, it's quite easy. Enter the <a href="https://teunbrand.github.io/legendry/" target="_blank">`legendry`</a> package: `guide_colbar()`[^3] can add end caps automagically when (and only when) the data exceed your scale limits by specifying `show = NA`:
+I know I could make equivalent plots using `matplotlib`, but I strongly prefer the syntax of `ggplot2`, and as such R will likely continue to remain my default for visualizations. So, I wanted to find a way to do this using R. Luckily, it's quite easy. Enter the <a href="https://teunbrand.github.io/legendry/" target="_blank">`legendry`</a> package: `guide_colbar()`[^4] can add end caps automagically when (and only when) the data exceed your scale limits by specifying `show = NA`:
 
 <pre style="font-size: 0.6em;">
 # install.packages("legendry")
