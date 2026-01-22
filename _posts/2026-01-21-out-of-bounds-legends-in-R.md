@@ -1,6 +1,6 @@
 ---
-title: 'Plotting Out of Bounds Values with R'
-subtitle: 'Replicating what `matplotlib` can do natively'
+title: 'Out of Bounds, On Purpose'
+subtitle: 'Replicating `matplotlib`’s extended colorbars in R with `legendry`'
 date: 2026-01-21
 permalink: /posts/2026-01-21-out-of-bounds-legends-in-R/
 author_profile: false
