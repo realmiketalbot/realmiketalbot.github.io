@@ -133,7 +133,7 @@ ggplot() +
 
 ![OOB Map Clipped with End Caps](../../images/oob_map_clipped_with_endcaps.png)
 
-Voila—out of bounds, on purpose. Now your map can focus on the bulk of the data yet stay honest about the extremes.
+Voila—out of bounds, on purpose. Now your plot can focus on the bulk of the data yet stay honest about the extremes.
 
 Big thanks to the developer of `legendry`. You made my day.
 
