@@ -103,7 +103,7 @@ Yes, we could switch to Python. But here's the hard truth: I simply do not like 
 I know I could make equivalent plots using `matplotlib`, but I simply prefer the syntax of `ggplot2`, and it will likely continue to remain my default for visualizations. So, I wanted to find a way to do this using R. Luckily, it's quite easy. Enter the <a href="https://teunbrand.github.io/legendry/" target="_blank">`legendry`</a> package: `guide_colbar()`[^3] can add end caps automagically when (and only when) the data exceed your scale limits by specifying `show = NA`:
 
 <pre style="font-size: 0.6em;">
-library(legendry)
+install.packages("legendry")
 
 ggplot() +
     geom_spatvector(data = us_states,
