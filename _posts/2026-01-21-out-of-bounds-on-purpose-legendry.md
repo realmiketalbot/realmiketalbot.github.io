@@ -13,16 +13,25 @@ I've been working on some larger, longer blog posts for... well, for too long. M
 
 Stay tuned for those, but in the meantime I've decided to start putting out some more bite-sized posts, and what I was working on today felt like it could be quite useful to others. So, let's jump in!
 
+<h2>Data visualization as an art</h2>
+I felt the need to include this brief preamble for one reason:[^1] to acknowledge that data visualization is often (but not always) more art than science. This will actually be my first in a series of posts on this subject, and we'll cover some broader topics later.
+
+A perfect and ubiquitous example of where data visualization can go wrong is with <em>color scales</em>: we can easily churn through a long list of palettes to find one that makes a figure “pop”—but if the encoding implies a numeric story the data don’t support, the plot becomes persuasive in the wrong way. My rule of thumb is that the figure itself should carry the burden of correct interpretation: captions should add context, not rescue an ambiguous encoding. So it behooves me to be constantly on the lookout for small, concrete tricks that make a visual more intuitive. 
+
+Let the plot do the work.
+
+<img src="https://imgs.xkcd.com/comics/painbow_award.png" alt="XKCD Painbow Award">
+
 <h2>Visualizing out-of-bounds (OOB) data using R</h2>
 Let's say you want to plot some data, and let's say that data has a relatively "long-tailed" distribution. This need not even necessarily be non-normally distributed data, but often this is also the case. There are many ways to visualize this kind of data and, obviously, the best ways will often depend upon the context. But instead of talking circles around this, let me provide an example.
 
-Let's look at some streamflow data. Without getting into details (because they are irrelevant to the substance of this post), I've extracted the largest observed streamflow values between 1981 and 2020 for 494 streams and rivers across the contiguous US.[^1] Here's what the distribution of these values looks like:
+Let's look at some streamflow data. Without getting into details (because they are irrelevant to the substance of this post), I've extracted the largest observed streamflow values between 1981 and 2020 for 494 streams and rivers across the contiguous US.[^2] Here's what the distribution of these values looks like:
 
 ![OOB Histogram](../../images/oob_histogram.png)
 
 <small>Histogram of largest streamflow values between 1981 and 2020 at 494 USGS gages [original content].</small>
 
-We can see that these data roughly resemble some kind of heavily[^2] right-skewed distribution. Now, let's say we're interested in mapping these data. We can do this quite easily using R:
+We can see that these data roughly resemble some kind of heavily[^3] right-skewed distribution. Now, let's say we're interested in mapping these data. We can do this quite easily using R:
 
 <pre style="font-size: 0.6em;">
 library(tidyverse)
@@ -96,9 +105,9 @@ But this creates a new problem: once you squish out-of-range values into the `li
 
 There’s an admittedly neat thing that Python’s `matplotlib` can do when you cap a color scale (i.e., you set limits but still want to signal out-of-range values). In `plt.colorbar`, you can use “extended” colorbars (triangular end caps) to indicate out-of-range values at one or both ends. That would solve our problem elegantly: we keep better contrast for the bulk of the data while still communicating that some stations exceed the plotted maximum. But, sadly, this is not a native feature of `ggplot2` :-(
 
-Yes, we could switch to Python.[^3] But here's the hard truth: I simply do not like `matplotlib`. I do not like it in the rain. I would not, could not, on a train. I will not use it here or there. I do not like it anywhere! 
+Yes, we could switch to Python.[^4] But here's the hard truth: I simply do not like `matplotlib`. I do not like it in the rain. I would not, could not, on a train. I will not use it here or there. I do not like it anywhere! 
 
-I know I could make equivalent plots using `matplotlib`, but I strongly prefer the syntax of `ggplot2`, and as such R will likely continue to remain my default for visualizations. So, I wanted to find a way to do this using R. Luckily, it's quite easy. Enter the <a href="https://teunbrand.github.io/legendry/" target="_blank">`legendry`</a> package: `guide_colbar()`[^4] can add end caps automagically when (and only when) the data exceed your scale limits by specifying `show = NA`:
+I know I could make equivalent plots using `matplotlib`, but I strongly prefer the syntax of `ggplot2`, and as such R will likely continue to remain my default for visualizations. So, I wanted to find a way to do this using R. Luckily, it's quite easy. Enter the <a href="https://teunbrand.github.io/legendry/" target="_blank">`legendry`</a> package: `guide_colbar()`[^5] can add end caps automagically when (and only when) the data exceed your scale limits by specifying `show = NA`:
 
 <pre style="font-size: 0.6em;">
 # install.packages("legendry")
@@ -142,7 +151,8 @@ Big thanks to the developer of `legendry`. You made my day.
 
 <hr>
 
-[^1]: Here's a <a href="https://gist.github.com/realmiketalbot/0bd0af38c5b0f74c0d1fe16f895fe80d" target="_blank">reprex</a> you can play with since I haven't provided you with my data.
-[^2]: As I'm using this data to illustrate a visualization method, I'm intentionally not normalizing streamflow by watershed area, which would of course reduce the skewness of the distribution considerably.
-[^3]: I use Python for a significant portion of my research (e.g., my machine learning model code), so this isn't about "R vs Python," which I believe to be an <a href="https://nonstandarddev.com/posts/r-vs-python/" target="_blank">utterly pointless debate</a> that nonetheless seems to persist. Part of why I often default to R is that I generally need to write significantly fewer lines of code in R than I would in Python to complete exactly the same task. But that's not the only reason. If you're interested in a deeper dive on why I believe R is _objectively_ better than Python **for data visualization**, check out <a href="https://edwinth.github.io/blog/nse/" target="_blank">Edwin Thoen's blog post</a> on one of the features of R that makes it so powerful: non-standard evaluation (NSE).
-[^4]: Note that while `oob = scales::oob_squish` controls how out-of-range data are mapped to colors, `guide_colbar(oob = "squish", show = NA)` controls how the legend signals (and colors) the out-of-range end caps. You'll typically want to use both.
+[^1]: Ok, two reasons... because every good blog post starts with an <a href="https://xkcd.com/2537/" target="_blank" rel="noopener">xkcd comic</a>.
+[^2]: Here's a <a href="https://gist.github.com/realmiketalbot/0bd0af38c5b0f74c0d1fe16f895fe80d" target="_blank">reprex</a> you can play with since I haven't provided you with my data.
+[^3]: As I'm using this data to illustrate a visualization method, I'm intentionally not normalizing streamflow by watershed area, which would of course reduce the skewness of the distribution considerably.
+[^4]: I use Python for a significant portion of my research (e.g., my machine learning model code), so this isn't about "R vs Python," which I believe to be an <a href="https://nonstandarddev.com/posts/r-vs-python/" target="_blank">utterly pointless debate</a> that nonetheless seems to persist. Part of why I often default to R is that I generally need to write significantly fewer lines of code in R than I would in Python to complete exactly the same task. But that's not the only reason. If you're interested in a deeper dive on why I believe R is _objectively_ better than Python **for data visualization**, check out <a href="https://edwinth.github.io/blog/nse/" target="_blank">Edwin Thoen's blog post</a> on one of the features of R that makes it so powerful: non-standard evaluation (NSE).
+[^5]: Note that while `oob = scales::oob_squish` controls how out-of-range data are mapped to colors, `guide_colbar(oob = "squish", show = NA)` controls how the legend signals (and colors) the out-of-range end caps. You'll typically want to use both.
