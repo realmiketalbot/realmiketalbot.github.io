@@ -23,8 +23,6 @@ Let's look at some streamflow data. Without getting into details (because they a
 
 ![OOB Histogram](../../images/oob_histogram.png)
 
-<small>Histogram of largest streamflow values between 1981 and 2020 at 494 USGS gages [original content].</small>
-
 We can see that these data roughly resemble some kind of heavily[^3] right-skewed distribution. Now, let's say we're interested in mapping these data. We can do this quite easily using R:
 
 <pre style="font-size: 0.6em;">
