@@ -9,10 +9,6 @@ tags:
   - science-communication
 ---
 
-I've been working on some larger, longer blog posts for... well, for too long. Maybe I bit off more than I could chew, but I hope to push one of them out before too long. 
-
-Stay tuned for those, but in the meantime I've decided to start putting out some more bite-sized posts, and what I was working on today felt like it could be quite useful to others. So, let's jump in!
-
 <h2>Data visualization as an art</h2>
 I felt the need to include this brief preamble for one reason:[^1] to acknowledge that data visualization is often (but not always) more art than science. This will actually be my first in a series of posts on this subject, and we'll cover some broader topics later.
 
