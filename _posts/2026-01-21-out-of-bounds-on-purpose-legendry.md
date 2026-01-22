@@ -61,7 +61,7 @@ ggplot() +
 
 What might immediately jump out to you from this map is that our skewed distribution leads to a large number of values showing up in yellow (the bottom of our color scale), and progressively fewer showing up in green, blue, or purple. What this effectively does is cluster the majority of values in a narrow band of our color scale, which makes it difficult to differentiate among the stations clustered at the low end.
 
-A common goal is to use the color scale efficiently so that the bulk of observations spans more of the available range, which improves visual discrimination among most stations. In practice, real datasets rarely fill a color scale evenly, so this is a common issue.
+A common goal is to use the color scale efficiently so that the bulk of observations spans more of the available range, which improves visual discrimination among data points. In practice, real datasets rarely fill a color scale evenly, so this is a common issue.
 
 I should note here that there are many different ways we could deal with this issue, including transforming the distribution of the data or using a more complex color mapping, and in some situations these are fine. However, I often avoid these strategies because they can reduce interpretability—especially on maps, where I prefer legends in the original units and a linear scale so equal numeric differences remain visually comparable. For this example, let’s prioritize distinguishing among the bulk of the data rather than among the largest values—in other words, we mainly need to know that “large values are large.” Looking back at our histogram, the bulk of our values appear to lie between about 0 and 1000 m^3/s. 
 
@@ -92,9 +92,9 @@ ggplot() +
 
 ![OOB Map Clipped](../../images/oob_map_clipped.png)
 
-But this creates a new problem: once you squish out-of-range values into the `limits`, the legend no longer communicates that those colors include values beyond the endpoints. Without an explicit indicator, a reader can reasonably interpret the darkest color as “≈ 1,000” rather than “≥ 1,000,” collapsing the extremes into an indistinguishable category. 
+But this creates a new problem: once you squish out-of-range values into the `limits`, the legend no longer communicates that those colors include values beyond the endpoints. Without an explicit indicator, a reader can reasonably interpret the darkest color as “≈ 1,000” rather than “≥ 1,000” (up to 4,848, our largest value) collapsing the extremes into an indistinguishable category. 
 
-There’s a neat thing that Python’s `matplotlib` can do when you cap a color scale (i.e., you set limits but still want to signal out-of-range values). In `plt.colorbar`, you can use “extended” colorbars (triangular end caps) to indicate out-of-range values at one or both ends. That would solve our problem elegantly: we keep better contrast for the bulk of the data while still communicating that some stations exceed the plotted maximum. But, sadly, this is not a native feature of `ggplot2` :-(
+There’s an admittedly neat thing that Python’s `matplotlib` can do when you cap a color scale (i.e., you set limits but still want to signal out-of-range values). In `plt.colorbar`, you can use “extended” colorbars (triangular end caps) to indicate out-of-range values at one or both ends. That would solve our problem elegantly: we keep better contrast for the bulk of the data while still communicating that some stations exceed the plotted maximum. But, sadly, this is not a native feature of `ggplot2` :-(
 
 Yes, we could switch to Python.[^3] But here's the hard truth: I simply do not like `matplotlib`. I do not like it in the rain. I would not, could not, on a train. I will not use it here or there. I do not like it anywhere! 
 
