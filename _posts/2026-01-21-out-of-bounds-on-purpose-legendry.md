@@ -43,7 +43,6 @@ ggplot() +
         fill = "white") +
     geom_spatvector(data = data, 
         aes(color = largest_observation),
-        linewidth = 0.01,
         size = 1) +
     scale_color_continuous_sequential(
         name = "Peak Q (m^3/s)", 
@@ -76,7 +75,6 @@ ggplot() +
         fill = "white") +
     geom_spatvector(data = data, 
         aes(color = largest_observation),
-        linewidth = 0.01,
         size = 1) +
     scale_color_continuous_sequential(
         name = "Peak Q (m^3/s)", 
@@ -112,7 +110,6 @@ ggplot() +
         fill = "white") +
     geom_spatvector(data = data, 
         aes(color = largest_observation),
-        linewidth = 0.01,
         size = 1) +
     scale_color_continuous_sequential(
         name = "Peak Q (m^3/s)", 
