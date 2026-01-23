@@ -16,6 +16,8 @@ A perfect and ubiquitous example of where data visualization can go wrong is wit
 
 <img src="https://imgs.xkcd.com/comics/painbow_award.png" alt="XKCD Painbow Award">
 
+<small>Source: <a href="https://xkcd.com/2537/" target="_blank">xkcd</a>, of course</a>
+
 <h2>Visualizing out-of-bounds (OOB) data using R</h2>
 Let's say you want to plot some data, and let's say that data has a relatively "long-tailed" distribution. This need not even necessarily be non-normally distributed data, but often this is also the case. There are many ways to visualize this kind of data and, obviously, the best ways will often depend upon the context. But instead of talking circles around this, let me provide an example.
 
