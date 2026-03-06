@@ -257,7 +257,7 @@ redirect_from:
       Co-Chair, Hydrology Days Organizing Committee
       <a href="https://www.engr.colostate.edu/ce/events/hydrology-days/" target="_blank" class="cv-link-icon"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
     </strong>
-    <span class="cv-dates">2026</span>
+    <span class="cv-dates">Spring 2026</span>
   </div>
 </div>
 
