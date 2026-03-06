@@ -287,7 +287,7 @@ redirect_from:
       Mentor, Scott Undergraduate Research Experience (SURE)
       <a href="https://www.engr.colostate.edu/walter-scott-jr-gift/sure/" target="_blank" class="cv-link-icon"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
     </strong>
-    <span class="cv-dates">2025 – Present</span>
+    <span class="cv-dates">Spring 2025</span>
   </div>
 </div>
 
