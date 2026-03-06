@@ -244,6 +244,16 @@ redirect_from:
 <div class="cv-entry">
   <div class="cv-row">
     <strong>
+      Mentor, OURA Mentored and Matched Scholars
+      <a href="https://tilt.colostate.edu/oura/" target="_blank" class="cv-link-icon"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+    </strong>
+    <span class="cv-dates">Spring 2026</span>
+  </div>
+</div>
+
+<div class="cv-entry">
+  <div class="cv-row">
+    <strong>
       Co-Chair, Hydrology Days Organizing Committee
       <a href="https://www.engr.colostate.edu/ce/events/hydrology-days/" target="_blank" class="cv-link-icon"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
     </strong>
