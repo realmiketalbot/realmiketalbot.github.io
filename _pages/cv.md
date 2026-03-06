@@ -244,6 +244,26 @@ redirect_from:
 <div class="cv-entry">
   <div class="cv-row">
     <strong>
+      Co-Chair, Hydrology Days Organizing Committee
+      <a href="https://www.engr.colostate.edu/ce/events/hydrology-days/" target="_blank" class="cv-link-icon"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+    </strong>
+    <span class="cv-dates">2026</span>
+  </div>
+</div>
+
+<div class="cv-entry">
+  <div class="cv-row">
+    <strong>
+      Peer Reviewer, <i>Journal of Hydrology</i>
+      <a href="https://www.sciencedirect.com/journal/journal-of-hydrology" target="_blank" class="cv-link-icon"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+    </strong>
+    <span class="cv-dates">2026 – Present</span>
+  </div>
+</div>
+
+<div class="cv-entry">
+  <div class="cv-row">
+    <strong>
       Peer Reviewer, <i>Frontiers of Earth Science</i>
       <a href="https://link.springer.com/journal/11707" target="_blank" class="cv-link-icon"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
     </strong>
