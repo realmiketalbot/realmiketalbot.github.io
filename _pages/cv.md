@@ -245,7 +245,7 @@ redirect_from:
   <div class="cv-row">
     <strong>
       Mentor, OURA Mentored and Matched Scholars
-      <a href="https://tilt.colostate.edu/oura/" target="_blank" class="cv-link-icon"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+      <a href="https://tilt.colostate.edu/oura/mentored-scholars-matching-grants/" target="_blank" class="cv-link-icon"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
     </strong>
     <span class="cv-dates">Spring 2026</span>
   </div>
