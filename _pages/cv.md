@@ -138,6 +138,16 @@ redirect_from:
 <div class="cv-entry">
   <div class="cv-row">
     <strong>
+      Outstanding Graduate Student Service Award
+      <a href="https://www.engr.colostate.edu/ce/cee-celebrates-faculty-staff-student-and-alumni-awards-sp26/" target="_blank" class="cv-link-icon"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+    </strong>
+    <span class="cv-dates">May 2026</span>
+  </div>
+</div>
+
+<div class="cv-entry">
+  <div class="cv-row">
+    <strong>
       Graduate Student Council Conference Travel Grant
       <a href="https://gsc.colostate.edu/budget/" target="_blank" class="cv-link-icon"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
     </strong>
