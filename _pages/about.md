@@ -12,9 +12,9 @@ redirect_from:
 Hello! I'm Mike, an engineer and hydrologist currently working on my PhD in the [Hydrologic Science & Engineering](https://www.engr.colostate.edu/ce/graduate/hydrologic-science-and-engineering/) program at Colorado State University, advised by [Dr. Frances Davenport](https://fdavenport.github.io) in the [Department of Civil & Environmental Engineering](https://www.engr.colostate.edu/ce/). Until I decided to reenter academia in January of 2024, I worked as a Water Resources Engineer with [Emmons & Olivier Resources](https://www.eorinc.com/) (EOR) for 10 years and continue to provide guidance and technical feedback on some hydrologic modeling, watershed planning, and web development projects. 
 
 My current research interests stem from my experience building and using hydrologic and hydraulic models for a variety of purposes across a wide range of spatial scales, and the challenges I encountered along the way. Within the framework of large-sample hydrology, I apply statistical methods, deep learning models, and explainability techniques to explore the estimation and prediction of hydrologic extremes. I'm particularly interested in questions like: 
-- How good are models are predicting extremes?
-- What methods can we use to improve their skill?
-- What can we learn from them about hydrologic science?
+- How good are machine learning models are predicting streamflow extremes?
+- What methods can we use to improve their skill at the tails of the streamflow distribution?
+- What can we learn from them about the principles of hydrologic science?
 
 ## My work experience
 While at EOR, I worked on a large number of projects ranging from engineering design support to regional-scale watershed planning. Some notable projects include:
