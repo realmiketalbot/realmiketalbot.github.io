@@ -81,7 +81,6 @@ const talks = defineCollection({
     date: z.coerce.date(),
     slides: link,
     link: link,
-    image: z.string().optional(),
   }),
 });
 

@@ -15,7 +15,7 @@ const talks = (await getList("talks")).sort((a, b) => +b.date - +a.date);
       <p class="mt-6 max-w-xs text-muted">Recent talks and posters.</p>
     </div>
     <div class="lg:col-span-8">
-      <TalkList items={talks.slice(0, RECENT)} thumbnails />
+      <TalkList items={talks.slice(0, RECENT)} />
       {
         talks.length > RECENT && (
           <a

@@ -1,4 +1,4 @@
-# type: Talk | Poster. Optional: slides, link (abstract/archive), image (in public/images).
+# type: Talk | Poster. Optional: slides, link (abstract/archive).
 - title: "No Free Lunch? Improving LSTM Flood Predictions with Minimal Loss in Overall Skill"
   authors: Talbot MT
   type: Poster
@@ -6,7 +6,6 @@
   location: New Orleans, LA
   date: 2025-12-15
   link: https://essopenarchive.org/users/857720/articles/1370403-no-free-lunch-improving-lstm-flood-predictions-with-minimal-loss-in-overall-skill
-  image: /images/2025-agu-poster.png
 
 - title: Toward Enhancing Neural Networks in Predicting Streamflow Extremes
   authors: Talbot MT
@@ -15,7 +14,6 @@
   location: Golden, CO
   date: 2025-05-02
   slides: https://drive.google.com/file/d/15NAYgW2fCMd89EBUh3qfwdOGTUlT388E/view?usp=sharing
-  image: /images/2025-awra-cgwa.png
 
 - title: Toward Improving Machine Learning Models for Predicting Streamflow Extremes
   authors: Talbot MT
@@ -32,7 +30,6 @@
   location: Washington, D.C.
   date: 2024-12-13
   link: https://essopenarchive.org/users/857720/articles/1241515-watershed-alchemy-transforming-data-into-hydrologic-understanding
-  image: /images/2024-agu-poster.png
 
 - title: Evaluation of a GIS-Based Flood Hazard Assessment in Rochester, Minnesota
   authors: Talbot MT

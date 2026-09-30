@@ -5,33 +5,14 @@ import type { CollectionEntry } from "astro:content";
 
 interface Props {
   items: CollectionEntry<"talks">["data"][];
-  thumbnails?: boolean;
 }
-const { items, thumbnails = false } = Astro.props;
+const { items } = Astro.props;
 ---
 
 <ul class="space-y-6">
   {
     items.map((t) => (
-      <li class="flex gap-5">
-        {thumbnails && (
-          <div class="hidden w-28 shrink-0 sm:block">
-            {t.image ? (
-              <a href={t.link ?? t.slides ?? t.image} target="_blank" rel="noopener noreferrer">
-                <img
-                  src={t.image}
-                  alt=""
-                  loading="lazy"
-                  class="aspect-[4/3] w-full rounded-lg border border-line bg-surface object-cover object-top transition-opacity hover:opacity-80"
-                />
-              </a>
-            ) : (
-              <div class="flex aspect-[4/3] w-full items-center justify-center rounded-lg border border-dashed border-line text-subtle">
-                <Icon name="slides" class="h-6 w-6" />
-              </div>
-            )}
-          </div>
-        )}
+      <li>
         <div class="min-w-0">
           <div class="flex flex-wrap items-center gap-2 font-mono text-xs text-subtle">
             <span
