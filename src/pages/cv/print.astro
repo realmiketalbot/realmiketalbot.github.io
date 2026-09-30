@@ -13,12 +13,12 @@ import { boldMe, formatMonthYear } from "../../lib/utils";
 
 const cv = await getCvData();
 
+// Keep this to one line on the page; LinkedIn is omitted for space
 const contacts = [
   siteConfig.social.email && { label: siteConfig.social.email, href: `mailto:${siteConfig.social.email}` },
   { label: siteConfig.url.replace(/^https?:\/\//, ""), href: siteConfig.url },
   siteConfig.social.orcid && { label: siteConfig.social.orcid.replace(/^https?:\/\//, ""), href: siteConfig.social.orcid },
   siteConfig.social.github && { label: siteConfig.social.github.replace(/^https?:\/\//, ""), href: siteConfig.social.github },
-  siteConfig.social.linkedin && { label: siteConfig.social.linkedin.replace(/^https?:\/\/(www\.)?/, ""), href: siteConfig.social.linkedin },
 ].filter(Boolean) as { label: string; href: string }[];
 
 const doiLabel = (doi: string) => "doi:" + doi.replace(/^https?:\/\/(dx\.)?doi\.org\//, "");
@@ -40,16 +40,9 @@ const dot = (s: string) => (/[.?!]$/.test(s) ? s : `${s}.`);
         <div>
           <h1>{siteConfig.fullName}</h1>
           <p class="headline">{siteConfig.cvHeadline} · {siteConfig.affiliation}, {siteConfig.location}</p>
-          <p class="contacts">
-            {
-              contacts.map((c, i) => (
-                <>
-                  {i > 0 && <span class="sep">·</span>}
-                  <a href={c.href} class="nowrap">{c.label}</a>
-                </>
-              ))
-            }
-          </p>
+          <ul class="contacts">
+            {contacts.map((c) => <li><a href={c.href}>{c.label}</a></li>)}
+          </ul>
         </div>
       </header>
 
@@ -301,17 +294,23 @@ const dot = (s: string) => (/[.?!]$/.test(s) ? s : `${s}.`);
     color: var(--muted);
   }
 
+  /* Contacts wrap between items (never mid-item) if they outgrow the line */
   .contacts {
+    display: flex;
+    flex-wrap: wrap;
     margin: 3pt 0 0;
+    padding: 0;
+    list-style: none;
     font-size: 9pt;
     color: var(--accent);
   }
 
-  .nowrap {
+  .contacts li {
     white-space: nowrap;
   }
 
-  .contacts .sep {
+  .contacts li + li::before {
+    content: "·";
     margin: 0 5pt;
     color: var(--rule);
   }
