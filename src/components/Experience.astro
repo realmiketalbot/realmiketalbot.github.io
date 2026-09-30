@@ -3,12 +3,7 @@ import SectionHeading from "./SectionHeading.astro";
 import { getList } from "../lib/utils";
 
 const isCurrent = (dates: string) => /present/i.test(dates);
-
-// Current teaching roles join the timeline; the full teaching history is on the CV page
-const currentTeaching = (await getList("teaching"))
-  .filter((t) => isCurrent(t.dates))
-  .map((t) => ({ title: t.title, org: t.org, location: t.location, dates: t.dates, bullets: t.courses }));
-const experience = [...currentTeaching, ...(await getList("experience"))];
+const experience = await getList("experience");
 ---
 
 <section id="experience" class="mx-auto max-w-7xl px-5 py-20 sm:px-8 lg:py-28">
