@@ -8,10 +8,9 @@ const year = new Date().getFullYear();
   <div
     class="mx-auto flex max-w-7xl flex-col items-start justify-between gap-6 px-5 py-10 sm:flex-row sm:items-center sm:px-8"
   >
-    <div>
-      <p class="font-mono text-sm text-fg">{siteConfig.fullName}</p>
-      <p class="mt-1 text-sm text-subtle">{siteConfig.location} · © {year}</p>
-    </div>
+    <p class="font-mono text-sm text-fg">
+      {siteConfig.fullName} <span class="text-subtle">© {year}</span>
+    </p>
     <SocialLinks iconClass="h-5 w-5" />
   </div>
 </footer>
