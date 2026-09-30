@@ -4,8 +4,9 @@
   location: Fort Collins, CO
   dates: 2024 – Present
   bullets:
-    - Researching machine learning (LSTM) prediction of streamflow extremes using large-sample hydrology datasets
-    - Running large-scale model training experiments on high-performance computing (HPC) clusters
+    - Dissertation research on flood frequency analysis and deep learning (LSTM) streamflow prediction at the extremes, with a focus on Colorado
+    - Developing mixed-population flood frequency methods for snowmelt, rainfall, and rain-on-snow floods across 206 Colorado stream gages
+    - Training and evaluating LSTM model ensembles across hundreds of catchments on high-performance computing (HPC) clusters
 
 - title: Water Resources Engineer
   org: Emmons & Olivier Resources, Inc.

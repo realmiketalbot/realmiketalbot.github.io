@@ -4,6 +4,8 @@
   details:
     - label: Program
       text: Hydrologic Science & Engineering
+    - label: Dissertation
+      text: Advancing Streamflow Estimation in Colorado Using Mixture Distributions and Deep Learning (proposed)
     - label: Advisor
       text: Dr. Frances Davenport
       url: https://www.engr.colostate.edu/ce/people/frances-davenport/

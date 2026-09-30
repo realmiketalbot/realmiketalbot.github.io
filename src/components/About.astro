@@ -16,19 +16,20 @@ import { inlineLinks } from "../lib/utils";
 
       <div class="rounded-2xl border border-line bg-surface p-6 sm:p-8">
         <h3 class="font-mono text-sm font-semibold uppercase tracking-wider text-accent">
-          Research
+          Dissertation research
         </h3>
-        <p class="mt-3 leading-relaxed text-muted">{siteConfig.researchIntro}</p>
-        <ul class="mt-5 space-y-3">
+        <p class="mt-3 text-lg font-semibold leading-snug text-fg">{siteConfig.dissertationTitle}</p>
+        <p class="mt-4 leading-relaxed text-muted">{siteConfig.researchIntro}</p>
+        <ol class="mt-6 space-y-4">
           {
             siteConfig.researchQuestions.map((q) => (
-              <li class="flex gap-3 text-fg">
-                <span class="mt-0.5 font-mono text-accent" aria-hidden="true">→</span>
-                <span>{q}</span>
+              <li class="grid grid-cols-1 gap-1 sm:grid-cols-[6.5rem_1fr] sm:gap-4">
+                <span class="font-mono text-sm font-semibold text-accent sm:pt-0.5">{q.label}</span>
+                <span class="text-fg">{q.text}</span>
               </li>
             ))
           }
-        </ul>
+        </ol>
       </div>
 
       <div>

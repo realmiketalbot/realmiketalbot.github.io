@@ -7,7 +7,7 @@ export const siteConfig = {
   fullName: "Michael T. Talbot",
   title: "Engineer & Hydrologist",
   description:
-    "Mike Talbot is an engineer, hydrologist, and PhD candidate at Colorado State University studying machine learning prediction of streamflow extremes.",
+    "Mike Talbot is an engineer, hydrologist, and PhD candidate at Colorado State University studying flood frequency and deep learning streamflow prediction at the extremes.",
   url: "https://miketalbot.io",
   location: "Fort Collins, CO",
   headshot: "/images/mike-talbot-bw.png",
@@ -17,7 +17,7 @@ export const siteConfig = {
   hero: {
     greeting: "Hi, I'm",
     tagline:
-      "PhD candidate at Colorado State University, using machine learning to better predict floods and other streamflow extremes.",
+      "PhD candidate at Colorado State University studying why hydrologic models struggle at the extremes (floods and dry years) and what we can do about it.",
   },
 
   social: {
@@ -35,21 +35,33 @@ export const siteConfig = {
     "I've always worked at the crossroads of hydrology, civil engineering, GIS, and data science, and I'm at my best carrying ideas from one field into another. The PhD is my chance to pair that breadth with depth: a real understanding of hydrology and its history as a scientific discipline.",
   ],
 
+  dissertationTitle:
+    "Advancing Streamflow Estimation in Colorado Using Mixture Distributions and Deep Learning",
   researchIntro:
-    "Within the framework of large-sample hydrology, I use statistical methods, deep learning, and explainability techniques to study hydrologic extremes. The questions driving my work:",
+    "Hydrologic models are fit to records that mix hydrologically distinct conditions: floods with different causes, catchments governed by different processes, years unlike the ones before them. The result describes the bulk of the data well and the extremes poorly, which is exactly where the stakes are highest. Using large-sample hydrology, my dissertation asks whether that loss of skill can be measured, mitigated, and explained:",
   researchQuestions: [
-    "How good are machine learning models at predicting streamflow extremes?",
-    "What methods can improve their skill in the tails of the streamflow distribution?",
-    "What can they teach us about the principles of hydrologic science?",
+    {
+      label: "Measure",
+      text: "How do flood frequency estimates in Colorado change when snowmelt, rainfall, and rain-on-snow floods are treated as separate populations?",
+    },
+    {
+      label: "Mitigate",
+      text: "Can data-centric interventions reduce peak-flow underestimation in LSTM streamflow models, and at what cost elsewhere in the flow distribution?",
+    },
+    {
+      label: "Explain",
+      text: "How reliably can LSTMs predict seasonal water supply in Colorado's driest years, and which inputs do they rely on?",
+    },
   ],
 
   skills: [
     "Hydrologic & hydraulic modeling",
     "Deep learning (LSTMs)",
     "Explainable AI",
-    "Statistical hydrology",
-    "Python",
-    "R",
+    "Flood frequency analysis",
+    "Extreme value statistics",
+    "Python / PyTorch",
+    "R / Shiny",
     "GIS",
     "HPC / SLURM",
     "SWMM / PCSWMM",
@@ -59,15 +71,33 @@ export const siteConfig = {
 
   projects: [
     {
-      name: "LSTM predictions of extreme streamflow",
+      name: "Mixed-population flood frequency in Colorado",
+      group: "research",
+      period: "2026 – present",
+      description:
+        "How much do flood quantile estimates change when snowmelt, rainfall, and rain-on-snow floods are modeled as separate populations? Peaks-over-threshold analysis across 206 USGS gages in Colorado, with an interactive dashboard for exploring site-level results.",
+      tags: ["Flood frequency", "Extreme value statistics", "R Shiny"],
+    },
+    {
+      name: "Closing the peak-flow gap in LSTM streamflow models",
+      group: "research",
       period: "2024 – present",
       description:
-        "PhD research on how training distribution and input fidelity affect the skill of LSTM streamflow models at the extremes, and how to improve flood predictions without sacrificing overall skill.",
+        "Testing whether oversampling rare flows and richer precipitation inputs reduce LSTM peak-flow underprediction across 494 CAMELS catchments, and what each costs in overall skill. Manuscript in preparation.",
       link: "https://essopenarchive.org/users/857720/articles/1370403-no-free-lunch-improving-lstm-flood-predictions-with-minimal-loss-in-overall-skill",
-      tags: ["Deep learning", "Large-sample hydrology", "Floods"],
+      tags: ["Deep learning", "PyTorch", "Large-sample hydrology"],
+    },
+    {
+      name: "LSTM water supply predictions in dry years",
+      group: "research",
+      period: "Planned, 2027",
+      description:
+        "Benchmarking April–August runoff predictions for Colorado catchments in dry versus normal years, and using expected gradients to see which inputs (including high-resolution snow water equivalent) the model relies on.",
+      tags: ["Water supply", "Explainable AI", "Snow"],
     },
     {
       name: "Rochester Comprehensive Surface Water Management Plan",
+      group: "consulting",
       period: "~2025",
       description:
         "Comprehensive surface water management plan for Rochester, Minnesota.",
@@ -76,6 +106,7 @@ export const siteConfig = {
     },
     {
       name: "Middle Cedar Watershed Management Plan",
+      group: "consulting",
       period: "2020",
       description:
         "Watershed management plan for the Middle Cedar River watershed in Iowa.",
@@ -84,6 +115,7 @@ export const siteConfig = {
     },
     {
       name: "Edmonton LID Study",
+      group: "consulting",
       period: "2019",
       description:
         "Study of low impact development (LID) stormwater practices for the City of Edmonton, Alberta.",
@@ -92,6 +124,7 @@ export const siteConfig = {
     },
     {
       name: "Grand Marais Stormwater Management Plan",
+      group: "consulting",
       period: "2018",
       description:
         "Stormwater management plan for the City of Grand Marais, Minnesota.",
@@ -100,6 +133,7 @@ export const siteConfig = {
     },
     {
       name: "Thunder Bay Stormwater Management Plan",
+      group: "consulting",
       period: "2016",
       description:
         "Stormwater management plan for the City of Thunder Bay, Ontario.",
@@ -108,6 +142,7 @@ export const siteConfig = {
     },
     {
       name: "Rural Stormwater Management Model",
+      group: "consulting",
       period: "2014",
       description:
         "A rural stormwater management model for managing water quality in the Lake Huron watersheds of Ontario.",

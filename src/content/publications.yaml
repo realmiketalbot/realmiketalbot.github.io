@@ -1,6 +1,6 @@
 # category: peer-reviewed | submitted | in-prep | proceedings | contributions
 # Your name is bolded automatically wherever "Talbot M" appears in `authors`.
-- title: Sensitivity of LSTM-based extreme streamflow predictions to training distribution and input fidelity
+- title: Toward closing the peak-flow prediction gap in LSTM streamflow models
   authors: Talbot MT, Davenport FV
   year: 2026
   venue: In preparation
