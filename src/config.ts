@@ -11,8 +11,10 @@ export const siteConfig = {
   url: "https://miketalbot.io",
   location: "Fort Collins, CO",
   headshot: "/images/mike-talbot-bw.png",
-  cvPdf:
-    "https://drive.google.com/file/d/1xxAZDTg61NM_-SZndC9Omd1DPyO4MZcV/view?usp=sharing",
+  // Generated at build time from /cv/print (see scripts/build-cv-pdf.mjs)
+  cvPdf: "/Talbot_CV.pdf",
+  cvHeadline: "PhD Candidate, Hydrologic Science & Engineering",
+  affiliation: "Colorado State University",
 
   hero: {
     greeting: "Hi, I'm",

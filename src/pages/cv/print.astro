@@ -1,0 +1,432 @@
+---
+// Print-optimized CV (US Letter). Not linked from the site; rendered to
+// /Talbot_CV.pdf at build time by scripts/build-cv-pdf.mjs. Open /cv/print in a
+// browser to preview it as pages.
+import "@fontsource/ibm-plex-serif/400.css";
+import "@fontsource/ibm-plex-serif/400-italic.css";
+import "@fontsource/ibm-plex-serif/600.css";
+import "@fontsource/ibm-plex-sans/500.css";
+import "@fontsource/ibm-plex-sans/600.css";
+import { siteConfig } from "../../config";
+import { getCvData, CV_SECTIONS as S } from "../../lib/cv";
+import { boldMe, formatMonthYear } from "../../lib/utils";
+
+const cv = await getCvData();
+
+const contacts = [
+  { label: siteConfig.url.replace(/^https?:\/\//, ""), href: siteConfig.url },
+  siteConfig.social.email && { label: siteConfig.social.email, href: `mailto:${siteConfig.social.email}` },
+  siteConfig.social.orcid && { label: siteConfig.social.orcid.replace(/^https?:\/\//, ""), href: siteConfig.social.orcid },
+  siteConfig.social.github && { label: siteConfig.social.github.replace(/^https?:\/\//, ""), href: siteConfig.social.github },
+  siteConfig.social.linkedin && { label: siteConfig.social.linkedin.replace(/^https?:\/\/(www\.)?/, ""), href: siteConfig.social.linkedin },
+].filter(Boolean) as { label: string; href: string }[];
+
+const doiLabel = (doi: string) => "doi:" + doi.replace(/^https?:\/\/(dx\.)?doi\.org\//, "");
+// Append a period unless the text already ends with one
+const dot = (s: string) => (/[.?!]$/.test(s) ? s : `${s}.`);
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="robots" content="noindex, nofollow" />
+    <title>{siteConfig.fullName} · Curriculum Vitae</title>
+  </head>
+  <body>
+    <main class="sheet">
+      <header class="cv-header">
+        <div>
+          <h1>{siteConfig.fullName}</h1>
+          <p class="headline">{siteConfig.cvHeadline} · {siteConfig.affiliation}, {siteConfig.location}</p>
+          <p class="contacts">
+            {
+              contacts.map((c, i) => (
+                <>
+                  {i > 0 && <span class="sep">·</span>}
+                  <a href={c.href} class="nowrap">{c.label}</a>
+                </>
+              ))
+            }
+          </p>
+        </div>
+      </header>
+
+      <section>
+        <h2>{S.education}</h2>
+        {
+          cv.education.map((e) => (
+            <div class="entry">
+              <div class="row">
+                <span class="title">{e.degree}</span>
+                <span class="date">{e.dates}</span>
+              </div>
+              <div class="sub">{e.school}</div>
+              {e.details?.map((d) => (
+                <div class="detail">
+                  <span class="label">{d.label}:</span> {d.text}
+                </div>
+              ))}
+              {e.areas && (
+                <div class="detail">
+                  <span class="label">Research areas:</span> {e.areas.join("; ")}
+                </div>
+              )}
+            </div>
+          ))
+        }
+      </section>
+
+      <section>
+        <h2>{S.experience}</h2>
+        {
+          cv.experience.map((j) => (
+            <div class="entry">
+              <div class="row">
+                <span class="title">{j.title}</span>
+                <span class="date">{j.dates}</span>
+              </div>
+              <div class="sub">{[j.org, j.location].filter(Boolean).join(", ")}</div>
+              {j.bullets && (
+                <ul>
+                  {j.bullets.map((b) => <li>{b}</li>)}
+                </ul>
+              )}
+            </div>
+          ))
+        }
+      </section>
+
+      <section>
+        <h2>{S.teaching}</h2>
+        {
+          cv.teaching.map((t) => (
+            <div class="entry">
+              <div class="row">
+                <span class="title">{t.title}</span>
+                <span class="date">{t.dates}</span>
+              </div>
+              <div class="sub">{[t.department, t.org, t.location].filter(Boolean).join(", ")}</div>
+              {t.courses && (
+                <ul>
+                  {t.courses.map((c) => <li>{c}</li>)}
+                </ul>
+              )}
+            </div>
+          ))
+        }
+      </section>
+
+      <section>
+        <h2>{S.publications}</h2>
+        {
+          cv.pubGroups.map((g) => (
+            <div class="group">
+              <h3>{g.label}</h3>
+              <ol class="refs">
+                {g.items.map((p) => (
+                  <li>
+                    <span set:html={boldMe(p.authors)} />. ({p.year}). {dot(p.title)} <em>{dot(p.venue)}</em>
+                    {p.doi && (
+                      <>
+                        {" "}
+                        <a href={p.doi}>{doiLabel(p.doi)}</a>
+                      </>
+                    )}
+                  </li>
+                ))}
+              </ol>
+            </div>
+          ))
+        }
+      </section>
+
+      <section>
+        <h2>{S.talks}</h2>
+        <ol class="refs">
+          {
+            cv.talks.map((t) => (
+              <li>
+                <span set:html={boldMe(t.authors)} />. {dot(t.title)} <em>{t.event}</em>, {dot(t.location)}{" "}
+                {formatMonthYear(t.date)}.{t.type === "Poster" && <span class="tag"> Poster.</span>}
+              </li>
+            ))
+          }
+        </ol>
+      </section>
+
+      <section>
+        <h2>{S.awards}</h2>
+        {
+          cv.awards.map((a) => (
+            <div class="entry tight">
+              <div class="row">
+                <span class="title plain">{a.title}</span>
+                <span class="date">{a.date}</span>
+              </div>
+              {a.note && <div class="note">{a.note}</div>}
+            </div>
+          ))
+        }
+      </section>
+
+      <section>
+        <h2>{S.service}</h2>
+        {
+          cv.service.map((s) => (
+            <div class="entry tight">
+              <div class="row">
+                <span class="title plain">{s.title}</span>
+                <span class="date">{s.date}</span>
+              </div>
+              {s.note && <div class="note">{s.note}</div>}
+            </div>
+          ))
+        }
+      </section>
+
+      <section>
+        <h2>{S.credentials}</h2>
+        {
+          [...cv.certifications, ...cv.training].map((c) => (
+            <div class="entry">
+              <div class="row">
+                <span class="title">{c.title}</span>
+                <span class="date">{c.date}</span>
+              </div>
+              <div class="sub">{c.issuer}</div>
+              {c.note && <div class="detail">{c.note}</div>}
+              {c.bullets && (
+                <ul>
+                  {c.bullets.map((b) => <li>{b}</li>)}
+                </ul>
+              )}
+            </div>
+          ))
+        }
+      </section>
+
+      <section>
+        <h2>{S.affiliations}</h2>
+        {
+          cv.affiliations.map((a) => (
+            <div class="entry tight">
+              <div class="row">
+                <span class="title plain">{a.org}</span>
+                <span class="date">{a.role}</span>
+              </div>
+            </div>
+          ))
+        }
+      </section>
+    </main>
+  </body>
+</html>
+
+<style is:global>
+  @page {
+    size: letter;
+    margin: 0.7in 0.75in 0.75in;
+  }
+
+  :root {
+    --ink: #111418;
+    --muted: #4a5360;
+    --accent: #0b4f7c;
+    --rule: #b9c3cf;
+  }
+
+  * {
+    box-sizing: border-box;
+  }
+
+  html {
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
+
+  body {
+    margin: 0;
+    color: var(--ink);
+    font-family: "IBM Plex Serif", Georgia, serif;
+    font-size: 9.75pt;
+    line-height: 1.38;
+  }
+
+  a {
+    color: inherit;
+    text-decoration: none;
+  }
+
+  /* On screen, preview the CV as a sheet of paper */
+  @media screen {
+    body {
+      background: #d9dde2;
+      padding: 32px 0;
+    }
+    .sheet {
+      width: 8.5in;
+      min-height: 11in;
+      margin: 0 auto;
+      padding: 0.7in 0.75in 0.75in;
+      background: white;
+      box-shadow: 0 2px 16px rgb(0 0 0 / 0.15);
+    }
+  }
+
+  .cv-header {
+    padding-bottom: 10pt;
+    border-bottom: 1.5pt solid var(--accent);
+    margin-bottom: 4pt;
+  }
+
+  h1,
+  h2,
+  h3 {
+    font-family: "IBM Plex Sans", Helvetica, Arial, sans-serif;
+  }
+
+  h1 {
+    margin: 0;
+    font-size: 22pt;
+    font-weight: 600;
+    letter-spacing: -0.01em;
+    line-height: 1.1;
+  }
+
+  .headline {
+    margin: 5pt 0 0;
+    font-size: 10.5pt;
+    color: var(--muted);
+  }
+
+  .contacts {
+    margin: 3pt 0 0;
+    font-size: 9pt;
+    color: var(--accent);
+  }
+
+  .nowrap {
+    white-space: nowrap;
+  }
+
+  .contacts .sep {
+    margin: 0 5pt;
+    color: var(--rule);
+  }
+
+  section {
+    margin-top: 13pt;
+  }
+
+  h2 {
+    margin: 0 0 6pt;
+    padding-bottom: 2pt;
+    border-bottom: 0.75pt solid var(--rule);
+    font-size: 10pt;
+    font-weight: 600;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--accent);
+    break-after: avoid;
+  }
+
+  h3 {
+    margin: 7pt 0 3pt;
+    font-size: 8.5pt;
+    font-weight: 500;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--muted);
+    break-after: avoid;
+  }
+
+  .entry {
+    margin-bottom: 7pt;
+    break-inside: avoid;
+  }
+
+  .entry.tight {
+    margin-bottom: 3pt;
+  }
+
+  .row {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    gap: 12pt;
+  }
+
+  .title {
+    font-weight: 600;
+  }
+
+  .title.plain {
+    font-weight: 400;
+  }
+
+  .date {
+    flex-shrink: 0;
+    font-size: 9pt;
+    color: var(--muted);
+    font-variant-numeric: tabular-nums;
+    text-align: right;
+  }
+
+  .sub {
+    font-style: italic;
+    color: var(--muted);
+  }
+
+  .detail,
+  .note {
+    color: var(--ink);
+  }
+
+  .note {
+    font-size: 9pt;
+    color: var(--muted);
+  }
+
+  .label {
+    color: var(--muted);
+  }
+
+  ul {
+    margin: 2pt 0 0;
+    padding-left: 13pt;
+  }
+
+  ul li {
+    margin-bottom: 1pt;
+  }
+
+  ol.refs {
+    margin: 0;
+    padding-left: 18pt;
+  }
+
+  ol.refs li {
+    margin-bottom: 4pt;
+    padding-left: 2pt;
+    break-inside: avoid;
+  }
+
+  ol.refs li::marker {
+    color: var(--muted);
+    font-size: 9pt;
+  }
+
+  ol.refs a {
+    color: var(--accent);
+  }
+
+  .tag {
+    color: var(--muted);
+  }
+
+  .group {
+    break-inside: auto;
+  }
+</style>

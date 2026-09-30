@@ -7,24 +7,9 @@ import TalkList from "../components/TalkList.astro";
 import SocialLinks from "../components/SocialLinks.astro";
 import Icon from "../components/Icon.astro";
 import { siteConfig } from "../config";
-import { getList } from "../lib/utils";
-import { getPublicationGroups } from "../lib/publications";
+import { getCvData, CV_SECTIONS as S } from "../lib/cv";
 
-const [education, experience, teaching, credentials, awards, service, affiliations, talks] =
-  await Promise.all([
-    getList("education"),
-    getList("experience"),
-    getList("teaching"),
-    getList("credentials"),
-    getList("awards"),
-    getList("service"),
-    getList("affiliations"),
-    getList("talks"),
-  ]);
-const pubGroups = await getPublicationGroups();
-talks.sort((a, b) => +b.date - +a.date);
-const training = credentials.filter((c) => c.kind === "training");
-const certifications = credentials.filter((c) => c.kind === "certification");
+const cv = await getCvData();
 ---
 
 <Layout title={`CV · ${siteConfig.name}`} description={`Curriculum vitae of ${siteConfig.fullName}.`}>
@@ -34,7 +19,7 @@ const certifications = credentials.filter((c) => c.kind === "certification");
         <p class="font-mono text-sm text-accent">Curriculum Vitae</p>
         <h1 class="mt-2 text-4xl font-bold tracking-tight text-fg sm:text-5xl">{siteConfig.fullName}</h1>
         <p class="mt-3 text-muted">
-          PhD Candidate, Hydrologic Science &amp; Engineering · Colorado State University · {siteConfig.location}
+          {siteConfig.cvHeadline} · {siteConfig.affiliation} · {siteConfig.location}
         </p>
       </div>
       <a
@@ -47,10 +32,10 @@ const certifications = credentials.filter((c) => c.kind === "certification");
       </a>
     </header>
 
-    <CvSection title="Education">
+    <CvSection title={S.education}>
       <div class="space-y-6">
         {
-          education.map((e) => (
+          cv.education.map((e) => (
             <CvItem title={e.degree} date={e.dates} subtitle={e.school}>
               {e.details?.map((d) => (
                 <p class="mt-1 text-sm text-muted">
@@ -76,10 +61,10 @@ const certifications = credentials.filter((c) => c.kind === "certification");
       </div>
     </CvSection>
 
-    <CvSection title="Research & Professional Experience">
+    <CvSection title={S.experience}>
       <div class="space-y-6">
         {
-          experience.map((j) => (
+          cv.experience.map((j) => (
             <CvItem title={j.title} date={j.dates} subtitle={[j.org, j.location].filter(Boolean).join(", ")}>
               {j.bullets && (
                 <ul class="mt-2 list-disc space-y-1 pl-5 text-sm text-muted marker:text-subtle">
@@ -92,10 +77,10 @@ const certifications = credentials.filter((c) => c.kind === "certification");
       </div>
     </CvSection>
 
-    <CvSection title="Teaching Experience" id="teaching">
+    <CvSection title={S.teaching} id="teaching">
       <div class="space-y-6">
         {
-          teaching.map((t) => (
+          cv.teaching.map((t) => (
             <CvItem title={t.title} date={t.dates} subtitle={[t.department, t.org, t.location].filter(Boolean).join(", ")}>
               {t.courses && (
                 <ul class="mt-2 list-disc space-y-1 pl-5 text-sm text-muted marker:text-subtle">
@@ -108,12 +93,41 @@ const certifications = credentials.filter((c) => c.kind === "certification");
       </div>
     </CvSection>
 
-    <CvSection title="Certifications & Training">
+    <CvSection title={S.publications} id="publications">
+      <div class="space-y-10">
+        {
+          cv.pubGroups.map((g) => (
+            <div>
+              <h3 class="mb-4 font-mono text-xs uppercase tracking-wider text-subtle">{g.label}</h3>
+              <PublicationList items={g.items} />
+            </div>
+          ))
+        }
+      </div>
+    </CvSection>
+
+    <CvSection title={S.talks} id="talks">
+      <TalkList items={cv.talks} />
+    </CvSection>
+
+    <CvSection title={S.awards}>
+      <div class="space-y-4">
+        {cv.awards.map((a) => <CvItem title={a.title} date={a.date} url={a.url} subtitle={a.note} />)}
+      </div>
+    </CvSection>
+
+    <CvSection title={S.service}>
+      <div class="space-y-4">
+        {cv.service.map((s) => <CvItem title={s.title} date={s.date} url={s.url} subtitle={s.note} />)}
+      </div>
+    </CvSection>
+
+    <CvSection title={S.credentials}>
       <div class="space-y-8">
         {
           [
-            { label: "Specialized training", items: training },
-            { label: "Certifications", items: certifications },
+            { label: "Specialized training", items: cv.training },
+            { label: "Certifications", items: cv.certifications },
           ]
             .filter((g) => g.items.length)
             .map((g) => (
@@ -137,42 +151,9 @@ const certifications = credentials.filter((c) => c.kind === "certification");
       </div>
     </CvSection>
 
-    <CvSection title="Awards & Honors">
+    <CvSection title={S.affiliations}>
       <div class="space-y-4">
-        {
-          awards.map((a) => (
-            <CvItem title={a.title} date={a.date} url={a.url} subtitle={a.note} />
-          ))
-        }
-      </div>
-    </CvSection>
-
-    <CvSection title="Service & Leadership">
-      <div class="space-y-4">
-        {service.map((s) => <CvItem title={s.title} date={s.date} url={s.url} subtitle={s.note} />)}
-      </div>
-    </CvSection>
-
-    <CvSection title="Publications" id="publications">
-      <div class="space-y-10">
-        {
-          pubGroups.map((g) => (
-            <div>
-              <h3 class="mb-4 font-mono text-xs uppercase tracking-wider text-subtle">{g.label}</h3>
-              <PublicationList items={g.items} />
-            </div>
-          ))
-        }
-      </div>
-    </CvSection>
-
-    <CvSection title="Talks & Posters" id="talks">
-      <TalkList items={talks} />
-    </CvSection>
-
-    <CvSection title="Affiliations">
-      <div class="space-y-4">
-        {affiliations.map((a) => <CvItem title={a.org} subtitle={a.role} />)}
+        {cv.affiliations.map((a) => <CvItem title={a.org} subtitle={a.role} />)}
       </div>
     </CvSection>
 
