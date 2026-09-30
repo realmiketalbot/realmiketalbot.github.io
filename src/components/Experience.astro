@@ -11,12 +11,12 @@ const experience = await getList("experience");
     </div>
     <ol class="relative border-l border-line lg:col-span-8">
       {
-        experience.map((job, i) => (
+        experience.map((job) => (
           <li class="relative mb-10 pl-8 last:mb-0">
             <span
               class:list={[
                 "absolute -left-[7px] top-1.5 h-3.5 w-3.5 rounded-full border-2 border-accent",
-                i === 0 ? "bg-accent" : "bg-bg",
+                /present/i.test(job.dates) ? "bg-accent" : "bg-bg",
               ]}
               aria-hidden="true"
             />
