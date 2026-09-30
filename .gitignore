@@ -13,5 +13,3 @@ npm-debug.log*
 # macOS
 .DS_Store
 
-# unpublished blog drafts and data (kept locally only; the repo is public)
-/archive/blog/unpublished/

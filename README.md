@@ -48,12 +48,6 @@ Pushing to `master` runs `.github/workflows/deploy.yml`, which builds the site
 and publishes it to GitHub Pages. In the repo settings, **Pages → Build and
 deployment → Source** must be set to **GitHub Actions**.
 
-## Archive
-
-The previous Jekyll blog posts are kept, unpublished, in `archive/blog/`.
-Drafts that were never published (and their data) live in
-`archive/blog/unpublished/`, which is git-ignored and exists only locally.
-
 ## Blog
 
 The blog lives in its own Quarto repo,
