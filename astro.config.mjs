@@ -12,6 +12,11 @@ export default defineConfig({
     "/publications": "/#publications",
     "/talks": "/#talks",
     "/resume": "/cv",
+    // Posts moved to the Quarto blog repo, served at /blog
+    "/posts/2024-12-31-in-defense-of-acre-feet":
+      "/blog/posts/2024-12-31-in-defense-of-acre-feet/",
+    "/posts/2026-01-21-out-of-bounds-on-purpose-legendry":
+      "/blog/posts/2026-01-21-out-of-bounds-on-purpose-legendry/",
   },
   integrations: [cvPdf()],
   vite: {
