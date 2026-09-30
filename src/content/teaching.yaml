@@ -1,0 +1,22 @@
+# Newest first. Current roles (dates containing "Present") also appear in the
+# homepage Experience timeline.
+- title: Graduate Teaching Assistant
+  org: Colorado State University
+  department: Department of Civil & Environmental Engineering
+  location: Fort Collins, CO
+  dates: Fall 2026 – Present
+  courses:
+    - "CIVE 520: Physical Hydrology"
+
+- title: Teaching Assistant
+  org: University of Minnesota
+  department: Department of Bioproducts and Biosystems Engineering
+  dates: 2009 – 2012
+  courses:
+    - "BBE 2001: Mechanics and Structural Design"
+    - "BBE 4013: Transport in Biological Systems II"
+
+- title: Physics Learning Assistant
+  org: University of Minnesota
+  department: Department of Physics and Astronomy
+  dates: "2009"

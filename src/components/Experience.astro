@@ -1,7 +1,14 @@
 ---
 import SectionHeading from "./SectionHeading.astro";
 import { getList } from "../lib/utils";
-const experience = await getList("experience");
+
+const isCurrent = (dates: string) => /present/i.test(dates);
+
+// Current teaching roles join the timeline; the full teaching history is on the CV page
+const currentTeaching = (await getList("teaching"))
+  .filter((t) => isCurrent(t.dates))
+  .map((t) => ({ title: t.title, org: t.org, location: t.location, dates: t.dates, bullets: t.courses }));
+const experience = [...currentTeaching, ...(await getList("experience"))];
 ---
 
 <section id="experience" class="mx-auto max-w-7xl px-5 py-20 sm:px-8 lg:py-28">
@@ -16,7 +23,7 @@ const experience = await getList("experience");
             <span
               class:list={[
                 "absolute -left-[7px] top-1.5 h-3.5 w-3.5 rounded-full border-2 border-accent",
-                /present/i.test(job.dates) ? "bg-accent" : "bg-bg",
+                isCurrent(job.dates) ? "bg-accent" : "bg-bg",
               ]}
               aria-hidden="true"
             />

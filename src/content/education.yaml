@@ -9,6 +9,11 @@
     - label: Advisor
       text: Dr. Frances Davenport
       url: https://www.engr.colostate.edu/ce/people/frances-davenport/
+  areas:
+    - Flood frequency analysis and mixture distributions
+    - Deep learning (LSTMs) for streamflow prediction at the extremes
+    - Large-sample hydrology, mountain hydrology, and snow processes
+    - Explainable AI and uncertainty quantification
 
 - degree: M.S., Bioproducts & Biosystems Science, Engineering, and Management
   school: University of Minnesota

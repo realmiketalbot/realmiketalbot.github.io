@@ -10,10 +10,11 @@ import { siteConfig } from "../config";
 import { getList } from "../lib/utils";
 import { getPublicationGroups } from "../lib/publications";
 
-const [education, experience, credentials, awards, service, affiliations, talks] =
+const [education, experience, teaching, credentials, awards, service, affiliations, talks] =
   await Promise.all([
     getList("education"),
     getList("experience"),
+    getList("teaching"),
     getList("credentials"),
     getList("awards"),
     getList("service"),
@@ -61,13 +62,21 @@ const certifications = credentials.filter((c) => c.kind === "certification");
                   )}
                 </p>
               ))}
+              {e.areas && (
+                <>
+                  <p class="mt-1 text-sm text-subtle">Research areas:</p>
+                  <ul class="mt-1 list-disc space-y-0.5 pl-5 text-sm text-muted marker:text-subtle">
+                    {e.areas.map((a) => <li>{a}</li>)}
+                  </ul>
+                </>
+              )}
             </CvItem>
           ))
         }
       </div>
     </CvSection>
 
-    <CvSection title="Experience">
+    <CvSection title="Research & Professional Experience">
       <div class="space-y-6">
         {
           experience.map((j) => (
@@ -83,7 +92,23 @@ const certifications = credentials.filter((c) => c.kind === "certification");
       </div>
     </CvSection>
 
-    <CvSection title="Training & Certifications">
+    <CvSection title="Teaching Experience" id="teaching">
+      <div class="space-y-6">
+        {
+          teaching.map((t) => (
+            <CvItem title={t.title} date={t.dates} subtitle={[t.department, t.org, t.location].filter(Boolean).join(", ")}>
+              {t.courses && (
+                <ul class="mt-2 list-disc space-y-1 pl-5 text-sm text-muted marker:text-subtle">
+                  {t.courses.map((c) => <li>{c}</li>)}
+                </ul>
+              )}
+            </CvItem>
+          ))
+        }
+      </div>
+    </CvSection>
+
+    <CvSection title="Certifications & Training">
       <div class="space-y-8">
         {
           [

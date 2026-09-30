@@ -35,6 +35,19 @@ const education = defineCollection({
     details: z
       .array(z.object({ label: z.string(), text: z.string(), url: link }))
       .optional(),
+    areas: z.array(z.string()).optional(),
+  }),
+});
+
+const teaching = defineCollection({
+  loader: yamlList("src/content/teaching.yaml"),
+  schema: z.object({
+    title: z.string(),
+    org: z.string(),
+    department: z.string().optional(),
+    location: z.string().optional(),
+    dates: z.string(),
+    courses: z.array(z.string()).optional(),
   }),
 });
 
@@ -109,6 +122,7 @@ const affiliations = defineCollection({
 export const collections = {
   experience,
   education,
+  teaching,
   publications,
   talks,
   awards,
