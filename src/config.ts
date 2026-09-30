@@ -7,7 +7,7 @@ export const siteConfig = {
   fullName: "Michael T. Talbot",
   title: "Engineer & Hydrologist",
   description:
-    "Mike Talbot is an engineer, hydrologist, and PhD candidate at Colorado State University studying flood frequency and deep learning streamflow prediction at the extremes.",
+    "Mike Talbot is an engineer, hydrologist, and PhD candidate at Colorado State University studying how statistical and deep learning models represent hydrologic extremes.",
   url: "https://miketalbot.io",
   location: "Fort Collins, CO",
   headshot: "/images/mike-talbot-bw.png",
@@ -17,7 +17,7 @@ export const siteConfig = {
   hero: {
     greeting: "Hi, I'm",
     tagline:
-      "PhD candidate at Colorado State University studying why hydrologic models struggle at the extremes (floods and dry years) and what we can do about it.",
+      "PhD candidate at Colorado State University studying how statistical and deep learning models represent hydrologic extremes.",
   },
 
   social: {
@@ -32,27 +32,13 @@ export const siteConfig = {
   // Each string is one paragraph. Simple inline links: [text](url)
   about: [
     "I'm an engineer and hydrologist working toward a PhD in Civil & Environmental Engineering at [Colorado State University](https://www.engr.colostate.edu/ce/graduate/hydrologic-science-and-engineering/), advised by [Dr. Frances Davenport](https://fdavenport.github.io). Before returning to school in 2024, I spent a decade as a water resources engineer at [Emmons & Olivier Resources](https://www.eorinc.com/), building hydrologic and hydraulic models for everything from engineering design to regional watershed planning.",
-    "I've always worked at the crossroads of hydrology, civil engineering, GIS, and data science, and I'm at my best carrying ideas from one field into another. The PhD is my chance to pair that breadth with depth: a real understanding of hydrology and its history as a scientific discipline.",
+    "My work has long sat at the intersection of hydrology, civil engineering, GIS, and data science, and some of my most rewarding projects have come from carrying an idea from one of those fields into another. The PhD is an opportunity to pair that breadth with depth, and to develop a more rigorous understanding of hydrology and its history as a scientific discipline.",
   ],
 
   dissertationTitle:
     "Advancing Streamflow Estimation in Colorado Using Mixture Distributions and Deep Learning",
   researchIntro:
-    "Hydrologic models are fit to records that mix hydrologically distinct conditions: floods with different causes, catchments governed by different processes, years unlike the ones before them. The result describes the bulk of the data well and the extremes poorly, which is exactly where the stakes are highest. Using large-sample hydrology, my dissertation asks whether that loss of skill can be measured, mitigated, and explained:",
-  researchQuestions: [
-    {
-      label: "Measure",
-      text: "How do flood frequency estimates in Colorado change when snowmelt, rainfall, and rain-on-snow floods are treated as separate populations?",
-    },
-    {
-      label: "Mitigate",
-      text: "Can data-centric interventions reduce peak-flow underestimation in LSTM streamflow models, and at what cost elsewhere in the flow distribution?",
-    },
-    {
-      label: "Explain",
-      text: "How reliably can LSTMs predict seasonal water supply in Colorado's driest years, and which inputs do they rely on?",
-    },
-  ],
+    "My dissertation examines how hydrologic models perform at the extremes of the streamflow distribution, where the practical stakes are highest and where models fit to heterogeneous records tend to fall short. The work combines mixed-population flood frequency analysis in Colorado with deep learning approaches to peak-flow and dry-year streamflow prediction.",
 
   skills: [
     "Hydrologic & hydraulic modeling",
@@ -75,7 +61,7 @@ export const siteConfig = {
       group: "research",
       period: "2026 – present",
       description:
-        "How much do flood quantile estimates change when snowmelt, rainfall, and rain-on-snow floods are modeled as separate populations? Peaks-over-threshold analysis across 206 USGS gages in Colorado, with an interactive dashboard for exploring site-level results.",
+        "Evaluating how flood quantile estimates change when snowmelt, rainfall, and rain-on-snow floods are modeled as separate populations, using peaks-over-threshold analysis at 206 USGS gages across Colorado. Site-level results are available through an interactive dashboard.",
       tags: ["Flood frequency", "Extreme value statistics", "R Shiny"],
     },
     {
@@ -83,7 +69,7 @@ export const siteConfig = {
       group: "research",
       period: "2024 – present",
       description:
-        "Testing whether oversampling rare flows and richer precipitation inputs reduce LSTM peak-flow underprediction across 494 CAMELS catchments, and what each costs in overall skill. Manuscript in preparation.",
+        "Evaluating whether resampling rare flows and improving precipitation inputs reduce peak-flow underprediction in LSTM streamflow models across 494 CAMELS catchments, and at what cost to overall skill. Manuscript in preparation.",
       link: "https://essopenarchive.org/users/857720/articles/1370403-no-free-lunch-improving-lstm-flood-predictions-with-minimal-loss-in-overall-skill",
       tags: ["Deep learning", "PyTorch", "Large-sample hydrology"],
     },
@@ -92,7 +78,7 @@ export const siteConfig = {
       group: "research",
       period: "Planned, 2027",
       description:
-        "Benchmarking April–August runoff predictions for Colorado catchments in dry versus normal years, and using expected gradients to see which inputs (including high-resolution snow water equivalent) the model relies on.",
+        "Assessing LSTM predictions of April–August runoff in Colorado during dry and normal years, and using feature attribution to identify which inputs, including high-resolution snow water equivalent, drive those predictions.",
       tags: ["Water supply", "Explainable AI", "Snow"],
     },
     {

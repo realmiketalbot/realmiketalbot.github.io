@@ -20,16 +20,6 @@ import { inlineLinks } from "../lib/utils";
         </h3>
         <p class="mt-3 text-lg font-semibold leading-snug text-fg">{siteConfig.dissertationTitle}</p>
         <p class="mt-4 leading-relaxed text-muted">{siteConfig.researchIntro}</p>
-        <ol class="mt-6 space-y-4">
-          {
-            siteConfig.researchQuestions.map((q) => (
-              <li class="grid grid-cols-1 gap-1 sm:grid-cols-[6.5rem_1fr] sm:gap-4">
-                <span class="font-mono text-sm font-semibold text-accent sm:pt-0.5">{q.label}</span>
-                <span class="text-fg">{q.text}</span>
-              </li>
-            ))
-          }
-        </ol>
       </div>
 
       <div>
