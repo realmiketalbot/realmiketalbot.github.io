@@ -1,6 +1,7 @@
 // @ts-check
 import { defineConfig } from "astro/config";
 import tailwindcss from "@tailwindcss/vite";
+import cvPdf from "./integrations/cv-pdf.mjs";
 
 // https://astro.build/config
 export default defineConfig({
@@ -12,6 +13,7 @@ export default defineConfig({
     "/talks": "/#talks",
     "/resume": "/cv",
   },
+  integrations: [cvPdf()],
   vite: {
     plugins: [tailwindcss()],
   },

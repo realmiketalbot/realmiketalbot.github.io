@@ -28,6 +28,20 @@ Entries appear in the order they're listed in each YAML file (talks and
 publications are sorted by date automatically). Quote any YAML value that
 contains ` #` or starts with a special character, e.g. `"Grant #123"`.
 
+## PDF CV
+
+The PDF CV is generated from the same content as the website, so there's only
+one version to maintain. `src/pages/cv/print.astro` is a print-optimized
+layout (US Letter); `integrations/cv-pdf.mjs` renders it to `/Talbot_CV.pdf`
+with headless Chrome:
+
+- `npm run dev`: http://localhost:4321/Talbot_CV.pdf is rendered on request,
+  and http://localhost:4321/cv/print previews the layout as pages.
+- `npm run build`: writes `dist/Talbot_CV.pdf`.
+
+Requires Chrome or Chromium (set `CHROME_PATH` if it isn't found
+automatically, or `SKIP_CV_PDF=1` to skip).
+
 ## Deployment
 
 Pushing to `master` runs `.github/workflows/deploy.yml`, which builds the site

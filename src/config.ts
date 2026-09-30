@@ -11,7 +11,7 @@ export const siteConfig = {
   url: "https://miketalbot.io",
   location: "Fort Collins, CO",
   headshot: "/images/mike-talbot-bw.png",
-  // Generated at build time from /cv/print (see scripts/build-cv-pdf.mjs)
+  // Generated from /cv/print by integrations/cv-pdf.mjs
   cvPdf: "/Talbot_CV.pdf",
   cvHeadline: "PhD Candidate, Hydrologic Science & Engineering",
   affiliation: "Colorado State University",
