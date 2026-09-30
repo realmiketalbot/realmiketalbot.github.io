@@ -1,0 +1,37 @@
+# Newest first. `bullets` is optional.
+- title: Graduate Research Assistant
+  org: Colorado State University
+  location: Fort Collins, CO
+  dates: 2024 – Present
+  bullets:
+    - Researching machine learning (LSTM) prediction of streamflow extremes using large-sample hydrology datasets
+    - Running large-scale model training experiments on high-performance computing (HPC) clusters
+
+- title: Water Resources Engineer
+  org: Emmons & Olivier Resources, Inc.
+  location: St. Paul, MN
+  dates: 2013 – 2023
+  bullets:
+    - Built and applied hydrologic and hydraulic models for projects ranging from engineering design support to regional-scale watershed planning
+    - Contributed to stormwater and watershed management plans across Minnesota, Iowa, Ontario, and Alberta
+    - Developed web tools supporting modeling and watershed planning projects
+
+- title: Graduate Research Assistant
+  org: University of Minnesota
+  location: St. Paul, MN
+  dates: 2010 – 2012
+
+- title: Graduate Research Contractor
+  org: United States Geological Survey
+  location: Minneapolis, MN
+  dates: "2010"
+
+- title: Visiting Research Assistant
+  org: Czech Technical University (ČVUT)
+  location: Prague, Czech Republic
+  dates: "2009"
+
+- title: Undergraduate Research Assistant
+  org: University of Minnesota
+  location: St. Paul, MN
+  dates: 2005 – 2009

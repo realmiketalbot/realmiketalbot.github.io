@@ -1,0 +1,110 @@
+# type: Talk | Poster. Optional: slides, link (abstract/archive), image (in public/images).
+- title: "No Free Lunch? Improving LSTM Flood Predictions with Minimal Loss in Overall Skill"
+  authors: Talbot MT
+  type: Poster
+  event: AGU25 Annual Meeting
+  location: New Orleans, LA
+  date: 2025-12-15
+  link: https://essopenarchive.org/users/857720/articles/1370403-no-free-lunch-improving-lstm-flood-predictions-with-minimal-loss-in-overall-skill
+  image: /images/2025-agu-poster.png
+
+- title: Toward Enhancing Neural Networks in Predicting Streamflow Extremes
+  authors: Talbot MT
+  type: Talk
+  event: 2025 AWRA & CGWA Symposium
+  location: Golden, CO
+  date: 2025-05-02
+  slides: https://drive.google.com/file/d/15NAYgW2fCMd89EBUh3qfwdOGTUlT388E/view?usp=sharing
+  image: /images/2025-awra-cgwa.png
+
+- title: Toward Improving Machine Learning Models for Predicting Streamflow Extremes
+  authors: Talbot MT
+  type: Talk
+  event: 2025 Hydrology Days
+  location: Fort Collins, CO
+  date: 2025-04-09
+  slides: https://drive.google.com/file/d/1LdpeB0xb_di94eZcCk7tOIzsGK72t-n5/view?usp=sharing
+
+- title: "Watershed Alchemy: Transforming Data into Hydrologic Understanding"
+  authors: Talbot MT
+  type: Poster
+  event: AGU24 Annual Meeting
+  location: Washington, D.C.
+  date: 2024-12-13
+  link: https://essopenarchive.org/users/857720/articles/1241515-watershed-alchemy-transforming-data-into-hydrologic-understanding
+  image: /images/2024-agu-poster.png
+
+- title: Evaluation of a GIS-Based Flood Hazard Assessment in Rochester, Minnesota
+  authors: Talbot MT
+  type: Poster
+  event: 56th International Conference on Water Management Modeling (ICWMM)
+  location: Virtual
+  date: 2023-03-02
+  link: https://www.icwmm.org/2023-C032-33
+
+- title: "Improving Remote Collaboration while Lowering Costs: A Case Study in Prioritization and Targeting using Open Source Software"
+  authors: Talbot MT, Isensee M, Pynn B
+  type: Talk
+  event: Minnesota Association of Watershed Districts Annual Conference
+  location: Virtual
+  date: 2020-12-04
+
+- title: Investigating the impact of ET model choice for DRAINMOD in the upper Midwest
+  authors: Talbot MT
+  type: Talk
+  event: Midwest Drainage Research Forum
+  location: Virtual
+  date: 2020-12-01
+
+- title: Locating and Evaluating the Costs and Benefits of Urban LID Retrofits
+  authors: Talbot MT
+  type: Talk
+  event: EWRI World Environmental & Water Resources Congress
+  location: Minneapolis, MN
+  date: 2018-06-03
+
+- title: "What to do when your lidar is out of date: a modeling perspective"
+  authors: Talbot MT
+  type: Talk
+  event: 51st International Conference on Water Management Modeling (ICWMM)
+  location: Brampton, ON
+  date: 2018-02-28
+  slides: https://drive.google.com/file/d/1vgaGW4hH_zftXVNtXOVgh3nUGHZjihD7/view?usp=sharing
+
+- title: Locating and Evaluating the Costs and Benefits of Urban LID Retrofits
+  authors: Talbot MT, Perera N
+  type: Talk
+  event: 51st International Conference on Water Management Modeling (ICWMM)
+  location: Brampton, ON
+  date: 2018-02-28
+  slides: https://drive.google.com/file/d/1vksZS3KpHy6YWML4UpsT7724gQJ-oNud/view?usp=sharing
+
+- title: Modeling the Influences of Riverine Hydrology on Near-Channel Nesting Habitat for State-Listed Turtle Species
+  authors: Naber JN, Ulrich JS, Talbot MT
+  type: Talk
+  event: 2016 Minnesota Water Resources Conference
+  location: St. Paul, MN
+  date: 2016-10-18
+
+- title: Searching for the Goldilocks Water Quality Model
+  authors: Emmons BH, Correll C, Talbot MT, Davenport T, Vincent P
+  type: Talk
+  event: 89th Central States Water Environment Association Annual Meeting
+  location: Madison, WI
+  date: 2016-05-17
+  slides: https://drive.google.com/file/d/1vhSz_9d-cw1-pOkTn7KjpRydBw-sfxXD/view?usp=sharing
+
+- title: Rural Stormwater Management Model (RSWMM)
+  authors: Olivier C, Talbot MT
+  type: Talk
+  event: 48th International Conference on Water Management Modeling (ICWMM)
+  location: Brampton, ON
+  date: 2015-02-25
+  slides: https://drive.google.com/file/d/1vh6Yoy7R7H2zPEPzVRSl526QaCrwqhd2/view?usp=sharing
+
+- title: Assessment of Bioretention Device Performance by Use of Water Level Recordings
+  authors: Talbot MT
+  type: Talk
+  event: 2014 Minnesota Water Resources Conference
+  location: St. Paul, MN
+  date: 2014-10-14

@@ -1,0 +1,33 @@
+---
+import SectionHeading from "./SectionHeading.astro";
+import PublicationList from "./PublicationList.astro";
+import { siteConfig } from "../config";
+import { getPublicationGroups } from "../lib/publications";
+const groups = await getPublicationGroups();
+---
+
+<section id="publications" class="mx-auto max-w-7xl px-5 py-20 sm:px-8 lg:py-28">
+  <div class="grid grid-cols-1 gap-10 lg:grid-cols-12 lg:gap-16">
+    <div class="lg:col-span-4">
+      <SectionHeading index="04" title="Publications" />
+      <p class="mt-6 max-w-xs text-muted">
+        Also on{" "}
+        <a href={siteConfig.social.scholar} target="_blank" rel="noopener noreferrer" class="text-accent hover:underline">Google Scholar</a>
+        {" "}and{" "}
+        <a href={siteConfig.social.orcid} target="_blank" rel="noopener noreferrer" class="text-accent hover:underline">ORCID</a>.
+      </p>
+    </div>
+    <div class="space-y-12 lg:col-span-8">
+      {
+        groups.map((g) => (
+          <div>
+            <h3 class="mb-5 border-b border-line pb-2 font-mono text-sm font-semibold uppercase tracking-wider text-subtle">
+              {g.label}
+            </h3>
+            <PublicationList items={g.items} />
+          </div>
+        ))
+      }
+    </div>
+  </div>
+</section>

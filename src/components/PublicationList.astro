@@ -1,0 +1,43 @@
+---
+import Icon from "./Icon.astro";
+import { boldMe } from "../lib/utils";
+import type { CollectionEntry } from "astro:content";
+
+interface Props {
+  items: CollectionEntry<"publications">["data"][];
+}
+const { items } = Astro.props;
+---
+
+<ul class="space-y-6">
+  {
+    items.map((p) => (
+      <li class="grid grid-cols-[3.5rem_1fr] gap-4">
+        <span class="pt-0.5 font-mono text-sm text-subtle">{p.year}</span>
+        <div>
+          <p class="font-medium leading-snug text-fg">
+            {p.doi || p.url ? (
+              <a href={p.doi ?? p.url} target="_blank" rel="noopener noreferrer" class="hover:text-accent">
+                {p.title}
+              </a>
+            ) : (
+              p.title
+            )}
+          </p>
+          <p class="mt-1 text-sm text-muted" set:html={boldMe(p.authors)} />
+          <p class="mt-0.5 text-sm italic text-subtle">{p.venue}</p>
+          {p.doi && (
+            <a
+              href={p.doi}
+              target="_blank"
+              rel="noopener noreferrer"
+              class="mt-2 inline-flex items-center gap-1 font-mono text-xs text-accent hover:text-accent-strong"
+            >
+              DOI <Icon name="arrow-up-right" class="h-3 w-3" />
+            </a>
+          )}
+        </div>
+      </li>
+    ))
+  }
+</ul>

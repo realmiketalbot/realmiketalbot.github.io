@@ -1,0 +1,70 @@
+---
+import ThemeToggle from "./ThemeToggle.astro";
+import { siteConfig } from "../config";
+
+interface Props {
+  home?: boolean;
+}
+const { home = false } = Astro.props;
+const prefix = home ? "" : "/";
+
+const sections = [
+  { label: "About", href: `${prefix}#about` },
+  { label: "Projects", href: `${prefix}#projects` },
+  { label: "Experience", href: `${prefix}#experience` },
+  { label: "Publications", href: `${prefix}#publications` },
+  { label: "Talks", href: `${prefix}#talks` },
+];
+const onCv = Astro.url.pathname.startsWith("/cv");
+---
+
+<header
+  id="site-header"
+  class="no-print fixed inset-x-0 top-0 z-50 border-b border-transparent transition-all duration-300"
+>
+  <nav class="mx-auto flex max-w-7xl items-center justify-between gap-6 px-5 py-3 sm:px-8">
+    <a href="/" class="font-mono text-sm font-semibold tracking-tight text-fg hover:text-accent">
+      {siteConfig.name.toLowerCase().replace(" ", "")}<span class="text-accent">.io</span>
+    </a>
+
+    <div class="flex items-center gap-6">
+      <ul class="hidden items-center gap-6 md:flex">
+        {
+          sections.map((s) => (
+            <li>
+              <a href={s.href} class="text-sm font-medium text-muted transition-colors hover:text-fg">
+                {s.label}
+              </a>
+            </li>
+          ))
+        }
+      </ul>
+      <a
+        href="/cv"
+        class:list={[
+          "rounded-full border px-3.5 py-1.5 font-mono text-xs font-medium transition-colors",
+          onCv
+            ? "border-accent bg-accent-soft text-accent"
+            : "border-line text-fg hover:border-accent hover:text-accent",
+        ]}
+        aria-current={onCv ? "page" : undefined}
+      >
+        CV
+      </a>
+      <ThemeToggle />
+    </div>
+  </nav>
+</header>
+
+<script>
+  const header = document.getElementById("site-header");
+  const onScroll = () => {
+    const scrolled = window.scrollY > 40;
+    header?.classList.toggle("bg-bg/80", scrolled);
+    header?.classList.toggle("backdrop-blur-md", scrolled);
+    header?.classList.toggle("border-line", scrolled);
+    header?.classList.toggle("border-transparent", !scrolled);
+  };
+  window.addEventListener("scroll", onScroll, { passive: true });
+  onScroll();
+</script>

@@ -1,0 +1,50 @@
+---
+import SectionHeading from "./SectionHeading.astro";
+import { siteConfig } from "../config";
+import { inlineLinks } from "../lib/utils";
+---
+
+<section id="about" class="mx-auto max-w-7xl px-5 py-20 sm:px-8 lg:py-28">
+  <div class="grid grid-cols-1 gap-10 lg:grid-cols-12 lg:gap-16">
+    <div class="lg:col-span-4">
+      <SectionHeading index="01" title="About" />
+    </div>
+    <div class="space-y-10 lg:col-span-8">
+      <div class="prose-links space-y-5 text-lg leading-relaxed text-muted">
+        {siteConfig.about.map((p) => <p set:html={inlineLinks(p)} />)}
+      </div>
+
+      <div class="rounded-2xl border border-line bg-surface p-6 sm:p-8">
+        <h3 class="font-mono text-sm font-semibold uppercase tracking-wider text-accent">
+          Research
+        </h3>
+        <p class="mt-3 leading-relaxed text-muted">{siteConfig.researchIntro}</p>
+        <ul class="mt-5 space-y-3">
+          {
+            siteConfig.researchQuestions.map((q) => (
+              <li class="flex gap-3 text-fg">
+                <span class="mt-0.5 font-mono text-accent" aria-hidden="true">→</span>
+                <span>{q}</span>
+              </li>
+            ))
+          }
+        </ul>
+      </div>
+
+      <div>
+        <h3 class="font-mono text-sm font-semibold uppercase tracking-wider text-subtle">
+          Tools &amp; methods
+        </h3>
+        <ul class="mt-4 flex flex-wrap gap-2">
+          {
+            siteConfig.skills.map((s) => (
+              <li class="rounded-md border border-line bg-surface px-3 py-1.5 font-mono text-xs text-fg sm:text-sm">
+                {s}
+              </li>
+            ))
+          }
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>

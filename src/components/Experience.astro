@@ -1,0 +1,46 @@
+---
+import SectionHeading from "./SectionHeading.astro";
+import { getList } from "../lib/utils";
+const experience = await getList("experience");
+---
+
+<section id="experience" class="mx-auto max-w-7xl px-5 py-20 sm:px-8 lg:py-28">
+  <div class="grid grid-cols-1 gap-10 lg:grid-cols-12 lg:gap-16">
+    <div class="lg:col-span-4">
+      <SectionHeading index="03" title="Experience" />
+    </div>
+    <ol class="relative border-l border-line lg:col-span-8">
+      {
+        experience.map((job, i) => (
+          <li class="relative mb-10 pl-8 last:mb-0">
+            <span
+              class:list={[
+                "absolute -left-[7px] top-1.5 h-3.5 w-3.5 rounded-full border-2 border-accent",
+                i === 0 ? "bg-accent" : "bg-bg",
+              ]}
+              aria-hidden="true"
+            />
+            <div class="flex flex-col gap-1 sm:flex-row sm:items-baseline sm:justify-between">
+              <h3 class="text-lg font-semibold text-fg">{job.title}</h3>
+              <span class="shrink-0 font-mono text-xs text-subtle sm:text-sm">{job.dates}</span>
+            </div>
+            <p class="mt-0.5 text-accent">
+              {job.org}
+              {job.location && <span class="text-subtle"> · {job.location}</span>}
+            </p>
+            {job.bullets && (
+              <ul class="mt-3 space-y-2">
+                {job.bullets.map((b) => (
+                  <li class="flex gap-3 text-muted">
+                    <span class="mt-2.5 h-1 w-1 shrink-0 rounded-full bg-subtle" aria-hidden="true" />
+                    <span>{b}</span>
+                  </li>
+                ))}
+              </ul>
+            )}
+          </li>
+        ))
+      }
+    </ol>
+  </div>
+</section>

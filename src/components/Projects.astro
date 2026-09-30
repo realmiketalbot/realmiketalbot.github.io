@@ -1,0 +1,60 @@
+---
+import SectionHeading from "./SectionHeading.astro";
+import Icon from "./Icon.astro";
+import { siteConfig } from "../config";
+---
+
+<section id="projects" class="mx-auto max-w-7xl px-5 py-20 sm:px-8 lg:py-28">
+  <div class="grid grid-cols-1 gap-10 lg:grid-cols-12 lg:gap-16">
+    <div class="lg:col-span-4">
+      <SectionHeading index="02" title="Projects" />
+      <p class="mt-6 max-w-xs text-muted">
+        Current research, plus a selection of work from my decade in consulting.
+      </p>
+    </div>
+    <div class="grid grid-cols-1 gap-5 sm:grid-cols-2 lg:col-span-8">
+      {
+        siteConfig.projects.map((p, i) => {
+          const Tag = p.link ? "a" : "div";
+          const linkProps = p.link
+            ? { href: p.link, target: "_blank", rel: "noopener noreferrer" }
+            : {};
+          return (
+            <Tag
+              {...linkProps}
+              class:list={[
+                "group relative flex flex-col rounded-2xl border border-line bg-surface p-6 transition-all duration-300",
+                p.link && "hover:-translate-y-1 hover:border-accent hover:bg-surface-2",
+                i === 0 && "sm:col-span-2",
+              ]}
+            >
+              <div class="flex items-start justify-between gap-4">
+                <span class="font-mono text-xs text-accent">
+                  {String(i + 1).padStart(2, "0")} · {p.period}
+                </span>
+                {p.link && (
+                  <span class="flex h-8 w-8 shrink-0 items-center justify-center rounded-full border border-line text-muted transition-colors group-hover:border-accent group-hover:text-accent">
+                    <Icon name="arrow-up-right" class="h-4 w-4" />
+                  </span>
+                )}
+              </div>
+              <h3 class="mt-2 text-lg font-semibold leading-snug text-fg">{p.name}</h3>
+              <p class="mt-3 flex-1 text-sm leading-relaxed text-muted sm:text-base">
+                {p.description}
+              </p>
+              {p.tags?.length > 0 && (
+                <ul class="mt-5 flex flex-wrap gap-1.5">
+                  {p.tags.map((t) => (
+                    <li class="rounded bg-accent-soft px-2 py-1 font-mono text-[11px] text-accent">
+                      {t}
+                    </li>
+                  ))}
+                </ul>
+              )}
+            </Tag>
+          );
+        })
+      }
+    </div>
+  </div>
+</section>

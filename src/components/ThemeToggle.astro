@@ -1,0 +1,34 @@
+---
+import Icon from "./Icon.astro";
+---
+
+<button
+  type="button"
+  data-theme-toggle
+  class="inline-flex h-9 w-9 items-center justify-center rounded-full border border-line text-muted transition-colors hover:border-accent hover:text-accent"
+  aria-label="Switch to light mode"
+  title="Toggle light/dark mode"
+>
+  <span class="hidden dark:inline"><Icon name="sun" class="h-[18px] w-[18px]" /></span>
+  <span class="inline dark:hidden"><Icon name="moon" class="h-[18px] w-[18px]" /></span>
+</button>
+
+<script>
+  const root = document.documentElement;
+  const sync = () => {
+    const dark = root.classList.contains("dark");
+    document.querySelectorAll("[data-theme-toggle]").forEach((btn) =>
+      btn.setAttribute("aria-label", dark ? "Switch to light mode" : "Switch to dark mode"),
+    );
+  };
+  document.querySelectorAll("[data-theme-toggle]").forEach((btn) =>
+    btn.addEventListener("click", () => {
+      const dark = root.classList.toggle("dark");
+      try {
+        localStorage.setItem("theme", dark ? "dark" : "light");
+      } catch {}
+      sync();
+    }),
+  );
+  sync();
+</script>

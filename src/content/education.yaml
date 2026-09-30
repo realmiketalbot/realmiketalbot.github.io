@@ -1,0 +1,24 @@
+- degree: Ph.D., Civil & Environmental Engineering
+  school: Colorado State University
+  dates: Expected 2027
+  details:
+    - label: Program
+      text: Hydrologic Science & Engineering
+    - label: Advisor
+      text: Dr. Frances Davenport
+      url: https://www.engr.colostate.edu/ce/people/frances-davenport/
+
+- degree: M.S., Bioproducts & Biosystems Science, Engineering, and Management
+  school: University of Minnesota
+  dates: "2019"
+  details:
+    - label: Thesis
+      text: Comparison of Evapotranspiration Estimation Methods and Implications for Water Balance Model Parameterization in the Midwestern United States
+      url: https://conservancy.umn.edu/items/48e62166-9c34-4898-9678-f3cfa3f8580a
+    - label: Advisor
+      text: Dr. Gary Sands
+      url: https://bbe.umn.edu/people/gary-r-sands
+
+- degree: B.B.A.E., Biosystems & Agricultural Engineering
+  school: University of Minnesota
+  dates: "2009"

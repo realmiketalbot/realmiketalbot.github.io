@@ -1,0 +1,111 @@
+---
+import SocialLinks from "./SocialLinks.astro";
+import Icon from "./Icon.astro";
+import { siteConfig } from "../config";
+---
+
+<section id="hero" class="relative isolate overflow-hidden">
+  <!-- Grid + accent glow background -->
+  <div class="hero-grid absolute inset-0 -z-10" aria-hidden="true"></div>
+  <div class="hero-glow absolute inset-0 -z-10" aria-hidden="true"></div>
+
+  <!-- Faint hydrograph across the bottom -->
+  <svg
+    class="absolute inset-x-0 bottom-0 -z-10 h-40 w-full text-accent opacity-30 sm:h-56"
+    viewBox="0 0 1200 200"
+    preserveAspectRatio="none"
+    aria-hidden="true"
+  >
+    <path
+      d="M0 170 L180 168 C230 166 260 160 290 140 C320 118 335 40 360 38 C385 36 400 110 440 138 C490 168 560 162 640 164 L720 162 C760 160 780 150 800 128 C815 110 825 82 840 82 C858 82 868 120 900 144 C950 170 1060 166 1200 168"
+      fill="none"
+      stroke="currentColor"
+      stroke-width="2"
+      vector-effect="non-scaling-stroke"></path>
+    <path
+      d="M0 190 L1200 190"
+      fill="none"
+      stroke="currentColor"
+      stroke-width="1"
+      stroke-dasharray="4 6"
+      vector-effect="non-scaling-stroke"></path>
+  </svg>
+
+  <div
+    class="mx-auto grid min-h-[min(92vh,60rem)] max-w-7xl grid-cols-1 items-center gap-12 px-5 pb-28 pt-28 sm:px-8 md:grid-cols-12 md:pt-24"
+  >
+    <div class="md:col-span-7 lg:col-span-8">
+      <img
+        src={siteConfig.headshot}
+        alt=""
+        class="fade-in mb-8 h-20 w-20 rounded-2xl border-2 border-accent object-cover md:hidden"
+        width="80"
+        height="80"
+      />
+      <p class="fade-in font-mono text-lg text-muted sm:text-xl">{siteConfig.hero.greeting}</p>
+      <h1
+        class="fade-in delay-1 mt-3 text-5xl font-bold tracking-tight text-fg sm:text-6xl lg:text-8xl"
+      >
+        <span class="text-accent">{siteConfig.name}</span>
+      </h1>
+      <p class="fade-in delay-2 mt-6 font-mono text-lg font-medium text-fg sm:text-2xl">
+        {siteConfig.title}
+      </p>
+      <p class="fade-in delay-2 mt-4 max-w-2xl text-base leading-relaxed text-muted sm:text-lg">
+        {siteConfig.hero.tagline}
+      </p>
+
+      <div class="fade-in delay-3 mt-10 flex flex-wrap items-center gap-x-8 gap-y-6">
+        <div class="flex gap-3">
+          <a
+            href="#about"
+            class="rounded-full bg-accent px-5 py-2.5 font-mono text-sm font-semibold text-bg transition-colors hover:bg-accent-strong"
+          >
+            About me
+          </a>
+          <a
+            href="/cv"
+            class="inline-flex items-center gap-1.5 rounded-full border border-line px-5 py-2.5 font-mono text-sm font-semibold text-fg transition-colors hover:border-accent hover:text-accent"
+          >
+            <Icon name="file" class="h-4 w-4" /> CV
+          </a>
+        </div>
+        <SocialLinks />
+      </div>
+    </div>
+
+    <div class="fade-in delay-2 hidden md:col-span-5 md:block lg:col-span-4">
+      <div class="relative mx-auto aspect-square w-full max-w-sm">
+        <div class="absolute inset-0 translate-x-3 translate-y-3 rounded-3xl border-2 border-accent"></div>
+        <img
+          src={siteConfig.headshot}
+          alt={`Portrait of ${siteConfig.name}`}
+          class="relative h-full w-full rounded-3xl border border-line bg-surface object-cover"
+          width="400"
+          height="400"
+        />
+      </div>
+    </div>
+  </div>
+</section>
+
+<style>
+  .hero-grid {
+    background-image:
+      linear-gradient(to right, var(--grid) 1px, transparent 1px),
+      linear-gradient(to bottom, var(--grid) 1px, transparent 1px);
+    background-size: 64px 64px;
+    mask-image: radial-gradient(ellipse 80% 70% at 70% 30%, black 30%, transparent 100%);
+  }
+  .hero-glow {
+    background: radial-gradient(ellipse 900px 700px at 0% 0%, var(--accent-soft), transparent 70%);
+  }
+  @keyframes fadeIn {
+    from { opacity: 0; transform: translateY(16px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+  .fade-in { animation: fadeIn 0.7s ease-out both; }
+  .delay-1 { animation-delay: 0.1s; }
+  .delay-2 { animation-delay: 0.25s; }
+  .delay-3 { animation-delay: 0.4s; }
+</style>

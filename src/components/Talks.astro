@@ -1,0 +1,31 @@
+---
+import SectionHeading from "./SectionHeading.astro";
+import TalkList from "./TalkList.astro";
+import Icon from "./Icon.astro";
+import { getList } from "../lib/utils";
+
+const RECENT = 5;
+const talks = (await getList("talks")).sort((a, b) => +b.date - +a.date);
+---
+
+<section id="talks" class="mx-auto max-w-7xl px-5 py-20 sm:px-8 lg:py-28">
+  <div class="grid grid-cols-1 gap-10 lg:grid-cols-12 lg:gap-16">
+    <div class="lg:col-span-4">
+      <SectionHeading index="05" title="Talks" />
+      <p class="mt-6 max-w-xs text-muted">Recent talks and posters.</p>
+    </div>
+    <div class="lg:col-span-8">
+      <TalkList items={talks.slice(0, RECENT)} thumbnails />
+      {
+        talks.length > RECENT && (
+          <a
+            href="/cv#talks"
+            class="mt-10 inline-flex items-center gap-1.5 font-mono text-sm text-accent hover:text-accent-strong"
+          >
+            All {talks.length} talks &amp; posters <Icon name="arrow-up-right" class="h-4 w-4" />
+          </a>
+        )
+      }
+    </div>
+  </div>
+</section>

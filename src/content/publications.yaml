@@ -1,0 +1,47 @@
+# category: peer-reviewed | submitted | in-prep | proceedings | contributions
+# Your name is bolded automatically wherever "Talbot M" appears in `authors`.
+- title: Sensitivity of LSTM-based extreme streamflow predictions to training distribution and input fidelity
+  authors: Talbot MT, Davenport FV
+  year: 2026
+  venue: In preparation
+  category: in-prep
+
+- title: Parameterization and Application of Agricultural Best Management Practices in a Rural Ontario Watershed Using PCSWMM
+  authors: Talbot MT, McGuire O, Olivier C, Fleming R
+  year: 2016
+  venue: Journal of Water Management Modeling
+  category: peer-reviewed
+  doi: https://doi.org/10.14796/JWMM.C400
+  url: https://www.chijournal.org/Journals/PDF/C400
+
+- title: Developing optimum subsurface drainage design procedures
+  authors: Sands GR, Canelon D, Talbot M
+  year: 2015
+  venue: "Acta Agriculturae Scandinavica, Section B — Soil & Plant Science 65(sup1):121–127"
+  category: peer-reviewed
+  doi: https://doi.org/10.1080/09064710.2014.997788
+  url: https://www.tandfonline.com/doi/full/10.1080/09064710.2014.997788
+
+- title: Evaluating and Estimating DRAINMOD's Effective Rooting Depth for Corn
+  authors: Talbot MT, Sands G, Coulter J
+  year: 2014
+  venue: "Evapotranspiration: Challenges in Measurement and Modeling from Leaf to the Landscape Scale and Beyond. Raleigh, NC"
+  category: proceedings
+  doi: https://doi.org/10.13031/et.1863580
+  url: https://elibrary.asabe.org/login.asp?search=0&JID=1&AID=44311&CID=cmmllsb2014&v=&i=&T=2
+
+- title: "Agriculture — A river runs through it — The connections between agriculture and water quality"
+  authors: Capel PD, McCarthy KA, Coupe RH, Grey KM, Amenumey SE, Baker NT, Johnson RL
+  year: 2018
+  venue: U.S. Geological Survey Circular 1433
+  category: contributions
+  doi: https://doi.org/10.3133/cir1433
+  url: https://pubs.usgs.gov/circ/1433/cir1433.pdf
+
+- title: The Role of Hydrologic Alteration and Riparian Vegetation Dynamics in Channel Evolution along the Lower Minnesota River
+  authors: Lenhart CF, Titov ML, Ulrich JS, Nieber JL, Suppes BJ
+  year: 2013
+  venue: "Transactions of the ASABE 56(2):549"
+  category: contributions
+  doi: https://doi.org/10.13031/2013.42686
+  url: https://elibrary.asabe.org/login.asp?search=0&JID=3&AID=42686&CID=t2013&v=56&i=2&T=2

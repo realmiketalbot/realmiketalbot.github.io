@@ -1,0 +1,39 @@
+---
+import Icon from "./Icon.astro";
+import { siteConfig } from "../config";
+
+interface Props {
+  iconClass?: string;
+  class?: string;
+}
+const { iconClass = "h-6 w-6", class: className = "" } = Astro.props;
+const s = siteConfig.social;
+
+const links = [
+  s.email && { label: "Email", href: `mailto:${s.email}`, icon: "email" as const },
+  s.github && { label: "GitHub", href: s.github, icon: "github" as const },
+  s.scholar && { label: "Google Scholar", href: s.scholar, icon: "scholar" as const },
+  s.orcid && { label: "ORCID", href: s.orcid, icon: "orcid" as const },
+  s.linkedin && { label: "LinkedIn", href: s.linkedin, icon: "linkedin" as const },
+  s.bluesky && { label: "Bluesky", href: s.bluesky, icon: "bluesky" as const },
+].filter(Boolean) as { label: string; href: string; icon: any }[];
+---
+
+<ul class={`flex items-center gap-5 ${className}`}>
+  {
+    links.map((l) => (
+      <li>
+        <a
+          href={l.href}
+          target={l.href.startsWith("mailto:") ? undefined : "_blank"}
+          rel="noopener noreferrer"
+          aria-label={l.label}
+          title={l.label}
+          class="block text-muted transition-colors hover:text-accent"
+        >
+          <Icon name={l.icon} class={iconClass} />
+        </a>
+      </li>
+    ))
+  }
+</ul>
