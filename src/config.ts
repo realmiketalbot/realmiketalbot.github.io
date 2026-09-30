@@ -23,7 +23,7 @@ export const siteConfig = {
   },
 
   social: {
-    email: "", // leave blank to hide
+    email: "mtalbot@colostate.edu", // leave blank to hide
     github: "https://github.com/realmiketalbot",
     linkedin: "https://www.linkedin.com/in/realmiketalbot",
     scholar: "https://scholar.google.com/citations?user=OrD79wlC97wC&hl=en",

@@ -14,8 +14,8 @@ import { boldMe, formatMonthYear } from "../../lib/utils";
 const cv = await getCvData();
 
 const contacts = [
-  { label: siteConfig.url.replace(/^https?:\/\//, ""), href: siteConfig.url },
   siteConfig.social.email && { label: siteConfig.social.email, href: `mailto:${siteConfig.social.email}` },
+  { label: siteConfig.url.replace(/^https?:\/\//, ""), href: siteConfig.url },
   siteConfig.social.orcid && { label: siteConfig.social.orcid.replace(/^https?:\/\//, ""), href: siteConfig.social.orcid },
   siteConfig.social.github && { label: siteConfig.social.github.replace(/^https?:\/\//, ""), href: siteConfig.social.github },
   siteConfig.social.linkedin && { label: siteConfig.social.linkedin.replace(/^https?:\/\/(www\.)?/, ""), href: siteConfig.social.linkedin },

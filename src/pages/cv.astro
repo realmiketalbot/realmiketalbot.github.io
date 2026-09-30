@@ -21,6 +21,16 @@ const cv = await getCvData();
         <p class="mt-3 text-muted">
           {siteConfig.cvHeadline} · {siteConfig.affiliation} · {siteConfig.location}
         </p>
+        {
+          siteConfig.social.email && (
+            <a
+              href={`mailto:${siteConfig.social.email}`}
+              class="mt-2 inline-flex items-center gap-2 font-mono text-sm text-accent hover:text-accent-strong"
+            >
+              <Icon name="email" class="h-4 w-4" /> {siteConfig.social.email}
+            </a>
+          )
+        }
       </div>
       <a
         href={siteConfig.cvPdf}
