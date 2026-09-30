@@ -53,3 +53,11 @@ deployment → Source** must be set to **GitHub Actions**.
 The previous Jekyll blog posts are kept, unpublished, in `archive/blog/`.
 Drafts that were never published (and their data) live in
 `archive/blog/unpublished/`, which is git-ignored and exists only locally.
+
+## Blog
+
+The blog lives in its own Quarto repo,
+[realmiketalbot/blog](https://github.com/realmiketalbot/blog), served at
+`/blog`. It copies this site's colour tokens (`src/styles/global.css`), header
+and footer, so changes to those should be mirrored there (see that repo's
+README).
