@@ -31,7 +31,7 @@ export const siteConfig = {
     linkedin: "https://www.linkedin.com/in/realmiketalbot",
     scholar: "https://scholar.google.com/citations?user=OrD79wlC97wC&hl=en",
     orcid: "https://orcid.org/0000-0002-1145-8207",
-    bluesky: "https://bsky.app/profile/miketalbot.io",
+    bluesky: "", // hidden while inactive; was https://bsky.app/profile/miketalbot.io
   },
 
   // Each string is one paragraph. Simple inline links: [text](url)

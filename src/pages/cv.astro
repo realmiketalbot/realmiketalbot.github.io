@@ -4,7 +4,6 @@ import CvSection from "../components/CvSection.astro";
 import CvItem from "../components/CvItem.astro";
 import PublicationList from "../components/PublicationList.astro";
 import TalkList from "../components/TalkList.astro";
-import SocialLinks from "../components/SocialLinks.astro";
 import Icon from "../components/Icon.astro";
 import { siteConfig } from "../config";
 import { getCvData, CV_SECTIONS as S } from "../lib/cv";
@@ -166,10 +165,5 @@ const cv = await getCvData();
         {cv.affiliations.map((a) => <CvItem title={a.org} subtitle={a.role} />)}
       </div>
     </CvSection>
-
-    <div class="no-print flex items-center justify-between border-t border-line pt-10">
-      <a href="/" class="font-mono text-sm text-accent hover:text-accent-strong">← Home</a>
-      <SocialLinks iconClass="h-5 w-5" />
-    </div>
   </div>
 </Layout>
