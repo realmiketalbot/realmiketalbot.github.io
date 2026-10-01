@@ -2,6 +2,8 @@
 // Records that grow over time (publications, talks, awards, etc.) live in
 // src/content/*.yaml instead.
 
+import headshot from "./assets/mike-talbot-bw.png";
+
 export const siteConfig = {
   name: "Mike Talbot",
   fullName: "Michael T. Talbot",
@@ -10,7 +12,8 @@ export const siteConfig = {
     "Mike Talbot is an engineer, hydrologist, and PhD candidate at Colorado State University studying how statistical and deep learning models represent hydrologic extremes.",
   url: "https://miketalbot.io",
   location: "Fort Collins, CO",
-  headshot: "/images/mike-talbot-bw.png",
+  // Imported so astro:assets can resize it and serve WebP
+  headshot,
   // Generated from /cv/print by integrations/cv-pdf.mjs
   cvPdf: "/Talbot_CV.pdf",
   cvHeadline: "PhD Candidate, Hydrologic Science & Engineering",

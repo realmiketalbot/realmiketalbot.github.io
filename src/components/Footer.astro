@@ -8,9 +8,18 @@ const year = new Date().getFullYear();
   <div
     class="mx-auto flex max-w-7xl flex-col items-start justify-between gap-6 px-5 py-10 sm:flex-row sm:items-center sm:px-8"
   >
-    <p class="font-mono text-sm text-fg">
-      {siteConfig.fullName} <span class="text-subtle">© {year}</span>
-    </p>
+    <div>
+      <p class="font-mono text-sm text-fg">{siteConfig.fullName} © {year}</p>
+      <p class="mt-1 text-sm text-subtle">
+        Built with <a
+          href="https://astro.build"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="underline decoration-line underline-offset-[3px] transition-colors hover:text-accent hover:decoration-accent"
+          >Astro</a
+        >
+      </p>
+    </div>
     <SocialLinks iconClass="h-5 w-5" />
   </div>
 </footer>

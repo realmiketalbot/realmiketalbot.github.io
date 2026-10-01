@@ -1,6 +1,7 @@
 ---
 import SocialLinks from "./SocialLinks.astro";
 import Icon from "./Icon.astro";
+import { Image } from "astro:assets";
 import { siteConfig } from "../config";
 ---
 
@@ -35,12 +36,14 @@ import { siteConfig } from "../config";
     class="mx-auto grid min-h-[min(92vh,60rem)] max-w-7xl grid-cols-1 items-center gap-12 px-5 pb-28 pt-28 sm:px-8 md:grid-cols-12 md:pt-24"
   >
     <div class="md:col-span-7 lg:col-span-8">
-      <img
+      <Image
         src={siteConfig.headshot}
         alt=""
         class="fade-in mb-8 h-20 w-20 rounded-2xl border-2 border-accent object-cover md:hidden"
-        width="80"
-        height="80"
+        width={80}
+        height={80}
+        densities={[1, 2]}
+        loading="eager"
       />
       <p class="fade-in font-mono text-lg text-muted sm:text-xl">{siteConfig.hero.greeting}</p>
       <h1
@@ -77,12 +80,15 @@ import { siteConfig } from "../config";
     <div class="fade-in delay-2 hidden md:col-span-5 md:block lg:col-span-4">
       <div class="relative mx-auto aspect-square w-full max-w-sm">
         <div class="absolute inset-0 translate-x-3 translate-y-3 rounded-3xl border-2 border-accent"></div>
-        <img
+        <Image
           src={siteConfig.headshot}
           alt={`Portrait of ${siteConfig.name}`}
           class="relative h-full w-full rounded-3xl border border-line bg-surface object-cover"
-          width="400"
-          height="400"
+          width={400}
+          height={400}
+          densities={[1, 2]}
+          loading="eager"
+          fetchpriority="high"
         />
       </div>
     </div>
