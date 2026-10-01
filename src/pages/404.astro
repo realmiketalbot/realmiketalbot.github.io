@@ -7,8 +7,19 @@ import Layout from "../layouts/Layout.astro";
     <p class="font-mono text-sm text-accent">404</p>
     <h1 class="mt-2 text-4xl font-bold tracking-tight text-fg sm:text-5xl">Out of bounds.</h1>
     <p class="mt-4 text-lg text-muted">
-      This page doesn't exist anymore, or never did. The old blog has been retired.
+      This page doesn't exist anymore<span class="fade-away">… or maybe it never did…?</span>
     </p>
     <a href="/" class="mt-8 font-mono text-sm text-accent hover:text-accent-strong">← Back home</a>
   </section>
 </Layout>
+
+<style>
+  /* The second thought slowly slips away. Reduced-motion visitors keep it,
+     via the global prefers-reduced-motion rule in global.css. */
+  .fade-away {
+    animation: fade-away 1.75s ease-in 2s forwards;
+  }
+  @keyframes fade-away {
+    to { opacity: 0.04; }
+  }
+</style>
