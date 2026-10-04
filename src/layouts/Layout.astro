@@ -49,6 +49,18 @@ const canonical = new URL(Astro.url.pathname, Astro.site);
       href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600;700&family=IBM+Plex+Sans:ital,wght@0,400;0,500;0,600;1,400&display=swap"
       rel="stylesheet"
     />
+
+    {/* GoatCounter analytics; production builds only so local dev visits aren't counted */}
+    {
+      import.meta.env.PROD && (
+        <script
+          is:inline
+          data-goatcounter="https://mtalbot.goatcounter.com/count"
+          async
+          src="https://gc.zgo.at/count.js"
+        />
+      )
+    }
   </head>
   <body class="min-h-screen">
     <a
