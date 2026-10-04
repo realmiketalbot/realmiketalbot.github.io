@@ -75,11 +75,7 @@ const cv = await getCvData();
         {
           cv.experience.map((j) => (
             <CvItem title={j.title} date={j.dates} subtitle={[j.org, j.location].filter(Boolean).join(", ")}>
-              {j.bullets && (
-                <ul class="mt-2 list-disc space-y-1 pl-5 text-sm text-muted marker:text-subtle">
-                  {j.bullets.map((b) => <li>{b}</li>)}
-                </ul>
-              )}
+              {j.summary && <p class="mt-2 text-sm text-muted">{j.summary}</p>}
             </CvItem>
           ))
         }

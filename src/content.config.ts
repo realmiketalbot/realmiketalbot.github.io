@@ -23,6 +23,7 @@ const experience = defineCollection({
     location: z.string().optional(),
     dates: z.string(),
     bullets: z.array(z.string()).optional(),
+    summary: z.string().optional(),
   }),
 });
 

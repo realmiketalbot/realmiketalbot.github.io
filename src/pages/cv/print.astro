@@ -81,11 +81,7 @@ const dot = (s: string) => (/[.?!]$/.test(s) ? s : `${s}.`);
                 <span class="date">{j.dates}</span>
               </div>
               <div class="sub">{[j.org, j.location].filter(Boolean).join(", ")}</div>
-              {j.bullets && (
-                <ul>
-                  {j.bullets.map((b) => <li>{b}</li>)}
-                </ul>
-              )}
+              {j.summary && <div class="detail">{j.summary}</div>}
             </div>
           ))
         }

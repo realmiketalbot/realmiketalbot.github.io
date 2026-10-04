@@ -1,10 +1,9 @@
-# Newest first. `bullets` is optional.
+# Newest first. `bullets` (homepage) and `summary` (CV) are optional.
 - title: Graduate Research Assistant
   org: Colorado State University
   location: Fort Collins, CO
   dates: 2024 – Present
   bullets:
-    - Dissertation research on flood frequency analysis and deep learning (LSTM) streamflow prediction at the extremes, with a focus on Colorado
     - Developing mixed-population flood frequency methods for snowmelt, rainfall, and rain-on-snow floods across 206 Colorado stream gages
     - Training and evaluating LSTM model ensembles across hundreds of catchments on high-performance computing (HPC) clusters
 
@@ -12,10 +11,12 @@
   org: Emmons & Olivier Resources, Inc.
   location: St. Paul, MN
   dates: 2013 – 2023
+  summary: Stormwater and flood modeling, climate resilience and risk analysis, watershed management planning (MN, IA, ON, AB), and web application development.
   bullets:
-    - Built and applied hydrologic and hydraulic models for projects ranging from engineering design support to regional-scale watershed planning
-    - Contributed to stormwater and watershed management plans across Minnesota, Iowa, Ontario, and Alberta
-    - Developed web tools supporting modeling and watershed planning projects
+    - Modeled stormwater and flooding (PCSWMM, XPSWMM) for floodplain studies, flood mitigation, and infrastructure design, and contributed to watershed management plans across Minnesota, Iowa, Ontario, and Alberta
+    - Conducted climate resilience work, including future precipitation analysis, vulnerability and risk assessments, and community resilience planning
+    - Built R Shiny and Leaflet web applications for planning decision support, client-facing maps, and model pre- and post-processing, with GIS and Python workflows to automate model building and analysis
+    - Managed projects, wrote proposals, served as modeling technical lead, and mentored junior engineers
 
 - title: Graduate Research Assistant
   org: University of Minnesota
